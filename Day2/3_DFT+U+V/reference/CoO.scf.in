@@ -1,0 +1,44 @@
+ &control
+    calculation='scf'
+    restart_mode='from_scratch',
+    prefix='CoO'
+    pseudo_dir = '../files/pseudo'
+    outdir='./tmp'
+    verbosity='high'
+ /
+ &system
+    ibrav = 0,
+    celldm(1) = 8.00,
+    nat = 4,
+    ntyp = 3,
+    ecutwfc = 35.0
+    ecutrho = 280.0
+    nspin = 2
+    starting_magnetization(1) =  0.5,
+    starting_magnetization(2) = -0.5,
+    occupations = 'smearing',
+    smearing = 'mv',
+    degauss = 0.02
+    lda_plus_u = .true.,
+    lda_plus_u_kind = 2,
+    U_projection_type = 'ortho-atomic',
+    Hubbard_parameters = 'file'
+ /
+ &electrons
+    conv_thr =  1.d-10
+ /
+ATOMIC_SPECIES
+ Co1  58.933194  co_pbesol_v1.2.uspp.F.UPF
+ Co2  58.933194  co_pbesol_v1.2.uspp.F.UPF
+ O    15.999     O.pbesol-n-kjpaw_psl.0.1.UPF
+ATOMIC_POSITIONS {crystal}
+Co1      0.00000000     0.00000000     0.00000000
+Co2      0.50000000     0.50000000     0.50000000
+O        0.25000000     0.25000000     0.25000000
+O        0.75000000     0.75000000     0.75000000
+CELL_PARAMETERS {alat}
+   0.500380664   0.500380664   1.004818266
+   0.500380664   1.004818266   0.500380664
+   1.004818266   0.500380664   0.500380664
+K_POINTS {automatic}
+ 3 3 3 0 0 0
