@@ -1,0 +1,35 @@
+{
+  "workflow": {
+    "functional": "ki",
+    "method": "dfpt",
+    "init_orbitals": "kohn-sham",
+    "from_scratch": true,
+    "n_max_sc_steps": 1,
+    "pseudo_library": "sg15"
+  },
+  "atoms": {
+    "cell_parameters": {
+      "vectors": [[8.1738, 0.0, 0.0],
+                  [0.0, 6.0, 0.0],
+                  [0.0, 0.0, 6.66]],
+      "units": "angstrom",
+      "periodic": false
+    },
+    "atomic_positions": {
+      "units": "angstrom",
+      "positions": [
+        ["O", 4.0869, 3.0, 2.89],
+        ["O", 5.1738, 3.0, 3.55],
+        ["O", 3.0, 3.0, 3.55]
+      ]
+    }
+  },
+  "calculator_parameters": {
+    "ecutwfc": 50.0,
+    "ecutrho": 200.0,
+    "nbnd": 10,
+    "kc_wann": {
+       "kc_screen":{ "tr2": 1e-14}
+     }
+  }
+}

@@ -1,0 +1,45 @@
+&CONTROL
+   calculation      = 'scf'
+   verbosity        = 'high'
+   restart_mode     = 'from_scratch'
+   outdir           = '../out'
+   prefix           = 'kc'
+   pseudo_dir       = '../../../../files/pseudo/'
+/
+&SYSTEM
+   ibrav            = 0
+   nbnd             = 10
+   tot_charge       = 0
+   tot_magnetization = 0
+   ecutwfc          = 50.0
+   ecutrho          = 200.0
+   nspin            = 2
+   assume_isolated  = 'm-t'
+   starting_magnetization(1) = 0.0
+   ntyp             = 1
+   nat              = 3
+/
+&ELECTRONS
+   conv_thr         = 3.6000000000000005e-08
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+O  15.999 O_ONCV_PBE-1.2.upf
+
+K_POINTS automatic
+1 1 1  0 0 0
+
+CELL_PARAMETERS angstrom
+8.17380000000000 0.00000000000000 0.00000000000000
+0.00000000000000 6.00000000000000 0.00000000000000
+0.00000000000000 0.00000000000000 6.66000000000000
+
+ATOMIC_POSITIONS angstrom
+O  4.0869000000 3.0000000000 2.8900000000
+O  5.1738000000 3.0000000000 3.5500000000
+O  3.0000000000 3.0000000000 3.5500000000
+

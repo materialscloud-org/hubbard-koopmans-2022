@@ -1,0 +1,145 @@
+
+     =--------------------------------------------------------------------------------=
+                      :::    :::           ::::::::         :::       ::: 
+                     :+:   :+:           :+:    :+:        :+:       :+:  
+                    +:+  +:+            +:+               +:+       +:+   
+                   +#++:++             +#+               +#+  +:+  +#+    
+                  +#+  +#+            +#+               +#+ +#+#+ +#+     
+                 #+#   #+#           #+#    #+#         #+#+# #+#+#       
+                ###    ###           ########           ###   ###         
+
+       Koopmans functional implementation based on DFPT; please cite this program as
+
+          N.Colonna, R. De Gannaro, E. Linscott, and N. Marzari, arXiv:2202.08155   
+     =--------------------------------------------------------------------------------=
+
+     Program KCW v.7.1 starts on 20Sep2022 at  9:40:32 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     1623 MiB available memory on the printing compute node when the environment starts
+ 
+      Title line not specified: using 'default'.
+
+     KCW INPUT SUMMARY 
+     ============================================
+
+      CONTROL 
+       # title               =           default
+       # out_dir             =           ../out/
+       # prefix              =                kc
+       # calculation         =          wann2kcw
+       # kcw_iverbosity      =                 1
+       # kcw_at_ks           =                 T
+       # spin_component      =                 1
+       # homo_only           =                 F
+       # read_unitary_matrix =                 F
+       # check_ks            =                 F
+       # l_vcut              =                 F
+       # assume_isolated     =               m-t
+     ============================================
+
+     INFO: Reading pwscf data
+
+     Reading xml data from directory:
+
+     ../out/kc.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        2787    2787    691               105259   105259   13179
+ 
+     Using Slab Decomposition
+ 
+     Reading collected, re-writing distributed wavefunctions
+
+     INFO: NO ROTATION, using the canonical KS manifold
+
+
+     INFO: Minimizing orbitals DEFINED
+
+
+     INFO: PREPARING THE KCW CALCULATION ...
+
+     INFO: Compute Wannier-orbital Densities ...
+
+        ==============================================================================
+        iq =     1
+        The Wannier density at  q =    0.0000000   0.0000000   0.0000000  [Cart ]
+        The Wannier density at  q =    0.0000000   0.0000000   0.0000000  [Cryst]
+        ==============================================================================
+
+        INFO: Map k+q -> p in 1BZ DONE  
+
+        INFO: rho_q(r) DONE 
+
+     INFO: Orbital Self-Hartree (SH)
+     orb     1     SH   0.685845
+     orb     2     SH   0.576880
+     orb     3     SH   0.485592
+     orb     4     SH   0.596889
+     orb     5     SH   0.505926
+     orb     6     SH   0.538071
+     orb     7     SH   0.515308
+     orb     8     SH   0.523201
+     orb     9     SH   0.478960
+     orb    10     SH   0.493689
+
+     INFO: PREPARING THE KCW CALCULATION ... DONE
+
+
+ 
+     KCW          :      0.66s CPU      0.83s WALL
+
+     INITIALIZATION: 
+     map          :      0.00s CPU      0.00s WALL (       1 calls)
+     rho_of_q     :      0.06s CPU      0.06s WALL (       1 calls)
+ 
+     init_vloc    :      0.04s CPU      0.04s WALL (       1 calls)
+     init_us_1    :      0.00s CPU      0.00s WALL (       1 calls)
+ 
+ 
+ 
+ 
+ 
+     h_psi        :      0.04s CPU      0.05s WALL (       1 calls)
+ 
+     h_psi        :      0.04s CPU      0.05s WALL (       1 calls)
+     add_vuspsi   :      0.00s CPU      0.00s WALL (       1 calls)
+ 
+ 
+ 
+      General routines
+     calbec       :      0.00s CPU      0.00s WALL (       1 calls)
+     fft          :      0.04s CPU      0.04s WALL (      19 calls)
+     ffts         :      0.15s CPU      0.15s WALL (      70 calls)
+     fftw         :      0.07s CPU      0.08s WALL (      40 calls)
+     davcio       :      0.00s CPU      0.02s WALL (       9 calls)
+ 
+ 
+     KCW          :      0.66s CPU      0.83s WALL
+
+ 
+   This run was terminated on:   9:40:32  20Sep2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

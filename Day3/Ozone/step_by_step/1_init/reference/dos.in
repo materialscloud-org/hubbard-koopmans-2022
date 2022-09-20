@@ -1,0 +1,6 @@
+&DOS
+ outdir="../out"
+ prefix="kc"
+ deltaE=0.001
+ degauss=0.001
+/

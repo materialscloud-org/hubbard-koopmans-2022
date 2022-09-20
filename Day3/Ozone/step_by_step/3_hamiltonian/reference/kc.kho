@@ -1,0 +1,231 @@
+
+     =--------------------------------------------------------------------------------=
+                      :::    :::           ::::::::         :::       ::: 
+                     :+:   :+:           :+:    :+:        :+:       :+:  
+                    +:+  +:+            +:+               +:+       +:+   
+                   +#++:++             +#+               +#+  +:+  +#+    
+                  +#+  +#+            +#+               +#+ +#+#+ +#+     
+                 #+#   #+#           #+#    #+#         #+#+# #+#+#       
+                ###    ###           ########           ###   ###         
+
+       Koopmans functional implementation based on DFPT; please cite this program as
+
+          N.Colonna, R. De Gannaro, E. Linscott, and N. Marzari, arXiv:2202.08155   
+     =--------------------------------------------------------------------------------=
+
+     Program KCW v.7.1 starts on 20Sep2022 at  9:43:15 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     1715 MiB available memory on the printing compute node when the environment starts
+ 
+      Title line not specified: using 'default'.
+
+     KCW INPUT SUMMARY 
+     ============================================
+
+      CONTROL 
+       # title               =           default
+       # out_dir             =           ../out/
+       # prefix              =                kc
+       # calculation         =               ham
+       # kcw_iverbosity      =                 1
+       # kcw_at_ks           =                 T
+       # spin_component      =                 1
+       # homo_only           =                 F
+       # read_unitary_matrix =                 F
+       # check_ks            =                 F
+       # l_vcut              =                 F
+       # assume_isolated     =               m-t
+
+      HAM 
+       # qp_symm             =                 F
+       # kipz_corr           =                 F
+       # MP grid             =     1     1     1
+       # do_bands            =                 F
+       # use_ws_distance     =                 T
+       # write_hr            =                 T
+       # l_alpha_corr        =                 F
+       # on_site_only        =                 F
+     ============================================
+
+     INFO: Reading pwscf data
+
+     Reading xml data from directory:
+
+     ../out/kc.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        2787    2787    691               105259   105259   13179
+ 
+     Using Slab Decomposition
+ 
+     Reading collected, re-writing distributed wavefunctions
+
+     INFO: total number of primitive cell    1
+
+     READING SCREENING PARAMETERS
+
+     INFO: alphas read from:../out/kcw/kc.alpha.dat                                                                                                                                                                                                                                         
+     iwann =     1   alpha =      0.64437202
+     iwann =     2   alpha =      0.71514930
+     iwann =     3   alpha =      0.76833701
+     iwann =     4   alpha =      0.66653607
+     iwann =     5   alpha =      0.76365358
+     iwann =     6   alpha =      0.71919489
+     iwann =     7   alpha =      0.73445415
+     iwann =     8   alpha =      0.72986886
+     iwann =     9   alpha =      0.76504010
+     iwann =    10   alpha =      0.75637576
+
+     INFO: MLWF read from file: Reading collected, re-writing distributed wavefunctions
+
+     INFO: Coulomb kernel treated according to MT scheme
+
+     INFO: READING Wannier-orbital Densities ...
+
+        ==============================================================================
+        iq =     1
+        The  Wannier density at  q =    0.0000000   0.0000000   0.0000000  [Cart ]
+        The  Wannier density at  q =    0.0000000   0.0000000   0.0000000  [Cryst]
+        ==============================================================================
+
+     INFO: total number of wannier to compute   10 from     1 to    10
+     INFO: PREPARING THE KCW CALCULATION ... DONE
+
+
+
+     INFO: KC SCALAR TERM CALCULATION ... START
+
+     INFO: KC SCALAR TERM CALCULATION ... END
+
+
+     INFO: KI[2nd] HAMILTONIAN CALCULATION ik=    1 ...
+
+        INFO: Map k+q -> p in 1BZ DONE  
+
+
+          k = 0.0000 0.0000 0.0000     band energies (ev):
+
+          KS     -34.6868   -27.7502   -19.5427   -14.9620   -14.7823   -14.4890    -9.1343    -8.0533
+          KS      -7.8890    -6.0739
+          KI     -40.2653   -32.9625   -24.2707   -19.8474   -19.5418   -19.2977   -13.7264   -12.7259
+          KI     -12.4385    -1.4694
+
+        KS       highest occupied, lowest unoccupied level (ev):    -7.8890   -6.0739
+        KI[2nd]  highest occupied, lowest unoccupied level (ev):   -12.4385   -1.4694
+
+     INFO: KI calcualtion: Full Hamiltonian ... 
+
+        INFO: Map k+q -> p in 1BZ DONE  
+
+        self_hatree    1    1    -0.68584472
+        KI corr const term, sh[n_i], Exc[n], Exc[n-n_i], int{v_xc[n] n_i}     0.68584472  -20.38871520  -18.90351019   -1.54129183
+        orbital  1   spin  1     uKI_diag    -0.62975790 Ry   rKI_diag    -0.40579837 Ry   alpha=     0.64437202
+
+        self_hatree    2    1    -0.57687992
+        KI corr const term, sh[n_i], Exc[n], Exc[n-n_i], int{v_xc[n] n_i}     0.57687992  -20.38871520  -18.88386148   -1.55215862
+        orbital  2   spin  1     uKI_diag    -0.52957502 Ry   rKI_diag    -0.37872521 Ry   alpha=     0.71514930
+
+        self_hatree    3    1    -0.48559248
+        KI corr const term, sh[n_i], Exc[n], Exc[n-n_i], int{v_xc[n] n_i}     0.48559248  -20.38871520  -18.92471400   -1.50025947
+        orbital  3   spin  1     uKI_diag    -0.44933420 Ry   rKI_diag    -0.34524010 Ry   alpha=     0.76833701
+
+        self_hatree    4    1    -0.59688898
+        KI corr const term, sh[n_i], Exc[n], Exc[n-n_i], int{v_xc[n] n_i}     0.59688898  -20.38871520  -19.07900256   -1.38752550
+        orbital  4   spin  1     uKI_diag    -0.51907612 Ry   rKI_diag    -0.34598296 Ry   alpha=     0.66653607
+
+        self_hatree    5    1    -0.50592569
+        KI corr const term, sh[n_i], Exc[n], Exc[n-n_i], int{v_xc[n] n_i}     0.50592569  -20.38871520  -18.95146627   -1.49540472
+        orbital  5   spin  1     uKI_diag    -0.44776989 Ry   rKI_diag    -0.34194108 Ry   alpha=     0.76365358
+
+        self_hatree    6    1    -0.53807085
+        KI corr const term, sh[n_i], Exc[n], Exc[n-n_i], int{v_xc[n] n_i}     0.53807085  -20.38871520  -19.00615894   -1.43989465
+        orbital  6   spin  1     uKI_diag    -0.48073245 Ry   rKI_diag    -0.34574032 Ry   alpha=     0.71919489
+
+        self_hatree    7    1    -0.51530769
+        KI corr const term, sh[n_i], Exc[n], Exc[n-n_i], int{v_xc[n] n_i}     0.51530769  -20.38871520  -19.05873520   -1.40230152
+        orbital  7   spin  1     uKI_diag    -0.44298618 Ry   rKI_diag    -0.32535304 Ry   alpha=     0.73445415
+
+        self_hatree    8    1    -0.52320093
+        KI corr const term, sh[n_i], Exc[n], Exc[n-n_i], int{v_xc[n] n_i}     0.52320093  -20.38871520  -18.98899118   -1.46377583
+        orbital  8   spin  1     uKI_diag    -0.45914912 Ry   rKI_diag    -0.33511865 Ry   alpha=     0.72986886
+
+        self_hatree    9    1    -0.47896016
+        KI corr const term, sh[n_i], Exc[n], Exc[n-n_i], int{v_xc[n] n_i}     0.47896016  -20.38871520  -18.99234102   -1.44635727
+        orbital  9   spin  1     uKI_diag    -0.42897707 Ry   rKI_diag    -0.32818466 Ry   alpha=     0.76504010
+
+        self_hatree   10    1    -0.49368862
+        KI corr const term, sh[n_i], Exc[n], Exc[n+n_i], int{v_xc[n] n_i}     0.49368862  -20.38871520  -21.90600958   -1.46807481
+        orbital 10   spin  1     uKI_diag     0.44446905 Ry   rKI_diag     0.33618561 Ry   alpha=     0.75637576
+
+     INFO: KI calcualtion: Full Hamiltonian ... DONE
+
+        DATA: Empty states spectrum as a function of the # of orbitals
+          1   -1.4999
+
+          KI[Full]    -40.2080   -32.9030   -24.2399   -19.6693   -19.4346   -19.1930   -13.5610   -12.6129
+          KI[Full]    -12.3542    -1.4999
+
+          KI[Pert]    -40.2080   -32.9030   -24.2399   -19.6693   -19.4346   -19.1930   -13.5610   -12.6129
+          KI[Pert]    -12.3542    -1.4999
+
+        KI[pert] highest occupied, lowest unoccupied level (ev):   -12.3542   -1.4999
+        KI[full] highest occupied, lowest unoccupied level (ev):   -12.3542   -1.4999
+
+     Writing all to output data dir ../out/kc_kcw.save/
+ 
+     KCW          :      4.13s CPU      4.52s WALL
+
+     INITIALIZATION: 
+     map          :      0.00s CPU      0.00s WALL (       2 calls)
+ 
+     init_vloc    :      0.04s CPU      0.04s WALL (       1 calls)
+     init_us_1    :      0.00s CPU      0.00s WALL (       1 calls)
+ 
+ 
+ 
+ 
+ 
+     h_psi        :      0.10s CPU      0.10s WALL (       2 calls)
+ 
+     h_psi        :      0.10s CPU      0.10s WALL (       2 calls)
+     add_vuspsi   :      0.00s CPU      0.00s WALL (       2 calls)
+ 
+ 
+ 
+      General routines
+     calbec       :      0.00s CPU      0.00s WALL (       2 calls)
+     fft          :      0.64s CPU      0.64s WALL (     319 calls)
+     ffts         :      0.16s CPU      0.16s WALL (      78 calls)
+     fftw         :      0.12s CPU      0.12s WALL (      62 calls)
+     davcio       :      0.01s CPU      0.10s WALL (      13 calls)
+ 
+ 
+     KCW          :      4.13s CPU      4.52s WALL
+
+ 
+   This run was terminated on:   9:43:20  20Sep2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
