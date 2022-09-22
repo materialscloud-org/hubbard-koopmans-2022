@@ -1,0 +1,30 @@
+&CONTROL
+   prefix           = 'kc'
+   outdir           = '../out'
+   kcw_iverbosity   = 1
+   kcw_at_ks        = .false.
+   calculation      = 'screen'
+   lrpa             = .false.
+   mp1              = 4
+   mp2              = 4
+   mp3              = 4
+   homo_only        = .false.
+   read_unitary_matrix = .true.
+   l_vcut           = .true.
+   spin_component   = 1
+/
+&WANNIER
+   seedname         = 'wann'
+   check_ks         = .true.
+   num_wann_occ     = 26
+   num_wann_emp     = 2
+   have_empty       = .true.
+   has_disentangle  = .true.
+/
+&SCREEN
+   tr2              = 1e-18
+   nmix             = 4
+   niter            = 33
+   eps_inf          = 5.28
+   check_spread     = .true.
+/

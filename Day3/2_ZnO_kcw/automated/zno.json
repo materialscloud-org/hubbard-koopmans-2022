@@ -1,0 +1,65 @@
+{
+    "workflow": {
+        "task": "singlepoint",
+        "functional": "ki",
+        "base_functional": "lda",
+        "method": "dfpt",
+        "init_orbitals": "mlwfs",
+        "calculate_alpha" : false,
+        "alpha_guess": [[0.3580, 0.3641, 0.3640, 0.3641, 0.3571, 0.3577, 0.3577, 0.3573, 0.3573, 0.3580, 0.3641, 0.3640, 0.3641, 0.3571, 0.3577, 0.3577, 0.3573, 0.3573, 0.2158, 0.2323, 0.2344, 0.2343, 0.2158, 0.2323, 0.2344, 0.2343, 0.2231, 0.2231]],
+        "pseudo_library": "pseudo_dojo_standard",
+        "gb_correction" : true,
+        "eps_inf": 5.3,
+        "from_scratch": true,
+        "npool": 1
+    },
+    "atoms": {
+       "cell_parameters": {
+         "periodic": true,
+         "ibrav": 4,
+         "celldms": {"1": 6.14057, "3": 1.60204}
+        },
+        "atomic_positions": {
+            "units": "crystal",
+            "positions": [
+                ["Zn", 0.33330, 0.66670, 0.50000 ],
+                ["Zn", 0.66670, 0.33330, 0.00000 ],
+                ["O" , 0.33330, 0.66670, 0.11725 ],
+                ["O" , 0.66670, 0.33330, 0.61725 ]
+            ]
+        }
+    },
+    "kpoints": {
+        "grid": [
+            4,
+            4,
+            4
+        ],
+        "path": "ALMGAHK"
+    },
+    "calculator_parameters": {
+        "ecutwfc": 50.0,
+        "pw": {
+            "system": {
+                "nbnd": 52
+            }
+        },
+        "w90": {
+            "occ": {
+                "projections_blocks": [
+                    [{"site": "Zn", "ang_mtm": "l=0"}],
+                    [{"site": "Zn", "ang_mtm": "l=1"}],
+                    [{"site": "O", "ang_mtm": "l=0"}],
+                    [{"site": "Zn", "ang_mtm": "l=2"},
+                     {"site": "O", "ang_mtm": "l=1"}]
+                ]},
+            "emp": {
+                "dis_froz_max": 14.5,
+                "dis_win_max": 17.0,
+                "projections": [
+                    {"site": "Zn", "ang_mtm": "l=0"}
+                ]
+            }
+        }
+    }
+}
