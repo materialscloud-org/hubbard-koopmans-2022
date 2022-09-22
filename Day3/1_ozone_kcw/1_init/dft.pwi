@@ -4,7 +4,7 @@
    restart_mode     = 'from_scratch'
    outdir           = '../out'
    prefix           = 'kc'
-   pseudo_dir       = '../../../../files/pseudo/'
+   pseudo_dir       = '../../../files/pseudo/'
 /
 &SYSTEM
    ibrav            = 0
