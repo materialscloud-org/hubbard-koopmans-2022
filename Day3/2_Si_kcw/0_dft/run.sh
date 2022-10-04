@@ -5,4 +5,4 @@ echo " PWbands   done"
 bands.x -in bands.in > bands.out
 echo " BANDS     done"
 
-gnuplot plot_bands.gnu
+#gnuplot plot_bands.gnu
