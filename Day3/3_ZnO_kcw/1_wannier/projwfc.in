@@ -1,0 +1,9 @@
+&projwfc
+ outdir = '../out'
+ prefix = 'kc'
+ DeltaE = 0.005   !! eV
+ ngauss = 0
+ degauss = 0.02
+ filpdos = 'ZnO'
+/
+
