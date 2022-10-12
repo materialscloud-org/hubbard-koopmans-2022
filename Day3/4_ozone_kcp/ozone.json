@@ -1,7 +1,7 @@
 {
   "workflow": {
     "functional": "ki",
-    "method": "dfpt",
+    "method": "dscf",
     "init_orbitals": "kohn-sham",
     "from_scratch": true,
     "n_max_sc_steps": 1,
