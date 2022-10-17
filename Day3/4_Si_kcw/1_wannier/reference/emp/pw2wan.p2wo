@@ -1,0 +1,168 @@
+
+     Program PW2WANNIER v.7.1 starts on 17Oct2022 at 14:28:56 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     451 MiB available memory on the printing compute node when the environment starts
+ 
+ 
+  Reading nscf_save data
+
+     Reading xml data from directory:
+
+     ../../out/si.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PW
+                           (   1   4   0   0   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         295     295    109                 3287     3287     749
+ 
+     Using Slab Decomposition
+ 
+     Reading collected, re-writing distributed wavefunctions
+ 
+  Spin CASE ( up )
+ 
+  Wannier mode is: standalone     
+ 
+  -----------------
+  *** Reading nnkp 
+  -----------------
+ 
+  Checking info from wannier.nnkp file
+ 
+  - Real lattice is ok
+  - Reciprocal lattice is ok
+  - K-points are ok
+  - Number of wannier functions is ok (  4)
+  - All guiding functions are given 
+ 
+ Projections:
+   -0.250000    0.250000    0.250000 -3  1  1    1.000000
+   -0.250000    0.250000    0.250000 -3  2  1    1.000000
+   -0.250000    0.250000    0.250000 -3  3  1    1.000000
+   -0.250000    0.250000    0.250000 -3  4  1    1.000000
+ 
+  Reading data about k-point neighbours 
+ 
+  All neighbours are found 
+ 
+  Opening pp-files 
+ 
+ 
+  --------------------------
+  *** Compute  A projections
+  --------------------------
+ 
+  AMN: iknum =      216
+       1       2       3       4       5       6       7       8       9      10
+      11      12      13      14      15      16      17      18      19      20
+      21      22      23      24      25      26      27      28      29      30
+      31      32      33      34      35      36      37      38      39      40
+      41      42      43      44      45      46      47      48      49      50
+      51      52      53      54      55      56      57      58      59      60
+      61      62      63      64      65      66      67      68      69      70
+      71      72      73      74      75      76      77      78      79      80
+      81      82      83      84      85      86      87      88      89      90
+      91      92      93      94      95      96      97      98      99     100
+     101     102     103     104     105     106     107     108     109     110
+     111     112     113     114     115     116     117     118     119     120
+     121     122     123     124     125     126     127     128     129     130
+     131     132     133     134     135     136     137     138     139     140
+     141     142     143     144     145     146     147     148     149     150
+     151     152     153     154     155     156     157     158     159     160
+     161     162     163     164     165     166     167     168     169     170
+     171     172     173     174     175     176     177     178     179     180
+     181     182     183     184     185     186     187     188     189     190
+     191     192     193     194     195     196     197     198     199     200
+     201     202     203     204     205     206     207     208     209     210
+     211     212     213     214     215     216
+
+  AMN calculated
+ 
+  ---------------
+  *** Compute  M 
+  ---------------
+ 
+  MMN: iknum =      216
+       1       2       3       4       5       6       7       8       9      10
+      11      12      13      14      15      16      17      18      19      20
+      21      22      23      24      25      26      27      28      29      30
+      31      32      33      34      35      36      37      38      39      40
+      41      42      43      44      45      46      47      48      49      50
+      51      52      53      54      55      56      57      58      59      60
+      61      62      63      64      65      66      67      68      69      70
+      71      72      73      74      75      76      77      78      79      80
+      81      82      83      84      85      86      87      88      89      90
+      91      92      93      94      95      96      97      98      99     100
+     101     102     103     104     105     106     107     108     109     110
+     111     112     113     114     115     116     117     118     119     120
+     121     122     123     124     125     126     127     128     129     130
+     131     132     133     134     135     136     137     138     139     140
+     141     142     143     144     145     146     147     148     149     150
+     151     152     153     154     155     156     157     158     159     160
+     161     162     163     164     165     166     167     168     169     170
+     171     172     173     174     175     176     177     178     179     180
+     181     182     183     184     185     186     187     188     189     190
+     191     192     193     194     195     196     197     198     199     200
+     201     202     203     204     205     206     207     208     209     210
+     211     212     213     214     215     216
+
+  MMN calculated
+ 
+  -----------------------------------
+  *** Orbital terms are not computed 
+  -----------------------------------
+ 
+  -----------------------------------
+  *** SHC terms are not computed 
+  -----------------------------------
+ 
+  ----------------
+  *** Write bands 
+  ----------------
+ 
+ 
+  -----------------------------
+  *** Plot info is not printed 
+  -----------------------------
+ 
+  -----------------------------
+  *** Parity info is not printed 
+  -----------------------------
+ 
+  ------------
+  *** Stop pp 
+  ------------
+ 
+ 
+     init_pw2wan  :      0.31s CPU      0.43s WALL (       1 calls)
+     compute_amn  :      4.71s CPU      4.85s WALL (       1 calls)
+     compute_mmn  :      1.52s CPU      4.13s WALL (       1 calls)
+ 
+     PW2WANNIER   :      6.54s CPU      9.45s WALL
+
+ 
+   This run was terminated on:  14:29: 6  17Oct2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
+ 

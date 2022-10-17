@@ -8,11 +8,7 @@ cd 1_wannier
 cd ../
 
 cd 2_screening
-cd wannier_222
 ./clean.sh
-cd ../screening
-./clean.sh
-cd ..
 cd ..
 
 cd 3_hamiltonian
