@@ -27,9 +27,6 @@
   "calculator_parameters": {
     "ecutwfc": 50.0,
     "ecutrho": 200.0,
-    "nbnd": 10,
-    "kc_wann": {
-       "kc_screen":{ "tr2": 1e-14}
-     }
+    "nbnd": 10
   }
 }
