@@ -1,0 +1,744 @@
+=------------------------------------------------------------------------------=
+
+     CP: variable-cell Car-Parrinello molecular dynamics
+     using norm-conserving and ultrasoft Vanderbilt pseudopotentials
+
+     Version: 4.1 - Wed May 4 10:12:44 CEST 2022                          
+     Authors: Alfredo Pasquarello, Kari Laasonen, Andrea Trave, Roberto Car,
+       Paolo Giannozzi, Nicola Marzari, Carlo Cavazzoni, Guido Chiarotti,
+       Sandro Scandolo, Paolo Focher, Gerardo Ballabio, and others
+
+=------------------------------------------------------------------------------=
+
+   This run was started on:  14:19:22  17Oct2022               
+
+   MPI Parallel Build
+   Tasks =    4  This task id =    0
+     Message from routine  system_checkin     :
+      starting_magnetization is not used in CP 
+
+   Job Title: MD Simulation
+
+
+   Atomic Pseudopotentials Parameters
+   ----------------------------------
+
+   Reading pseudopotential for specie #  1 from file :
+   /home/nicola/Scrivania/CODES/git/koopmans/pseudos/pseudo_dojo_standard_v0.4.1/lda/Si.upf
+   file type is 20: UPF
+ read_nonlocal
+
+
+   Main Simulation Parameters (from input)
+   ---------------------------------------
+   ion_nstepe or cell_nstepe have no effects 
+   Restart Mode       =       1   restart        
+   Number of MD Steps =      50
+   Print out every            1 MD Steps
+   Reads from unit    =      60
+   Writes to unit     =      70
+   MD Simulation time step            =       1.00
+   Electronic fictitious mass (emass) =     400.00
+   emass cut-off                      =       2.50
+
+   Simulation Cell Parameters (from input)
+   external pressure       =            0.00 [GPa]
+   wmass (calculated)      =        62246.66 [AU]
+   ibrav =    2
+   alat  =    20.52440009
+   a1    =   -10.26220004    0.00000000   10.26220004
+   a2    =     0.00000000   10.26220004   10.26220004
+   a3    =   -10.26220004   10.26220004    0.00000000
+ 
+   b1    =    -0.04872250   -0.04872250    0.04872250
+   b2    =     0.04872250    0.04872250    0.04872250
+   b3    =    -0.04872250    0.04872250   -0.04872250
+   omega =  2161.48100938
+ nbeg           1
+
+    ========================================
+    |  CONJUGATE GRADIENT                  |
+    ========================================
+    | iterations   =           100         |
+    | conv_thr     = 0.00000006400 a.u.    |
+    | passop       =       2.00000 a.u.    |
+    | niter_cg_restart =  20      |
+    ========================================
+
+   Energy Cut-offs
+   ---------------
+   Ecutwfc =   20.0 Ry,      Ecutrho =   80.0 Ry,      Ecuts =   80.0 Ry
+   Gcutwfc =   14.6     ,    Gcutrho =   29.2          Gcuts =   29.2
+   NOTA BENE: refg, mmx =   0.050000  3200
+   Orthog. with Gram-Schmidt
+   Electron dynamics with conjugate gradient
+   Electron dynamics : the temperature is not controlled
+
+   Electronic states
+   -----------------
+   Local Spin Density calculation
+   Number of Electron =    64
+   Spins up   =    32, occupations: 
+   1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+   1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+   1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+   1.00 1.00
+   Spins down =    32, occupations: 
+   1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+   1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+   1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+   1.00 1.00
+
+
+   Empty states minimization
+   --------------------------
+      states =       64
+     maxiter =      100
+        ethr =   0.1000D-05
+
+
+   Exchange and correlations functionals
+   -------------------------------------
+   Using Local Density Approximation with
+     Exchange functional: SLATER                                                      
+     Correlation functional: PERDEW AND WANG                                             
+     Exchange-correlation      = SLA  PW   NOGX NOGC (1400)
+   Wavefunctions will be written to file as Kohn-Sham states
+
+
+   Ions Simulation Parameters
+   --------------------------
+   Ions are not allowed to move
+   Ionic position (from input)
+   sorted by specie, and converted to real a.u. coordinates
+   Species   1 atoms =   16 mass =     51195.82 (a.u.),        28.09 (amu) rcmax =   1.00 (a.u.)
+        0.000000     0.000000     0.000000
+       -2.565550     2.565550     2.565550
+       -5.131100     5.131100     0.000000
+       -7.696650     7.696650     2.565550
+        0.000000     5.131100     5.131100
+       -2.565550     7.696650     7.696650
+       -5.131100    10.262200     5.131100
+       -7.696650    12.827750     7.696650
+       -5.131100     0.000000     5.131100
+       -7.696650     2.565550     7.696650
+      -10.262200     5.131100     5.131100
+      -12.827750     7.696650     7.696650
+       -5.131100     5.131100    10.262200
+       -7.696650     7.696650    12.827750
+      -10.262200    10.262200    10.262200
+      -12.827750    12.827750    12.827750
+   Ionic position will be re-read from restart file
+
+
+   Cell Dynamics Parameters (from STDIN)
+   -------------------------------------
+   Starting cell generated from CELLDM
+   Cell parameters will be re-read from restart file
+   Constant VOLUME Molecular dynamics
+   cell parameters are not allowed to move
+
+   Verbosity: iprsta =  1
+
+ nbeg           1
+
+
+   Simulation dimensions initialization
+   ------------------------------------
+
+   unit vectors of full simulation cell
+   in real space:                         in reciprocal space (units 2pi/alat):
+   1   -10.2622    0.0000   10.2622             -1.0000   -1.0000    1.0000
+   2     0.0000   10.2622   10.2622              1.0000    1.0000    1.0000
+   3   -10.2622   10.2622    0.0000             -1.0000    1.0000   -1.0000
+ 
+   Stick Mesh
+   ----------
+   nst =   580,  nstw =   148, nsts =   580
+        PEs    n.st   n.stw   n.sts    n.g    n.gw   n.gs
+          1     290      74     290    6560     822    6560
+          2     290      74     290    6558     822    6558
+          3     289      73     289    6553     823    6553
+          4     290      74     290    6558     820    6558
+          0    1159     295    1159   26229    3287   26229
+ 
+ 
+   Real Mesh
+   ---------
+   Global Dimensions   Local  Dimensions   Processor Grid
+   .X.   .Y.   .Z.     .X.   .Y.   .Z.     .X.   .Y.   .Z.
+    45    45    45      45    45    12       1     1     4
+   Array leading dimensions ( nr1x, nr2x, nr3x )   =     45    45    45
+   Local number of cell to store the grid ( nnrx ) =      24300
+   Number of x-y planes for each processors: 
+   nr3l =    12   11   11   11
+ 
+   Smooth Real Mesh
+   ----------------
+   Global Dimensions   Local  Dimensions   Processor Grid
+   .X.   .Y.   .Z.     .X.   .Y.   .Z.     .X.   .Y.   .Z.
+    45    45    45      45    45    12       1     1     4
+   Array leading dimensions ( nr1x, nr2x, nr3x )   =     45    45    45
+   Local number of cell to store the grid ( nnrx ) =      24300
+   Number of x-y planes for each processors: 
+   nr3sl =    12   11   11   11
+ 
+   Small Box Real Mesh
+   -------------------
+   Global Dimensions   Local  Dimensions   Processor Grid
+   .X.   .Y.   .Z.     .X.   .Y.   .Z.     .X.   .Y.   .Z.
+    20    20    20      20    20    20       1     1     1
+   Array leading dimensions ( nr1x, nr2x, nr3x )   =     20    20    20
+   Local number of cell to store the grid ( nnrx ) =       8000
+ 
+   unit vectors of box grid cell
+   in real space:                         in reciprocal space:
+      -4.5610    0.0000    4.5610             -1.0000   -1.0000    1.0000
+       0.0000    4.5610    4.5610              1.0000    1.0000    1.0000
+      -4.5610    4.5610    0.0000             -1.0000    1.0000   -1.0000
+ 
+   Reciprocal Space Mesh
+   ---------------------
+                Large Mesh
+   PE   Global(ngmt)     Local(ngm) MaxLocal(ngmx)
+    1          26229           6560           6560
+    2          26229           6558           6560
+    3          26229           6553           6560
+    4          26229           6558           6560
+                Smooth Mesh
+   PE   Global(ngst)     Local(ngs) MaxLocal(ngsx)
+    1          26229           6560           6560
+    2          26229           6558           6560
+    3          26229           6553           6560
+    4          26229           6558           6560
+                Wave function Mesh
+   PE   Global(ngwt)     Local(ngw) MaxLocal(ngwx)
+    1           3287            822            823
+    2           3287            822            823
+    3           3287            823            823
+    4           3287            820            823
+
+                Small box Mesh
+   ngb =         1139 not distributed to processors
+
+
+   System geometry initialization
+   ------------------------------
+ 
+   Scaled positions from standard input
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   1.250000E-01  1.250000E-01  1.250000E-01
+   Si   0.000000E+00  0.000000E+00  5.000000E-01
+   Si   1.250000E-01  1.250000E-01  6.250000E-01
+   Si   0.000000E+00  5.000000E-01  0.000000E+00
+   Si   1.250000E-01  6.250000E-01  1.250000E-01
+   Si   0.000000E+00  5.000000E-01  5.000000E-01
+   Si   1.250000E-01  6.250000E-01  6.250000E-01
+   Si   5.000000E-01  0.000000E+00  0.000000E+00
+   Si   6.250000E-01  1.250000E-01  1.250000E-01
+   Si   5.000000E-01  0.000000E+00  5.000000E-01
+   Si   6.250000E-01  1.250000E-01  6.250000E-01
+   Si   5.000000E-01  5.000000E-01  0.000000E+00
+   Si   6.250000E-01  6.250000E-01  1.250000E-01
+   Si   5.000000E-01  5.000000E-01  5.000000E-01
+   Si   6.250000E-01  6.250000E-01  6.250000E-01
+   ibrav =    2       cell parameters 
+
+     -10.26220       0.00000     -10.26220
+       0.00000      10.26220      10.26220
+      10.26220      10.26220       0.00000
+ 
+
+   Matrix Multiplication Performances
+   ortho mmul, time for parallel driver      =   0.00001 with    1 procs
+
+   Constraints matrixes will be distributed block like on
+   ortho sub-group =    1*   1 procs
+
+
+
+   Pseudopotentials initialization
+   -------------------------------
+
+
+   Common initialization
+
+   Specie:     1
+   1  indv=  1   ang. mom=  0
+   2  indv=  2   ang. mom=  0
+   3  indv=  3   ang. mom=  1
+   4  indv=  3   ang. mom=  1
+   5  indv=  3   ang. mom=  1
+   6  indv=  4   ang. mom=  1
+   7  indv=  4   ang. mom=  1
+   8  indv=  4   ang. mom=  1
+   9  indv=  5   ang. mom=  2
+  10  indv=  5   ang. mom=  2
+  11  indv=  5   ang. mom=  2
+  12  indv=  5   ang. mom=  2
+  13  indv=  5   ang. mom=  2
+  14  indv=  6   ang. mom=  2
+  15  indv=  6   ang. mom=  2
+  16  indv=  6   ang. mom=  2
+  17  indv=  6   ang. mom=  2
+  18  indv=  6   ang. mom=  2
+ 
+                        dion 
+      5.565957977000      0.000000000000      0.000000000000      0.000000000000      0.000000000000      0.000000000000
+      0.000000000000      0.856966246250      0.000000000000      0.000000000000      0.000000000000      0.000000000000
+      0.000000000000      0.000000000000      2.726110639550      0.000000000000      0.000000000000      0.000000000000
+      0.000000000000      0.000000000000      0.000000000000      0.629827916450      0.000000000000      0.000000000000
+      0.000000000000      0.000000000000      0.000000000000      0.000000000000     -2.124804364500      0.000000000000
+      0.000000000000      0.000000000000      0.000000000000      0.000000000000      0.000000000000     -0.444604398110
+ 
+   Short Legend and Physical Units in the Output
+   ---------------------------------------------
+   NFI    [int]          - step index
+   EKINC  [HARTREE A.U.] - kinetic energy of the fictitious electronic dynamics
+   TEMPH  [K]            - Temperature of the fictitious cell dynamics
+   TEMP   [K]            - Ionic temperature
+   ETOT   [HARTREE A.U.] - Scf total energy (Kohn-Sham hamiltonian)
+   ENTHAL [HARTREE A.U.] - Enthalpy ( ETOT + P * V )
+   ECONS  [HARTREE A.U.] - Enthalpy + kinetic energy of ions and cell
+   ECONT  [HARTREE A.U.] - Constant of motion for the CP lagrangian
+ 
+   NK sic with integral ref =    T
+
+   NK background density factor =  1.0000
+   NK scaling factor =  1.0000
+   rhothr =  0.1E-11
+   NK memusage =     32.553 MB
+
+
+   f_cutoff =  0.0100
+   do_spinsym   =    F
+   EE with periodic-image correction method = none                
+ USING TCC FOR ODD T
+
+   reading restart file: /home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/TMP-CP//kc_60.save
+ here should be iotk first error
+ here should be iotk first error
+   restart file read in    0.054 sec.
+
+ nprint_nfi=           -2
+ nprint_nfi=            3
+
+   formf: eself= 102.12922
+   formf:     vps(g=0)=  -0.0025710     rhops(g=0)=  -0.0017250
+   formf:     vps(g=0)=  -0.0025710     rhops(g=0)=  -0.0017250
+   formf: sum_g vps(g)=  -1.0520089 sum_g rhops(g)=  -0.7183485
+   Delta V(G=0):   0.093002Ry,    2.530705eV
+
+ * Physical Quantities at step:     4
+
+PERFORMING CONJUGATE GRADIENT MINIMIZATION OF EL. STATES
+
+     CP           :     2.01s CPU time,    2.30s wall time
+
+     iteration =   1  eff iteration =   1   Etot (Ha) =    -67.42289647892356
+
+   Empty-states: WFCs read from file
+   Empty-states: Going to re-orthogonalize to occ manifold
+
+   Empty states minimization starting 
+   nfi         dekinc         ekinc
+
+PERFORMING CONJUGATE GRADIENT MINIMIZATION OF EMPTY STATES
+
+     CP           :     4.13s CPU time,    4.60s wall time
+
+     iteration =   1  eff iteration =   1   Etot (Ha) =     18.96509068947892
+     Ekin (Ha) =      42.65976872637342 Enl (Ha) =       7.99534334771987 Eloc (Ha) =    -31.98895853347706
+ Fake EODD (Ha) =       0.29893714886269
+
+   writing empty state DFT Hamiltonian file: hamiltonian0_emp
+
+   writing empty state KC  Hamiltonian file: hamiltonian_emp
+
+
+ -----------------------------------------
+ Projectability EMP states on OCC manifold
+ -----------------------------------------
+
+    orbital #    1 :  -0.00000000
+    orbital #    2 :  -0.00000000
+    orbital #    3 :   0.00000000
+    orbital #    4 :   0.00000000
+    orbital #    5 :  -0.00000000
+    orbital #    6 :  -0.00000000
+    orbital #    7 :   0.00000000
+    orbital #    8 :   0.00000000
+    orbital #    9 :   0.00000000
+    orbital #   10 :  -0.00000000
+    orbital #   11 :   0.00000000
+    orbital #   12 :   0.00000000
+    orbital #   13 :  -0.00000000
+    orbital #   14 :  -0.00000000
+    orbital #   15 :   0.00000000
+    orbital #   16 :   0.00000000
+    orbital #   17 :  -0.00000000
+    orbital #   18 :  -0.00000000
+    orbital #   19 :   0.00000000
+    orbital #   20 :   0.00000000
+    orbital #   21 :  -0.00000000
+    orbital #   22 :   0.00000000
+    orbital #   23 :   0.00000000
+    orbital #   24 :   0.00000000
+    orbital #   25 :  -0.00000000
+    orbital #   26 :  -0.00000000
+    orbital #   27 :   0.00000000
+    orbital #   28 :   0.00000000
+    orbital #   29 :   0.00000000
+    orbital #   30 :  -0.00000000
+    orbital #   31 :   0.00000000
+    orbital #   32 :   0.00000000
+    orbital #   33 :  -0.00000000
+    orbital #   34 :  -0.00000000
+    orbital #   35 :   0.00000000
+    orbital #   36 :   0.00000000
+    orbital #   37 :  -0.00000000
+    orbital #   38 :  -0.00000000
+    orbital #   39 :   0.00000000
+    orbital #   40 :   0.00000000
+    orbital #   41 :   0.00000000
+    orbital #   42 :  -0.00000000
+    orbital #   43 :   0.00000000
+    orbital #   44 :   0.00000000
+    orbital #   45 :  -0.00000000
+    orbital #   46 :  -0.00000000
+    orbital #   47 :   0.00000000
+    orbital #   48 :   0.00000000
+    orbital #   49 :  -0.00000000
+    orbital #   50 :  -0.00000000
+    orbital #   51 :   0.00000000
+    orbital #   52 :   0.00000000
+    orbital #   53 :  -0.00000000
+    orbital #   54 :   0.00000000
+    orbital #   55 :   0.00000000
+    orbital #   56 :   0.00000000
+    orbital #   57 :  -0.00000000
+    orbital #   58 :  -0.00000000
+    orbital #   59 :   0.00000000
+    orbital #   60 :   0.00000000
+    orbital #   61 :   0.00000000
+    orbital #   62 :  -0.00000000
+    orbital #   63 :   0.00000000
+    orbital #   64 :   0.00000000
+
+      Total projectability =   0.00000000
+
+
+
+                total energy =     -67.4228964789 Hartree a.u.
+              kinetic energy =      26.2155714974 Hartree a.u.
+        electrostatic energy =     -74.8856144694 Hartree a.u.
+                         esr =       0.0010190093 Hartree a.u.
+                       eself =     102.1292237828 Hartree a.u.
+      pseudopotential energy =      -4.0115673209 Hartree a.u.
+  n-l pseudopotential energy =      10.3163861633 Hartree a.u.
+ exchange-correlation energy =     -25.0576723493 Hartree a.u.
+           average potential =       0.0000000000 Hartree a.u.
+                  odd energy =       0.0000000000 Hartree a.u.
+        van der waals energy =       0.0000000000 Hartree a.u.
+
+
+
+   HOMO Eigenvalue (eV)
+
+    3.0715
+
+   LUMO Eigenvalue (eV)
+
+    4.3592
+
+   Electronic Gap (eV) =     1.2877
+
+
+   Eigenvalues (eV), kp =   1 , spin =  1
+
+   -8.9792   -6.6107   -6.6107   -6.6107   -6.6103   -4.8054   -4.8054   -4.8054   -4.8049   -4.8049
+   -4.8049   -4.0365   -4.0355   -4.0355   -4.0355    0.1319    0.1319    0.1319    0.1324    0.1324
+    0.1324    1.8365    1.8365    1.8365    1.8371    1.8371    1.8371    1.8371    1.8371    3.0708
+    3.0715    3.0715
+
+   Empty States Eigenvalues (eV), kp =   1 , spin =  1
+
+    4.3592    4.3593    4.3593    4.3629    4.3636    4.3636    5.2786    5.2806    5.2806    5.2811
+    6.3551    6.3556    6.3562    7.0964    7.0966    7.0966    7.0969    7.0969    7.0971    7.0975
+    7.0975    7.1060   11.1772   11.1772   11.1772   11.1779   13.8472   13.8472   13.8477   13.8480
+   13.8480   13.8483
+
+   Eigenvalues (eV), kp =   1 , spin =  2
+
+   -8.9792   -6.6107   -6.6107   -6.6107   -6.6103   -4.8054   -4.8054   -4.8054   -4.8049   -4.8049
+   -4.8049   -4.0365   -4.0355   -4.0355   -4.0355    0.1319    0.1319    0.1319    0.1324    0.1324
+    0.1324    1.8365    1.8365    1.8365    1.8371    1.8371    1.8371    1.8371    1.8371    3.0708
+    3.0715    3.0715
+
+   Empty States Eigenvalues (eV), kp =   1 , spin =  2
+
+    4.3592    4.3593    4.3593    4.3629    4.3636    4.3636    5.2786    5.2806    5.2806    5.2811
+    6.3551    6.3556    6.3562    7.0964    7.0966    7.0966    7.0969    7.0969    7.0971    7.0975
+    7.0975    7.1060   11.1772   11.1772   11.1772   11.1779   13.8472   13.8472   13.8477   13.8480
+   13.8480   13.8483
+
+   Orb -- Charge  ---   Centers xyz (Bohr)  ---  Spreads (Bohr^2) - SH(eV), kp =   1 , spin =  1
+
+OCC    1 --    1.00   ---   -5.13    0.08    0.08   ---  14.502   6.615   0.000   0.133
+OCC    2 --    1.00   ---   -5.13    5.72    5.72   ---  26.733   6.622   0.000   0.133
+OCC    3 --    1.00   ---   -1.42    2.01    5.72   ---  55.096   6.615   0.000   0.133
+OCC    4 --    1.00   ---   -1.42    5.72    2.01   ---  55.096   6.615   0.000   0.133
+OCC    5 --    1.00   ---   -0.24   -4.80    0.08   ---  14.134   6.615   0.000   0.133
+OCC    6 --    1.00   ---   -0.24    0.83    5.72   ---  25.017   6.622   0.000   0.133
+OCC    7 --    1.00   ---   -2.73    3.32    5.72   ---  26.392   6.615   0.000   0.133
+OCC    8 --    1.00   ---    3.47    0.83    2.01   ---  54.413   6.615   0.000   0.133
+OCC    9 --    1.00   ---   -5.13    4.40    4.40   ---  11.304   6.615   0.000   0.133
+OCC   10 --    1.00   ---   -5.13    2.01    2.01   ---   8.979   6.622   0.000   0.133
+OCC   11 --    1.00   ---   -1.42   -1.70    2.01   ---  43.210   6.615   0.000   0.133
+OCC   12 --    1.00   ---   -1.42    2.01   -1.70   ---  43.210   6.615   0.000   0.133
+OCC   13 --    1.00   ---   -0.24   -0.48    4.40   ---   9.026   6.615   0.000   0.133
+OCC   14 --    1.00   ---   -0.24   -2.87    2.01   ---   7.308   6.622   0.000   0.133
+OCC   15 --    1.00   ---   -2.73   -0.38    2.01   ---   7.600   6.615   0.000   0.133
+OCC   16 --    1.00   ---    3.47   -2.87   -1.70   ---  42.572   6.615   0.000   0.133
+OCC   17 --    1.00   ---   -0.24    0.08   -4.80   ---  14.134   6.615   0.000   0.133
+OCC   18 --    1.00   ---   -0.24    5.72    0.83   ---  25.017   6.622   0.000   0.133
+OCC   19 --    1.00   ---    3.47    2.01    0.83   ---  54.413   6.615   0.000   0.133
+OCC   20 --    1.00   ---   -2.73    5.72    3.32   ---  26.392   6.615   0.000   0.133
+OCC   21 --    1.00   ---    4.64   -4.80   -4.80   ---  13.931   6.615   0.000   0.133
+OCC   22 --    1.00   ---    4.64    0.83    0.83   ---  23.467   6.622   0.000   0.133
+OCC   23 --    1.00   ---    2.15    3.32    0.83   ---  24.490   6.615   0.000   0.133
+OCC   24 --    1.00   ---    2.15    0.83    3.32   ---  24.490   6.615   0.000   0.133
+OCC   25 --    1.00   ---   -0.24    4.40   -0.48   ---   9.026   6.615   0.000   0.133
+OCC   26 --    1.00   ---   -0.24    2.01   -2.87   ---   7.308   6.622   0.000   0.133
+OCC   27 --    1.00   ---    3.47   -1.70   -2.87   ---  42.572   6.615   0.000   0.133
+OCC   28 --    1.00   ---   -2.73    2.01   -0.38   ---   7.600   6.615   0.000   0.133
+OCC   29 --    1.00   ---    4.64   -0.48   -0.48   ---   6.914   6.615   0.000   0.133
+OCC   30 --    1.00   ---    4.64   -2.87   -2.87   ---   5.804   6.622   0.000   0.133
+OCC   31 --    1.00   ---    2.15   -0.38   -2.87   ---   5.744   6.615   0.000   0.133
+OCC   32 --    1.00   ---    2.15   -2.87   -0.38   ---   5.744   6.615   0.000   0.133
+
+   Orb -- Empty Charge  ---   Centers xyz (Bohr)  ---  Spreads (Bohr^2) - SH(eV), kp =   1 , spin =  1
+
+EMP    1 --    1.00   ---   -3.61    2.22    2.22   ---  41.570   3.413   0.127   0.041
+EMP    2 --    1.00   ---   -3.61    3.49    3.49   ---  48.242   3.457   0.128   0.041
+EMP    3 --    1.00   ---   -1.93    1.81    3.49   ---  51.153   3.413   0.127   0.041
+EMP    4 --    1.00   ---   -1.93    3.49    1.81   ---  51.153   3.413   0.127   0.041
+EMP    5 --    1.00   ---    0.14   -1.53    2.22   ---  38.979   3.413   0.127   0.041
+EMP    6 --    1.00   ---    0.14   -0.26    3.49   ---  42.521   3.457   0.128   0.041
+EMP    7 --    1.00   ---   -1.67    1.55    3.49   ---  57.189   3.413   0.127   0.041
+EMP    8 --    1.00   ---    1.82   -0.26    1.81   ---  47.120   3.413   0.127   0.041
+EMP    9 --    1.00   ---   -3.61    2.27    2.27   ---  42.838   3.413   0.127   0.041
+EMP   10 --    1.00   ---   -3.61    1.43    1.43   ---  31.508   3.457   0.128   0.041
+EMP   11 --    1.00   ---   -1.93   -0.25    1.43   ---  39.254   3.413   0.127   0.041
+EMP   12 --    1.00   ---   -1.93    1.43   -0.25   ---  39.254   3.413   0.127   0.041
+EMP   13 --    1.00   ---    0.14   -1.48    2.27   ---  36.374   3.413   0.127   0.041
+EMP   14 --    1.00   ---    0.14   -2.32    1.43   ---  27.593   3.457   0.128   0.041
+EMP   15 --    1.00   ---   -1.67   -0.51    1.43   ---  31.551   3.413   0.127   0.041
+EMP   16 --    1.00   ---    1.82   -2.32   -0.25   ---  37.027   3.413   0.127   0.041
+EMP   17 --    1.00   ---    0.14    2.22   -1.53   ---  38.979   3.413   0.127   0.041
+EMP   18 --    1.00   ---    0.14    3.49   -0.26   ---  42.521   3.457   0.128   0.041
+EMP   19 --    1.00   ---    1.82    1.81   -0.26   ---  47.120   3.413   0.127   0.041
+EMP   20 --    1.00   ---   -1.67    3.49    1.55   ---  57.189   3.413   0.127   0.041
+EMP   21 --    1.00   ---    3.88   -1.53   -1.53   ---  38.799   3.413   0.127   0.041
+EMP   22 --    1.00   ---    3.88   -0.26   -0.26   ---  39.212   3.457   0.128   0.041
+EMP   23 --    1.00   ---    2.07    1.55   -0.26   ---  50.518   3.413   0.127   0.041
+EMP   24 --    1.00   ---    2.07   -0.26    1.55   ---  50.518   3.413   0.127   0.041
+EMP   25 --    1.00   ---    0.14    2.27   -1.48   ---  36.374   3.413   0.127   0.041
+EMP   26 --    1.00   ---    0.14    1.43   -2.32   ---  27.593   3.457   0.128   0.041
+EMP   27 --    1.00   ---    1.82   -0.25   -2.32   ---  37.027   3.413   0.127   0.041
+EMP   28 --    1.00   ---   -1.67    1.43   -0.51   ---  31.551   3.413   0.127   0.041
+EMP   29 --    1.00   ---    3.88   -1.48   -1.48   ---  32.320   3.413   0.127   0.041
+EMP   30 --    1.00   ---    3.88   -2.32   -2.32   ---  26.089   3.457   0.128   0.041
+EMP   31 --    1.00   ---    2.07   -0.51   -2.32   ---  26.686   3.413   0.127   0.041
+EMP   32 --    1.00   ---    2.07   -2.32   -0.51   ---  26.686   3.413   0.127   0.041
+
+   Orb -- Charge  ---   Centers xyz (Bohr)  ---  Spreads (Bohr^2) - SH(eV), kp =   1 , spin =  2
+
+OCC    1 --    1.00   ---   -5.13    0.08    0.08   ---  14.502   6.615   0.000   0.133
+OCC    2 --    1.00   ---   -5.13    5.72    5.72   ---  26.733   6.622   0.000   0.133
+OCC    3 --    1.00   ---   -1.42    2.01    5.72   ---  55.096   6.615   0.000   0.133
+OCC    4 --    1.00   ---   -1.42    5.72    2.01   ---  55.096   6.615   0.000   0.133
+OCC    5 --    1.00   ---   -0.24   -4.80    0.08   ---  14.134   6.615   0.000   0.133
+OCC    6 --    1.00   ---   -0.24    0.83    5.72   ---  25.017   6.622   0.000   0.133
+OCC    7 --    1.00   ---   -2.73    3.32    5.72   ---  26.392   6.615   0.000   0.133
+OCC    8 --    1.00   ---    3.47    0.83    2.01   ---  54.413   6.615   0.000   0.133
+OCC    9 --    1.00   ---   -5.13    4.40    4.40   ---  11.304   6.615   0.000   0.133
+OCC   10 --    1.00   ---   -5.13    2.01    2.01   ---   8.979   6.622   0.000   0.133
+OCC   11 --    1.00   ---   -1.42   -1.70    2.01   ---  43.210   6.615   0.000   0.133
+OCC   12 --    1.00   ---   -1.42    2.01   -1.70   ---  43.210   6.615   0.000   0.133
+OCC   13 --    1.00   ---   -0.24   -0.48    4.40   ---   9.026   6.615   0.000   0.133
+OCC   14 --    1.00   ---   -0.24   -2.87    2.01   ---   7.308   6.622   0.000   0.133
+OCC   15 --    1.00   ---   -2.73   -0.38    2.01   ---   7.600   6.615   0.000   0.133
+OCC   16 --    1.00   ---    3.47   -2.87   -1.70   ---  42.572   6.615   0.000   0.133
+OCC   17 --    1.00   ---   -0.24    0.08   -4.80   ---  14.134   6.615   0.000   0.133
+OCC   18 --    1.00   ---   -0.24    5.72    0.83   ---  25.017   6.622   0.000   0.133
+OCC   19 --    1.00   ---    3.47    2.01    0.83   ---  54.413   6.615   0.000   0.133
+OCC   20 --    1.00   ---   -2.73    5.72    3.32   ---  26.392   6.615   0.000   0.133
+OCC   21 --    1.00   ---    4.64   -4.80   -4.80   ---  13.931   6.615   0.000   0.133
+OCC   22 --    1.00   ---    4.64    0.83    0.83   ---  23.467   6.622   0.000   0.133
+OCC   23 --    1.00   ---    2.15    3.32    0.83   ---  24.490   6.615   0.000   0.133
+OCC   24 --    1.00   ---    2.15    0.83    3.32   ---  24.490   6.615   0.000   0.133
+OCC   25 --    1.00   ---   -0.24    4.40   -0.48   ---   9.026   6.615   0.000   0.133
+OCC   26 --    1.00   ---   -0.24    2.01   -2.87   ---   7.308   6.622   0.000   0.133
+OCC   27 --    1.00   ---    3.47   -1.70   -2.87   ---  42.572   6.615   0.000   0.133
+OCC   28 --    1.00   ---   -2.73    2.01   -0.38   ---   7.600   6.615   0.000   0.133
+OCC   29 --    1.00   ---    4.64   -0.48   -0.48   ---   6.914   6.615   0.000   0.133
+OCC   30 --    1.00   ---    4.64   -2.87   -2.87   ---   5.804   6.622   0.000   0.133
+OCC   31 --    1.00   ---    2.15   -0.38   -2.87   ---   5.744   6.615   0.000   0.133
+OCC   32 --    1.00   ---    2.15   -2.87   -0.38   ---   5.744   6.615   0.000   0.133
+
+   Orb -- Empty Charge  ---   Centers xyz (Bohr)  ---  Spreads (Bohr^2) - SH(eV), kp =   1 , spin =  2
+
+EMP    1 --    1.00   ---   -3.61    2.22    2.22   ---  41.570   3.413   0.127   0.041
+EMP    2 --    1.00   ---   -3.61    3.49    3.49   ---  48.242   3.457   0.128   0.041
+EMP    3 --    1.00   ---   -1.93    1.81    3.49   ---  51.153   3.413   0.127   0.041
+EMP    4 --    1.00   ---   -1.93    3.49    1.81   ---  51.153   3.413   0.127   0.041
+EMP    5 --    1.00   ---    0.14   -1.53    2.22   ---  38.979   3.413   0.127   0.041
+EMP    6 --    1.00   ---    0.14   -0.26    3.49   ---  42.521   3.457   0.128   0.041
+EMP    7 --    1.00   ---   -1.67    1.55    3.49   ---  57.189   3.413   0.127   0.041
+EMP    8 --    1.00   ---    1.82   -0.26    1.81   ---  47.120   3.413   0.127   0.041
+EMP    9 --    1.00   ---   -3.61    2.27    2.27   ---  42.838   3.413   0.127   0.041
+EMP   10 --    1.00   ---   -3.61    1.43    1.43   ---  31.508   3.457   0.128   0.041
+EMP   11 --    1.00   ---   -1.93   -0.25    1.43   ---  39.254   3.413   0.127   0.041
+EMP   12 --    1.00   ---   -1.93    1.43   -0.25   ---  39.254   3.413   0.127   0.041
+EMP   13 --    1.00   ---    0.14   -1.48    2.27   ---  36.374   3.413   0.127   0.041
+EMP   14 --    1.00   ---    0.14   -2.32    1.43   ---  27.593   3.457   0.128   0.041
+EMP   15 --    1.00   ---   -1.67   -0.51    1.43   ---  31.551   3.413   0.127   0.041
+EMP   16 --    1.00   ---    1.82   -2.32   -0.25   ---  37.027   3.413   0.127   0.041
+EMP   17 --    1.00   ---    0.14    2.22   -1.53   ---  38.979   3.413   0.127   0.041
+EMP   18 --    1.00   ---    0.14    3.49   -0.26   ---  42.521   3.457   0.128   0.041
+EMP   19 --    1.00   ---    1.82    1.81   -0.26   ---  47.120   3.413   0.127   0.041
+EMP   20 --    1.00   ---   -1.67    3.49    1.55   ---  57.189   3.413   0.127   0.041
+EMP   21 --    1.00   ---    3.88   -1.53   -1.53   ---  38.799   3.413   0.127   0.041
+EMP   22 --    1.00   ---    3.88   -0.26   -0.26   ---  39.212   3.457   0.128   0.041
+EMP   23 --    1.00   ---    2.07    1.55   -0.26   ---  50.518   3.413   0.127   0.041
+EMP   24 --    1.00   ---    2.07   -0.26    1.55   ---  50.518   3.413   0.127   0.041
+EMP   25 --    1.00   ---    0.14    2.27   -1.48   ---  36.374   3.413   0.127   0.041
+EMP   26 --    1.00   ---    0.14    1.43   -2.32   ---  27.593   3.457   0.128   0.041
+EMP   27 --    1.00   ---    1.82   -0.25   -2.32   ---  37.027   3.413   0.127   0.041
+EMP   28 --    1.00   ---   -1.67    1.43   -0.51   ---  31.551   3.413   0.127   0.041
+EMP   29 --    1.00   ---    3.88   -1.48   -1.48   ---  32.320   3.413   0.127   0.041
+EMP   30 --    1.00   ---    3.88   -2.32   -2.32   ---  26.089   3.457   0.128   0.041
+EMP   31 --    1.00   ---    2.07   -0.51   -2.32   ---  26.686   3.413   0.127   0.041
+EMP   32 --    1.00   ---    2.07   -2.32   -0.51   ---  26.686   3.413   0.127   0.041
+ 
+ 
+   CELL_PARAMETERS
+   -1.02622000E+01    0.00000000E+00   -1.02622000E+01
+    0.00000000E+00    1.02622000E+01    1.02622000E+01
+    1.02622000E+01    1.02622000E+01    0.00000000E+00
+
+   System Density [g/cm^3] :     2.3297
+
+
+   Center of mass square displacement (a.u.):   0.000000
+
+   ATOMIC_POSITIONS
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si  -2.565550E+00  2.565550E+00  2.565550E+00
+   Si  -5.131100E+00  5.131100E+00  0.000000E+00
+   Si  -7.696650E+00  7.696650E+00  2.565550E+00
+   Si   0.000000E+00  5.131100E+00  5.131100E+00
+   Si  -2.565550E+00  7.696650E+00  7.696650E+00
+   Si  -5.131100E+00  1.026220E+01  5.131100E+00
+   Si  -7.696650E+00  1.282775E+01  7.696650E+00
+   Si  -5.131100E+00  0.000000E+00  5.131100E+00
+   Si  -7.696650E+00  2.565550E+00  7.696650E+00
+   Si  -1.026220E+01  5.131100E+00  5.131100E+00
+   Si  -1.282775E+01  7.696650E+00  7.696650E+00
+   Si  -5.131100E+00  5.131100E+00  1.026220E+01
+   Si  -7.696650E+00  7.696650E+00  1.282775E+01
+   Si  -1.026220E+01  1.026220E+01  1.026220E+01
+   Si  -1.282775E+01  1.282775E+01  1.282775E+01
+ 
+   ATOMIC_VELOCITIES
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+   Si   0.000000E+00  0.000000E+00  0.000000E+00
+ 
+
+
+   Partial temperatures (for each ionic specie) 
+   Species  Temp (K)   Mean Square Displacement (a.u.)
+        1       0.00     0.0000
+ 
+  nfi    ekinc  temph  tempp        etot      enthal       econs       econt    vnhh   xnhh0    vnhp   xnhp0
+ 
+       nfi   tempp            E -T.S-mu.nbsp         +K_p #Iter
+Step     4       0    -67.42290    -67.42290    -67.42290     1
+ tnosep= F thdyn= F
+
+   writing restart file: /home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/TMP-CP//kc_70.save
+   restart file written in    0.324 sec.
+
+
+
+   Averaged Physical Quantities
+                      accomulated      this run
+   ekinc         :        0.00000       0.00000 (AU)
+   ekin          :       58.04205      26.21557 (AU)
+   epot          :     -100.37962    -103.95485 (AU)
+   total energy  :      -31.27734     -67.42290 (AU)
+   temperature   :        0.00000       0.00000 (K )
+   enthalpy      :        0.00000       0.00000 (AU)
+   econs         :      -31.27734     -67.42290 (AU)
+   pressure      :        0.00000       0.00000 (Gpa)
+   volume        :     2161.48101    2161.48101 (AU)
+
+
+     initialize   :     0.65s CPU
+     total_time   :     3.63s CPU
+     formf        :     0.06s CPU
+     rhoofr       :     0.08s CPU (       2 calls,   0.040 s avg)
+     vofrho       :     0.02s CPU
+     vofrho1      :     0.02s CPU
+     dforce       :     0.23s CPU (      64 calls,   0.004 s avg)
+     dforce2      :     2.63s CPU
+     calphi       :     0.00s CPU (       2 calls,   0.000 s avg)
+     gram         :     0.01s CPU
+     newd         :     0.00s CPU
+     calbec       :     0.04s CPU (       4 calls,   0.011 s avg)
+     prefor       :     0.00s CPU (       5 calls,   0.001 s avg)
+     strucf       :     0.00s CPU
+     nlfl         :     0.00s CPU
+     set_cc       :     0.00s CPU
+     nlsm1        :     0.08s CPU (       8 calls,   0.010 s avg)
+     fft          :     0.50s CPU (     650 calls,   0.001 s avg)
+     ffts         :     0.00s CPU (       3 calls,   0.001 s avg)
+     fftw         :     0.19s CPU (     384 calls,   0.001 s avg)
+     fftb         :     0.00s CPU (      10 calls,   0.000 s avg)
+     cft3s        :     0.69s CPU (    1037 calls,   0.001 s avg)
+     fft_scatter  :     0.21s CPU (    1037 calls,   0.000 s avg)
+
+     nk_eforce    :     0.30s CPU (      64 calls,   0.005 s avg)
+     nk_corr      :     2.22s CPU (     128 calls,   0.017 s avg)
+     nk_corr_h    :     0.30s CPU (     128 calls,   0.002 s avg)
+     nk_corr_vxc  :     1.91s CPU (     128 calls,   0.015 s avg)
+
+
+     outer_loop   :     3.76s CPU
+     runcg_uspp   :     3.49s CPU (       2 calls,   1.743 s avg)
+     emass_p_tpa  :     0.00s CPU (       2 calls,   0.000 s avg)
+ 
+ 
+     CP           :     4.64s CPU time,    5.39s wall time
+
+ 
+   This run was terminated on:  14:19:28  17Oct2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

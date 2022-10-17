@@ -1,0 +1,6 @@
+&inputpp
+   outdir           = '/home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/init/wannier/TMP'
+   prefix           = 'kc'
+   seedname         = 'wann'
+   wan_mode         = 'wannier2kcp'
+/

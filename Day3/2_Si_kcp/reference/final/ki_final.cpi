@@ -1,0 +1,93 @@
+&CONTROL
+   calculation      = 'cp'
+   verbosity        = 'low'
+   restart_mode     = 'restart'
+   iprint           = 1
+   outdir           = '/home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/TMP-CP/'
+   prefix           = 'kc'
+   disk_io          = 'high'
+   pseudo_dir       = '/home/nicola/Scrivania/CODES/git/koopmans/pseudos/pseudo_dojo_standard_v0.4.1/lda/'
+   ndr              = 60
+   ndw              = 70
+   write_hr         = .true.
+/
+&SYSTEM
+   ibrav            = 2
+   celldm(1)        = 20.524400085727574
+   nbnd             = 64
+   tot_charge       = 0
+   tot_magnetization = 0
+   ecutwfc          = 20.0
+   nspin            = 2
+   do_orbdep        = .true.
+   fixed_state      = .false.
+   do_ee            = .true.
+   nelec            = 64
+   nelup            = 32
+   neldw            = 32
+   do_wf_cmplx      = .true.
+   nr1b             = 20
+   nr2b             = 20
+   nr3b             = 20
+   starting_magnetization(1) = 0.0
+   ntyp             = 1
+   nat              = 16
+/
+&ELECTRONS
+   conv_thr         = 6.4e-08
+   ortho_para       = 1
+   electron_dynamics = 'cg'
+   passop           = 2.0
+   do_outerloop     = .false.
+   do_outerloop_empty = .false.
+/
+&IONS
+   ion_dynamics     = 'none'
+   ion_nstepe       = 5
+   ion_radius(1)    = 1.0
+   ion_radius(2)    = 1.0
+   ion_radius(3)    = 1.0
+   ion_radius(4)    = 1.0
+/
+&CELL
+/
+&EE
+   which_compensation = 'none'
+/
+&NKSIC
+   do_innerloop     = .false.
+   odd_nkscalfact   = .true.
+   odd_nkscalfact_empty = .true.
+   which_orbdep     = 'nki'
+   innerloop_cg_nreset = 20
+   innerloop_cg_nsd = 2
+   innerloop_init_n = 3
+   hartree_only_sic = .false.
+   esic_conv_thr    = 6.4e-08
+   do_innerloop_cg  = .true.
+   innerloop_nmax   = 100
+   do_innerloop_empty = .false.
+   do_bare_eigs     = .true.
+/
+
+ATOMIC_SPECIES
+Si  28.085 Si.upf
+
+ATOMIC_POSITIONS crystal
+Si  -0.0000000000 0.0000000000 -0.0000000000
+Si  0.1250000000 0.1250000000 0.1250000000
+Si  -0.0000000000 0.0000000000 0.5000000000
+Si  0.1250000000 0.1250000000 0.6250000000
+Si  -0.0000000000 0.5000000000 -0.0000000000
+Si  0.1250000000 0.6250000000 0.1250000000
+Si  0.0000000000 0.5000000000 0.5000000000
+Si  0.1250000000 0.6250000000 0.6250000000
+Si  0.5000000000 0.0000000000 -0.0000000000
+Si  0.6250000000 0.1250000000 0.1250000000
+Si  0.5000000000 0.0000000000 0.5000000000
+Si  0.6250000000 0.1250000000 0.6250000000
+Si  0.5000000000 0.5000000000 -0.0000000000
+Si  0.6250000000 0.6250000000 0.1250000000
+Si  0.5000000000 0.5000000000 0.5000000000
+Si  0.6250000000 0.6250000000 0.6250000000
+

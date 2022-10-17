@@ -1,0 +1,62 @@
+{
+    "workflow": {
+        "task": "singlepoint",
+        "functional": "ki",
+        "base_functional": "lda",
+        "method": "dscf",
+        "mp_correction": false,
+        "init_orbitals": "mlwfs",
+        "alpha_guess": 0.077,
+        "orbital_groups": [0, 0, 0, 0, 1, 1, 1, 1],
+        "pseudo_library": "pseudo_dojo_standard",
+        "from_scratch": true
+    },
+    "atoms": {
+        "cell_parameters": {
+            "periodic": true,
+            "ibrav": 2,
+            "celldms": {"1": 10.2622}
+        },
+        "atomic_positions": {
+            "units": "crystal",
+            "positions": [["Si", 0.00, 0.00, 0.00],
+                          ["Si", 0.25, 0.25, 0.25]]
+        }
+    },
+    "kpoints": {
+        "grid": [2, 2, 2],
+        "offset": [0, 0, 0],
+        "path": "LGXKG"
+    },
+    "calculator_parameters": {
+        "ecutwfc": 20.0,
+        "pw": {
+            "system": {
+                "nbnd": 20
+            }
+        },
+        "kcp": {
+            "system": {
+                "nr1b": 20,
+                "nr2b": 20,
+                "nr3b": 20
+            }
+        },
+        "w90": {
+            "bands_plot": true,
+            "projections": [{"fsite": [ 0.25, 0.25, 0.25 ], "ang_mtm": "sp3"}],
+            "emp": {
+                "dis_froz_max": 10.6,
+                "dis_win_max": 16.9
+            }
+        },
+        "ui": {
+            "smooth_int_factor": 4
+        }
+    },
+    "plotting": {
+        "Emin": -15,
+        "Emax": 10,
+        "degauss": 0.2
+    }
+}

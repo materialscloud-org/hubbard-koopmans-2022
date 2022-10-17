@@ -1,0 +1,44 @@
+{
+  "workflow": {
+    "task": "ui"
+  },
+  "ui": {
+    "w90_calc": "pc",
+    "do_map": false,
+    "use_ws_distance": true,
+    "smooth_int_factor": [
+      4,
+      4,
+      4
+    ],
+    "do_dos": true,
+    "kc_ham_file": "/home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/final/ham_occ_1.dat",
+    "w90_seedname": "/home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/init/wannier/occ/wann",
+    "dft_smooth_ham_file": "/home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/postproc/wannier/occ/wann_hr.dat",
+    "dft_ham_file": "/home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/init/wannier/occ/wann_hr.dat"
+  },
+  "kpoints": {
+    "grid": [
+      2,
+      2,
+      2
+    ],
+    "path": "LGXKG",
+    "density": 9.997878187573864
+  },
+  "plotting": {
+    "degauss": 0.2,
+    "nstep": 1000,
+    "Emin": -15,
+    "Emax": 10
+  },
+  "atoms": {
+    "cell_parameters": {
+      "ibrav": 2,
+      "celldms": {
+        "1": 10.262200000000002
+      },
+      "periodic": true
+    }
+  }
+}
