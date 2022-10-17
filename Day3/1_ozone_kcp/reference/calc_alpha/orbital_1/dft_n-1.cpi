@@ -1,0 +1,78 @@
+&CONTROL
+   calculation      = 'cp'
+   verbosity        = 'low'
+   restart_mode     = 'restart'
+   iprint           = 1
+   outdir           = '/home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/4_ozone_kcp/calc_alpha/TMP-CP/orbital_1/'
+   prefix           = 'kc'
+   disk_io          = 'high'
+   pseudo_dir       = '/home/nicola/Scrivania/CODES/git/koopmans/pseudos/sg15_v1.2/pbe/'
+   ndr              = 60
+   ndw              = 63
+   write_hr         = .false.
+/
+&SYSTEM
+   ibrav            = 0
+   tot_charge       = 0
+   tot_magnetization = 0
+   ecutwfc          = 50.0
+   ecutrho          = 200.0
+   nspin            = 2
+   fixed_band       = 1
+   f_cutoff         = 1e-05
+   do_orbdep        = .false.
+   fixed_state      = .true.
+   do_ee            = .true.
+   nelec            = 18
+   nelup            = 9
+   neldw            = 9
+   do_wf_cmplx      = .true.
+   starting_magnetization(1) = 0.0
+   ntyp             = 1
+   nat              = 3
+/
+&ELECTRONS
+   conv_thr         = 1.8000000000000001e-06
+   ortho_para       = 1
+   maxiter          = 300
+   electron_dynamics = 'cg'
+   passop           = 2.0
+   do_outerloop     = .true.
+/
+&IONS
+   ion_dynamics     = 'none'
+   ion_nstepe       = 5
+   ion_radius(1)    = 1.0
+   ion_radius(2)    = 1.0
+   ion_radius(3)    = 1.0
+   ion_radius(4)    = 1.0
+/
+&CELL
+/
+&EE
+   which_compensation = 'tcc'
+/
+&NKSIC
+   do_innerloop     = .false.
+   innerloop_cg_nreset = 20
+   innerloop_cg_nsd = 2
+   innerloop_init_n = 3
+   hartree_only_sic = .false.
+   esic_conv_thr    = 1.8000000000000001e-06
+   do_innerloop_cg  = .true.
+   innerloop_nmax   = 100
+/
+
+ATOMIC_SPECIES
+O  15.999 O_ONCV_PBE-1.2.upf
+
+CELL_PARAMETERS angstrom
+8.17380000000000 0.00000000000000 0.00000000000000
+0.00000000000000 6.00000000000000 0.00000000000000
+0.00000000000000 0.00000000000000 6.66000000000000
+
+ATOMIC_POSITIONS angstrom
+O  4.0869000000 3.0000000000 2.8900000000
+O  5.1738000000 3.0000000000 3.5500000000
+O  3.0000000000 3.0000000000 3.5500000000
+

@@ -1,0 +1,490 @@
+=------------------------------------------------------------------------------=
+
+     CP: variable-cell Car-Parrinello molecular dynamics
+     using norm-conserving and ultrasoft Vanderbilt pseudopotentials
+
+     Version: 4.1 - Wed May 4 10:12:44 CEST 2022                          
+     Authors: Alfredo Pasquarello, Kari Laasonen, Andrea Trave, Roberto Car,
+       Paolo Giannozzi, Nicola Marzari, Carlo Cavazzoni, Guido Chiarotti,
+       Sandro Scandolo, Paolo Focher, Gerardo Ballabio, and others
+
+=------------------------------------------------------------------------------=
+
+   This run was started on:  11:53: 6  17Oct2022               
+
+   MPI Parallel Build
+   Tasks =    1  This task id =    0
+     Message from routine  system_checkin     :
+      starting_magnetization is not used in CP 
+Warning: card &NKSIC ignored
+Warning: card    DO_INNERLOOP     = .FALSE. ignored
+Warning: card    INNERLOOP_CG_NRESET = 20 ignored
+Warning: card    INNERLOOP_CG_NSD = 2 ignored
+Warning: card    INNERLOOP_INIT_N = 3 ignored
+Warning: card    HARTREE_ONLY_SIC = .FALSE. ignored
+Warning: card    ESIC_CONV_THR    = 1.8000000000000001E-06 ignored
+Warning: card    DO_INNERLOOP_CG  = .TRUE. ignored
+Warning: card    INNERLOOP_NMAX   = 100 ignored
+Warning: card / ignored
+
+   Job Title: MD Simulation
+
+
+   Atomic Pseudopotentials Parameters
+   ----------------------------------
+
+   Reading pseudopotential for specie #  1 from file :
+   /home/nicola/Scrivania/CODES/git/koopmans/pseudos/sg15_v1.2/pbe/O_ONCV_PBE-1.2.upf
+   file type is 20: UPF
+ read_nonlocal
+
+
+   Main Simulation Parameters (from input)
+   ---------------------------------------
+   ion_nstepe or cell_nstepe have no effects 
+   Restart Mode       =       1   restart        
+   Number of MD Steps =      50
+   Print out every            1 MD Steps
+   Reads from unit    =      60
+   Writes to unit     =      63
+   MD Simulation time step            =       1.00
+   Electronic fictitious mass (emass) =     400.00
+   emass cut-off                      =       2.50
+
+   Simulation Cell Parameters (from input)
+   external pressure       =            0.00 [GPa]
+   wmass (calculated)      =         6648.68 [AU]
+   initial cell from CELL_PARAMETERS card
+       8.17380000    0.00000000    0.00000000
+       0.00000000    6.00000000    0.00000000
+       0.00000000    0.00000000    6.66000000
+   ibrav =    0
+   alat  =    15.44624340
+   a1    =    15.44624340    0.00000000    0.00000000
+   a2    =     0.00000000   11.33835675    0.00000000
+   a3    =     0.00000000    0.00000000   12.58557599
+ 
+   b1    =     0.06474066    0.00000000    0.00000000
+   b2    =     0.00000000    0.08819620    0.00000000
+   b3    =     0.00000000    0.00000000    0.07945604
+   omega =  2204.17507822
+ nbeg           1
+
+    ========================================
+    |  CONJUGATE GRADIENT                  |
+    ========================================
+    | iterations   =           300         |
+    | conv_thr     = 0.00000180000 a.u.    |
+    | passop       =       2.00000 a.u.    |
+    | niter_cg_restart =  20      |
+    ========================================
+
+   Energy Cut-offs
+   ---------------
+   Ecutwfc =   50.0 Ry,      Ecutrho =  200.0 Ry,      Ecuts =  200.0 Ry
+   Gcutwfc =   17.4     ,    Gcutrho =   34.8          Gcuts =   34.8
+   NOTA BENE: refg, mmx =   0.050000  8000
+   Orthog. with Gram-Schmidt
+   Electron dynamics with conjugate gradient
+   Electron dynamics : the temperature is not controlled
+
+   Electronic states
+   -----------------
+   Local Spin Density calculation
+   Number of Electron =    18
+   Spins up   =     9, occupations: 
+   1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+   Spins down =     9, occupations: 
+   1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+
+
+   Exchange and correlations functionals
+   -------------------------------------
+   Using Local Density Approximation with
+     Exchange functional: SLATER                                                      
+     Correlation functional: PERDEW AND WANG                                             
+   Using Generalized Gradient Corrections with
+     Exchange functional: PERDEW BURKE ERNZERHOF                                      
+     Correlation functional: PERDEW BURKE ERNZERHOF                                      
+     Exchange-correlation      = PBE (1434)
+   Wavefunctions will be written to file as Kohn-Sham states
+
+
+   Ions Simulation Parameters
+   --------------------------
+   Ions are not allowed to move
+   Ionic position (from input)
+   sorted by specie, and converted to real a.u. coordinates
+   Species   1 atoms =    3 mass =     29164.39 (a.u.),        16.00 (amu) rcmax =   1.00 (a.u.)
+        7.723122     5.669178     5.461309
+        9.777065     5.669178     6.708528
+        5.669178     5.669178     6.708528
+   Ionic position will be re-read from restart file
+
+
+   Cell Dynamics Parameters (from STDIN)
+   -------------------------------------
+   Starting cell generated from CELLDM
+   Cell parameters will be re-read from restart file
+   Constant VOLUME Molecular dynamics
+   cell parameters are not allowed to move
+
+   Verbosity: iprsta =  1
+
+ nbeg           1
+
+
+   Simulation dimensions initialization
+   ------------------------------------
+
+   unit vectors of full simulation cell
+   in real space:                         in reciprocal space (units 2pi/alat):
+   1    15.4462    0.0000    0.0000              1.0000    0.0000    0.0000
+   2     0.0000   11.3384    0.0000              0.0000    1.3623    0.0000
+   3     0.0000    0.0000   12.5856              0.0000    0.0000    1.2273
+ 
+   Stick Mesh
+   ----------
+   nst =  1394,  nstw =   346, nsts =  1394
+        PEs    n.st   n.stw   n.sts    n.g    n.gw   n.gs
+          1    2787     691    2787  105259   13179  105259
+          0    2787     691    2787  105259   13179  105259
+ 
+ 
+   Real Mesh
+   ---------
+   Global Dimensions   Local  Dimensions   Processor Grid
+   .X.   .Y.   .Z.     .X.   .Y.   .Z.     .X.   .Y.   .Z.
+    72    54    60      72    54    60       1     1     1
+   Array leading dimensions ( nr1x, nr2x, nr3x )   =     72    54    60
+   Local number of cell to store the grid ( nnrx ) =     233280
+   Number of x-y planes for each processors: 
+   nr3l =    60
+ 
+   Smooth Real Mesh
+   ----------------
+   Global Dimensions   Local  Dimensions   Processor Grid
+   .X.   .Y.   .Z.     .X.   .Y.   .Z.     .X.   .Y.   .Z.
+    72    54    60      72    54    60       1     1     1
+   Array leading dimensions ( nr1x, nr2x, nr3x )   =     72    54    60
+   Local number of cell to store the grid ( nnrx ) =     233280
+   Number of x-y planes for each processors: 
+   nr3sl =    60
+ 
+   Reciprocal Space Mesh
+   ---------------------
+                Large Mesh
+   PE   Global(ngmt)     Local(ngm) MaxLocal(ngmx)
+    1         105259         105259         105259
+                Smooth Mesh
+   PE   Global(ngst)     Local(ngs) MaxLocal(ngsx)
+    1         105259         105259         105259
+                Wave function Mesh
+   PE   Global(ngwt)     Local(ngw) MaxLocal(ngwx)
+    1          13179          13179          13179
+
+
+   System geometry initialization
+   ------------------------------
+ 
+   Scaled positions from standard input
+   O    5.000000E-01  5.000000E-01  4.339339E-01
+   O    6.329736E-01  5.000000E-01  5.330330E-01
+   O    3.670264E-01  5.000000E-01  5.330330E-01
+   ibrav =    0       cell parameters 
+
+      15.44624       0.00000       0.00000
+       0.00000      11.33836       0.00000
+       0.00000       0.00000      12.58558
+ 
+
+   Matrix Multiplication Performances
+   ortho mmul, time for parallel driver      =   0.00000 with    1 procs
+
+   Constraints matrixes will be distributed block like on
+   ortho sub-group =    1*   1 procs
+
+
+
+   Pseudopotentials initialization
+   -------------------------------
+
+
+   Common initialization
+
+   Specie:     1
+   1  indv=  1   ang. mom=  0
+   2  indv=  2   ang. mom=  0
+   3  indv=  3   ang. mom=  1
+   4  indv=  3   ang. mom=  1
+   5  indv=  3   ang. mom=  1
+   6  indv=  4   ang. mom=  1
+   7  indv=  4   ang. mom=  1
+   8  indv=  4   ang. mom=  1
+ 
+                        dion 
+      9.757151948500      0.000000000000      0.000000000000      0.000000000000
+      0.000000000000      1.376126720650      0.000000000000      0.000000000000
+      0.000000000000      0.000000000000     -4.806858824850      0.000000000000
+      0.000000000000      0.000000000000      0.000000000000     -1.616239702250
+ 
+   Short Legend and Physical Units in the Output
+   ---------------------------------------------
+   NFI    [int]          - step index
+   EKINC  [HARTREE A.U.] - kinetic energy of the fictitious electronic dynamics
+   TEMPH  [K]            - Temperature of the fictitious cell dynamics
+   TEMP   [K]            - Ionic temperature
+   ETOT   [HARTREE A.U.] - Scf total energy (Kohn-Sham hamiltonian)
+   ENTHAL [HARTREE A.U.] - Enthalpy ( ETOT + P * V )
+   ECONS  [HARTREE A.U.] - Enthalpy + kinetic energy of ions and cell
+   ECONT  [HARTREE A.U.] - Constant of motion for the CP lagrangian
+ 
+
+   f_cutoff =  0.0000
+   do_spinsym   =    F
+   EE with periodic-image correction method = tcc                 
+ USING TCC FOR ODD T
+
+   reading restart file: /home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/4_ozone_kcp/calc_alpha/TMP-CP/orbital_6//kc_60.save
+ here should be iotk first error
+ here should be iotk first error
+   restart file read in    0.450 sec.
+
+ nprint_nfi=           -2
+ nprint_nfi=            3
+
+   formf: eself=  43.08577
+   formf:     vps(g=0)=  -0.0069801     rhops(g=0)=  -0.0027221
+   formf:     vps(g=0)=  -0.0068104     rhops(g=0)=  -0.0026118
+   formf: sum_g vps(g)=  -8.5354476 sum_g rhops(g)=  -1.0775227
+   Delta V(G=0):   0.025650Ry,    0.697974eV
+
+ * Physical Quantities at step:     4
+
+PERFORMING CONJUGATE GRADIENT MINIMIZATION OF EL. STATES
+
+     CP           :     1.08s CPU time,    1.36s wall time
+
+     iteration =   1  eff iteration =   1   Etot (Ha) =    -46.75564685230499
+     CP           :     2.07s CPU time,    2.39s wall time
+
+     iteration =   2  eff iteration =   2   Etot (Ha) =    -46.80819161732343
+     CP           :     3.16s CPU time,    3.52s wall time
+
+     iteration =   3  eff iteration =   3   Etot (Ha) =    -46.81709006140050 delta_E=  0.52544765018439E-01
+     CP           :     4.11s CPU time,    4.51s wall time
+
+     iteration =   4  eff iteration =   4   Etot (Ha) =    -46.81925842945490 delta_E=  0.88984440770687E-02
+     CP           :     5.31s CPU time,    5.75s wall time
+
+     iteration =   5  eff iteration =   5   Etot (Ha) =    -46.81994625970733 delta_E=  0.21683680543987E-02
+     CP           :     6.47s CPU time,    6.95s wall time
+
+     iteration =   6  eff iteration =   6   Etot (Ha) =    -46.82021004276159 delta_E=  0.68783025243135E-03
+     CP           :     7.53s CPU time,    8.07s wall time
+
+     iteration =   7  eff iteration =   7   Etot (Ha) =    -46.82031301053286 delta_E=  0.26378305425823E-03
+     CP           :     8.63s CPU time,    9.24s wall time
+
+     iteration =   8  eff iteration =   8   Etot (Ha) =    -46.82036779369808 delta_E=  0.10296777126939E-03
+     CP           :     9.79s CPU time,   10.49s wall time
+
+     iteration =   9  eff iteration =   9   Etot (Ha) =    -46.82040867924458 delta_E=  0.54783165218453E-04
+     CP           :    10.81s CPU time,   11.57s wall time
+
+     iteration =  10  eff iteration =  10   Etot (Ha) =    -46.82043368756825 delta_E=  0.40885546503944E-04
+
+     WARNING cg_sub: missed minimum, case 1, iteration   10      0.887503155423
+     CP           :    12.19s CPU time,   13.02s wall time
+
+     iteration =  11  eff iteration =  11   Etot (Ha) =    -46.82044540488820 delta_E=  0.25008323675024E-04
+     CP           :    13.24s CPU time,   14.14s wall time
+
+     iteration =  12  eff iteration =  12   Etot (Ha) =    -46.82044944671837 delta_E=  0.11717319949867E-04
+     CP           :    14.42s CPU time,   15.39s wall time
+
+     iteration =  13  eff iteration =  13   Etot (Ha) =    -46.82045207784012 delta_E=  0.40418301665568E-05
+     CP           :    15.64s CPU time,   16.66s wall time
+
+     iteration =  14  eff iteration =  14   Etot (Ha) =    -46.82045369149893 delta_E=  0.26311217524722E-05
+     CP           :    16.75s CPU time,   17.85s wall time
+
+     iteration =  15  eff iteration =  15   Etot (Ha) =    -46.82045439087845 delta_E=  0.16136588030236E-05
+     WARNING cg_sub: missed minimum, case 2, iteration   15
+     CP           :    18.25s CPU time,   19.43s wall time
+
+     iteration =  16  eff iteration =  16   Etot (Ha) =    -46.82045491299678 delta_E=  0.69937952673627E-06
+     WARNING cg_sub: missed minimum, case 3, iteration   16
+           1  -1.00000000000000       -46.8204547593454     
+           2  0.500000000000000       -46.8204544888729     
+           3 -0.250000000000000       -46.8204549989998     
+       iter3 =     3
+     CP           :    21.26s CPU time,   22.62s wall time
+
+     iteration =  17  eff iteration =  20   Etot (Ha) =    -46.82045499899975 delta_E=  0.52211832723970E-06
+     WARNING cg_sub: missed minimum, case 3, iteration   17
+           1  -1.00000000000000       -46.8204549607121     
+           2  0.500000000000000       -46.8204547108904     
+           3 -0.250000000000000       -46.8204550416019     
+       iter3 =     3
+
+
+ -----------------------
+ MAKOV-PAYNE CORRECTIONS
+ -----------------------
+
+ EXX : q-grid dimensions are    1   1   1
+ EXX : Gamma Extrapolation      F
+ EXX : q->0 term not estimated
+ EXX : Coulomb G0    -9.36090E+02
+
+
+   Makov-Payne 1-order energy :       1.06170251E-01
+
+
+                total energy =     -46.8204550416 Hartree a.u.
+              kinetic energy =      31.5430182913 Hartree a.u.
+        electrostatic energy =     -42.1676402994 Hartree a.u.
+                         esr =       0.4876308156 Hartree a.u.
+                       eself =      43.0857662834 Hartree a.u.
+      pseudopotential energy =     -25.2339357060 Hartree a.u.
+  n-l pseudopotential energy =      -1.1830844273 Hartree a.u.
+ exchange-correlation energy =      -9.7788129003 Hartree a.u.
+           average potential =       0.0000000000 Hartree a.u.
+                  odd energy =       0.0000000000 Hartree a.u.
+        van der waals energy =       0.0000000000 Hartree a.u.
+
+
+
+   HOMO Eigenvalue (eV)
+
+    0.0004
+
+   Eigenvalues (eV), kp =   1 , spin =  1
+
+  -45.0037  -37.9729  -29.2467  -25.0667  -24.4547**********  -17.4751  -17.3983    0.0004
+
+   Eigenvalues (eV), kp =   1 , spin =  2
+
+  -45.9060  -38.2454  -30.2009  -25.9455  -25.4393  -24.9199  -18.7283  -18.0197  -17.9077
+
+   Orb -- Charge  ---   Centers xyz (Bohr)  ---  Spreads (Bohr^2) - SH(eV), kp =   1 , spin =  1
+
+OCC    1 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    2 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    3 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    4 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    5 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    6 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    7 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    8 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    9 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+
+   Orb -- Charge  ---   Centers xyz (Bohr)  ---  Spreads (Bohr^2) - SH(eV), kp =   1 , spin =  2
+
+OCC    1 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    2 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    3 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    4 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    5 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    6 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    7 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    8 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+OCC    9 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
+ 
+ 
+   CELL_PARAMETERS
+    1.54462434E+01    0.00000000E+00    0.00000000E+00
+    0.00000000E+00    1.13383567E+01    0.00000000E+00
+    0.00000000E+00    0.00000000E+00    1.25855760E+01
+
+   System Density [g/cm^3] :     0.2440
+
+
+   Center of mass square displacement (a.u.):   0.000000
+
+   ATOMIC_POSITIONS
+   O    7.723122E+00  5.669178E+00  5.461309E+00
+   O    9.777065E+00  5.669178E+00  6.708528E+00
+   O    5.669178E+00  5.669178E+00  6.708528E+00
+ 
+   ATOMIC_VELOCITIES
+   O    0.000000E+00  0.000000E+00  0.000000E+00
+   O    0.000000E+00  0.000000E+00  0.000000E+00
+   O    0.000000E+00  0.000000E+00  0.000000E+00
+ 
+
+
+   Partial temperatures (for each ionic specie) 
+   Species  Temp (K)   Mean Square Displacement (a.u.)
+        1       0.00     0.0000
+ 
+  nfi    ekinc  temph  tempp        etot      enthal       econs       econt    vnhh   xnhh0    vnhp   xnhp0
+ 
+       nfi   tempp            E -T.S-mu.nbsp         +K_p #Iter
+Step     4       0    -46.82046    -46.82046    -46.82046    18
+ tnosep= F thdyn= F
+
+   writing restart file: /home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/4_ozone_kcp/calc_alpha/TMP-CP/orbital_6//kc_63.save
+   restart file written in    0.281 sec.
+
+ 
+                              lambda   nudx, spin =    9   1
+ fixed_lambda            6           6 -0.884311234181629     
+                              lambda   nudx, spin =    9   2
+ fixed_lambda            6           6  -95625.8033598247     
+
+
+   Averaged Physical Quantities
+                      accomulated      this run
+   ekinc         :        0.00000       0.00000 (AU)
+   ekin          :       50.64447      31.54302 (AU)
+   epot          :      -56.16567     -77.18039 (AU)
+   total energy  :       -6.48479     -46.82046 (AU)
+   temperature   :        0.00000       0.00000 (K )
+   enthalpy      :        0.00000       0.00000 (AU)
+   econs         :       -6.48479     -46.82046 (AU)
+   pressure      :        0.00000       0.00000 (Gpa)
+   volume        :     2204.17508    2204.17508 (AU)
+
+
+     initialize   :     0.65s CPU
+     total_time   :    23.29s CPU
+     formf        :     0.03s CPU
+     rhoofr       :     3.87s CPU (      44 calls,   0.088 s avg)
+     vofrho       :    14.48s CPU (      44 calls,   0.329 s avg)
+     vofrho1      :     1.24s CPU (       4 calls,   0.309 s avg)
+     vofrho2      :     5.60s CPU (      17 calls,   0.330 s avg)
+     vofrho3      :     5.55s CPU (      17 calls,   0.326 s avg)
+     vofrho4      :     2.09s CPU (       6 calls,   0.348 s avg)
+     dforce       :     2.32s CPU (     162 calls,   0.014 s avg)
+     dforce1      :     2.19s CPU (     153 calls,   0.014 s avg)
+     dforce2      :     0.32s CPU
+     calphi       :     0.02s CPU (      18 calls,   0.001 s avg)
+     newd         :     0.00s CPU (      18 calls,   0.000 s avg)
+     calbec       :     1.55s CPU (     163 calls,   0.010 s avg)
+     prefor       :     0.02s CPU (      20 calls,   0.001 s avg)
+     strucf       :     0.00s CPU
+     nlfl         :     0.00s CPU
+     nlsm1        :     1.55s CPU (     163 calls,   0.010 s avg)
+     fft          :     3.11s CPU (     749 calls,   0.004 s avg)
+     ffts         :     0.40s CPU (      88 calls,   0.005 s avg)
+     fftw         :     4.08s CPU (    1440 calls,   0.003 s avg)
+     cft3s        :     7.58s CPU (    2277 calls,   0.003 s avg)
+
+     outer_loop   :    23.12s CPU (      17 calls,   1.360 s avg)
+     runcg_uspp   :    23.29s CPU
+     pc2          :     0.18s CPU (      51 calls,   0.004 s avg)
+     pcdaga2      :     0.21s CPU (      17 calls,   0.012 s avg)
+     xminus1      :     0.01s CPU (      34 calls,   0.000 s avg)
+     emass_p_tpa  :     0.00s CPU
+ 
+ 
+     CP           :    24.15s CPU time,   25.76s wall time
+
+ 
+   This run was terminated on:  11:53:31  17Oct2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
