@@ -1,7 +1,11 @@
+set terminal post eps enhanced solid color "Helvetica" 20 
+set output "ZnO_wann_bands.eps" 
+
 ymin=-10
 ymax=10
 
-set term x11 enha 
+set ylab "E[eV]"
+set key hor out
 
 set xrange [0: 2.7577]
 set yrange [ ymin :  ymax]
@@ -17,4 +21,3 @@ set xtics ("A"  0.00000, "L"  0.5774, "M"  0.8895, "{/Symbol G}"  1.4668, "A"  1
 plot '../0_dft/dft_bands.gnu' u 1:($2-9.2869) w l lw 2 lc rgb 'black' tit 'PWscf',\
      'occ/wann_band.dat' u ($1/fact):($2-9.2869) w l lw 2 lc rgb 'red' tit 'W90',\
      'emp/wann_band.dat' u ($1/fact):($2-9.2869) w l lw 2 lc rgb 'red' notit
-pause -1

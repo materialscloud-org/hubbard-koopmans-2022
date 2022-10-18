@@ -2,6 +2,8 @@ pw.x -in scf.pwi > scf.pwo
 echo "  DFT scf         done"
 pw.x -in nscf.pwi > nscf.pwo
 echo "  DFT nscf        done"
+projwfc.x -in projwfc.in > projwfc.out 
+echo "  PDOS           done"
 cd occ
 wannier90.x -pp wann
 pw2wannier90.x -in pw2wan.p2wi > pw2wan.p2wo

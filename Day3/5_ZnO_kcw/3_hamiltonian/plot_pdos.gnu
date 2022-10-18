@@ -11,7 +11,7 @@ set ylabel "PDOS (states/eV/atom)"
 set label 1 "LDA" at -11,7
 set label 2 "KI" at -11,3
 set arrow from 0.6893,4.7 to 0.6893, 4.2 lw 2 
-et arrow from 3.44,0.7 to 3.44, 0.2 lw 2 
+set arrow from 3.44,0.7 to 3.44, 0.2 lw 2 
 
 plot "ZnO.pdos_atm#1(Zn)_wfc#3(d)" u ($1-7.3254):($2+0) w l lw 2 lt rgb "red"   title 'Zn-3d', \
      "ZnO.pdos_atm#3(O)_wfc#2(p)"  u ($1-7.3254):($2+0) w l lw 2 lt rgb "blue"  title ' O-2p',\
