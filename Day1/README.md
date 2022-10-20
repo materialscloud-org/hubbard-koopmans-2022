@@ -1,7 +1,7 @@
 # Exercises
 
- - [Exercise 0](0_initial_tests/README.md): Running a PWscf example and obtaining the total energy
- - [Exercise 1](1_convergence_tests/README.md): Convergence tests for input parameters
- - [Exercise 2](2_lattice_param_bulk_modulus/README.md): Determination of the equilibrium lattice length and bulk modulus
- - [Exercise 3](3_elastic_constants/README.md): Determination of the elastic constants
+ - [Exercise 1](exercise1/README.md): Bulk Si using PBE0
+ - [Exercise 2](exercise2/README.md): Bulk Si using HSE06
+ - [Exercise 3](exercise3/README.md): Bulk Si using SCAN
+ - [Exercise 4](exercise4/README.md): Bulk Fe using SCAN
 
