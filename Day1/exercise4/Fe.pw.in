@@ -8,23 +8,23 @@
  /
  &system
     ibrav = 3, 
-    celldm(1) = 5.406, 
+    celldm(1) = 5.418, 
     nat = 1, 
     ntyp = 1,
-    ecutwfc = 60.0, 
+    ecutwfc = 50.0, 
     occupations = 'smearing', 
     smearing ='mv', 
-    degauss = 0.01,
+    degauss = 0.02,
     nspin = 2,
-    starting_magnetization(1) = 0.3,
+    starting_magnetization(1) = 0.5,
     input_dft = 'SCAN'
  /
  &electrons
-    conv_thr = 1.d-12
+    conv_thr = 1.d-10
  /
 ATOMIC_SPECIES
-Fe  55.845  Fe.pbe_PseudoDojo.UPF
+Fe  55.845  Fe_ONCV_PBE-1.2.upf
 ATOMIC_POSITIONS {crystal}
 Fe 0.000000  0.000000  0.000000
 K_POINTS {automatic}
- 13 13 13 0 0 0
+ 20 20 20 0 0 0
