@@ -1,8 +1,12 @@
+*/TMP-CP
+*/calc_alpha
+*/final
+*/init
+*/postproc
+*/*.bib
+*/*.kwf
+
 # Tutorial 1
 1_ozone_kcp/BE.dat
-1_ozone_kcp/TMP-CP/
-1_ozone_kcp/calc_alpha/
-1_ozone_kcp/final/
-1_ozone_kcp/init/
-1_ozone_kcp/ozone.bib
-1_ozone_kcp/ozone.kwf
+
+# Tutorial 2
