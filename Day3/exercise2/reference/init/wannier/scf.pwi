@@ -1,9 +1,9 @@
 &CONTROL
    calculation      = 'scf'
    verbosity        = 'high'
-   outdir           = '/home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/init/wannier/TMP/'
+   outdir           = '/home/degennar/CODES/hubbard-koopmans-2022/Day3/exercise2/init/TMP/'
    prefix           = 'kc'
-   pseudo_dir       = '/home/nicola/Scrivania/CODES/git/koopmans/pseudos/pseudo_dojo_standard_v0.4.1/lda/'
+   pseudo_dir       = '/home/degennar/CODES/koopmans/src/koopmans/pseudopotentials/pseudo_dojo_standard_v0.4.1/lda/'
 /
 &SYSTEM
    ibrav            = 2

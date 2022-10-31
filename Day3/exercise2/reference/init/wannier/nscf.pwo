@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.1 starts on 17Oct2022 at 14:18:37 
+     Program PWSCF v.7.1 starts on 31Oct2022 at 16: 6:38 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -10,10 +10,10 @@
      in publications or presentations arising from this work. More details at
      http://www.quantum-espresso.org/quote
 
-     Parallel version (MPI), running on     4 processors
+     Parallel version (MPI), running on    24 processors
 
      MPI processes distributed on     1 nodes
-     339 MiB available memory on the printing compute node when the environment starts
+     181750 MiB available memory on the printing compute node when the environment starts
  
      Reading input from nscf.pwi
 Warning: card &IONS ignored
@@ -27,11 +27,12 @@ Warning: card / ignored
      Max angular momentum in pseudopotentials (lmaxx) =  4
 
      Atomic positions and unit cell read from directory:
-     /home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/init/wannier/TMP/kc.save/
+     /home/degennar/CODES/hubbard-koopmans-2022/Day3/exercise2/init/TMP/kc.save/
      Atomic positions from file used, from input discarded
  
  
-     R & G space division:  proc/nbgrp/npool/nimage =       4
+     K-points division:     npool     =       4
+     R & G space division:  proc/nbgrp/npool/nimage =       6
      Subspace diagonalization in iterative solution of the eigenvalue problem:
      a serial algorithm will be used
 
@@ -39,8 +40,8 @@ Warning: card / ignored
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min          73      73     22                  821      821     152
-     Max          74      74     23                  823      823     153
+     Min          49      49     15                  547      547     101
+     Max          50      50     16                  549      549     103
      Sum         295     295     91                 3287     3287     609
  
      Using Slab Decomposition
@@ -74,7 +75,7 @@ Warning: card / ignored
 
 
      PseudoPot. # 1 for Si read from file:
-     /home/nicola/Scrivania/CODES/git/koopmans/pseudos/pseudo_dojo_standard_v0.4.1/lda/Si.upf
+     /home/degennar/CODES/koopmans/src/koopmans/pseudopotentials/pseudo_dojo_standard_v0.4.1/lda/Si.upf
      MD5 check sum: 9e2d726316af3d4752eea8ab0afbb951
      Pseudo is Norm-conserving + core correction, Zval =  4.0
      Generated using ONCVPSP code by D. R. Hamann
@@ -152,73 +153,55 @@ A      1.00
 
      Dense  grid:     3287 G-vectors     FFT dimensions: (  24,  24,  24)
 
-     Dynamical RAM for                 wfc:       0.03 MB
+     Dynamical RAM for                 wfc:       0.02 MB
 
-     Dynamical RAM for     wfc (w. buffer):       0.03 MB
+     Dynamical RAM for     wfc (w. buffer):       0.02 MB
 
      Dynamical RAM for           str. fact:       0.01 MB
 
      Dynamical RAM for           local pot:       0.00 MB
 
-     Dynamical RAM for          nlocal pot:       0.06 MB
+     Dynamical RAM for          nlocal pot:       0.04 MB
 
      Dynamical RAM for                qrad:       0.72 MB
 
-     Dynamical RAM for          rho,v,vnew:       0.12 MB
+     Dynamical RAM for          rho,v,vnew:       0.08 MB
 
-     Dynamical RAM for           G-vectors:       0.05 MB
+     Dynamical RAM for           G-vectors:       0.04 MB
 
      Dynamical RAM for          h,s,v(r/c):       0.07 MB
 
      Dynamical RAM for          <psi|beta>:       0.01 MB
 
-     Dynamical RAM for                 psi:       0.06 MB
+     Dynamical RAM for                 psi:       0.04 MB
 
-     Dynamical RAM for                hpsi:       0.06 MB
+     Dynamical RAM for                hpsi:       0.04 MB
 
-     Dynamical RAM for      wfcinit/wfcrot:       0.07 MB
+     Dynamical RAM for      wfcinit/wfcrot:       0.05 MB
 
-     Estimated static dynamical RAM per process >       1.15 MB
+     Estimated static dynamical RAM per process >       1.00 MB
 
-     Estimated max dynamical RAM per process >       1.35 MB
+     Estimated max dynamical RAM per process >       1.17 MB
 
-     Estimated total dynamical RAM >       5.42 MB
+     Estimated total dynamical RAM >      28.11 MB
 
      The potential is recalculated from file :
-     /home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/init/wannier/TMP/kc.save/charge-density
+     /home/degennar/CODES/hubbard-koopmans-2022/Day3/exercise2/init/TMP/kc.save/charge-density
 
      Starting wfcs are    8 randomized atomic wfcs +   12 random wfcs
 
      Band Structure Calculation
      Davidson diagonalization with overlap
 
-     Computing kpt #:     1  of     8
+     Computing kpt #:     1  of     2 on this pool
+     total cpu time spent up to now is        0.1 secs
+
+     Computing kpt #:     2  of     2 on this pool
      total cpu time spent up to now is        0.2 secs
 
-     Computing kpt #:     2  of     8
-     total cpu time spent up to now is        0.3 secs
+     ethr =  2.00E-10,  avg # of iterations = 29.5
 
-     Computing kpt #:     3  of     8
-     total cpu time spent up to now is        0.3 secs
-
-     Computing kpt #:     4  of     8
-     total cpu time spent up to now is        0.4 secs
-
-     Computing kpt #:     5  of     8
-     total cpu time spent up to now is        0.5 secs
-
-     Computing kpt #:     6  of     8
-     total cpu time spent up to now is        0.5 secs
-
-     Computing kpt #:     7  of     8
-     total cpu time spent up to now is        0.6 secs
-
-     Computing kpt #:     8  of     8
-     total cpu time spent up to now is        0.6 secs
-
-     ethr =  2.00E-10,  avg # of iterations = 29.0
-
-     total cpu time spent up to now is        0.6 secs
+     total cpu time spent up to now is        0.2 secs
 
      End of band structure calculation
 
@@ -237,7 +220,7 @@ A      1.00
 
     -3.3359  -0.7597   5.1119   5.1119   7.6808   9.4961   9.4961  13.6106
     16.8448  16.8448  17.4097  17.5121  17.5121  19.0440  25.5792  26.0356
-    27.7442  27.7442  28.0450  28.0450
+    27.7442  27.7442  28.0449  28.0449
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -248,7 +231,7 @@ A      1.00
 
     -3.3359  -0.7597   5.1119   5.1119   7.6808   9.4961   9.4961  13.6106
     16.8448  16.8448  17.4097  17.5121  17.5121  19.0440  25.5792  26.0356
-    27.7442  27.7442  28.0450  28.0450
+    27.7442  27.7442  28.0449  28.0449
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -270,7 +253,7 @@ A      1.00
 
     -3.3359  -0.7597   5.1119   5.1119   7.6808   9.4961   9.4961  13.6106
     16.8448  16.8448  17.4097  17.5121  17.5121  19.0440  25.5792  26.0356
-    27.7442  27.7442  28.0450  28.0450
+    27.7442  27.7442  28.0449  28.0449
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -303,7 +286,7 @@ A      1.00
 
     -3.3359  -0.7597   5.1119   5.1119   7.6808   9.4961   9.4961  13.6106
     16.8448  16.8448  17.4097  17.5121  17.5121  19.0440  25.5792  26.0356
-    27.7442  27.7442  28.0450  28.0450
+    27.7442  27.7442  28.0449  28.0449
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -312,56 +295,56 @@ A      1.00
 
      highest occupied, lowest unoccupied level (ev):     6.3461    6.7679
 
-     Writing all to output data dir /home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/init/wannier/TMP/kc.save/
+     Writing all to output data dir /home/degennar/CODES/hubbard-koopmans-2022/Day3/exercise2/init/TMP/kc.save/
  
      init_run     :      0.01s CPU      0.01s WALL (       1 calls)
-     electrons    :      0.40s CPU      0.49s WALL (       1 calls)
+     electrons    :      0.07s CPU      0.07s WALL (       1 calls)
 
      Called by init_run:
      wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
-     wfcinit:atom :      0.00s CPU      0.00s WALL (       8 calls)
-     wfcinit:wfcr :      0.01s CPU      0.04s WALL (       8 calls)
+     wfcinit:atom :      0.00s CPU      0.00s WALL (       2 calls)
+     wfcinit:wfcr :      0.00s CPU      0.00s WALL (       2 calls)
      potinit      :      0.00s CPU      0.00s WALL (       1 calls)
-     hinit0       :      0.01s CPU      0.01s WALL (       1 calls)
+     hinit0       :      0.00s CPU      0.00s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :      0.40s CPU      0.49s WALL (       1 calls)
+     c_bands      :      0.07s CPU      0.07s WALL (       1 calls)
      v_of_rho     :      0.00s CPU      0.00s WALL (       1 calls)
      v_h          :      0.00s CPU      0.00s WALL (       1 calls)
      v_xc         :      0.00s CPU      0.00s WALL (       1 calls)
 
      Called by c_bands:
-     init_us_2    :      0.00s CPU      0.00s WALL (       8 calls)
-     init_us_2:cp :      0.00s CPU      0.00s WALL (       8 calls)
-     cegterg      :      0.38s CPU      0.45s WALL (      16 calls)
+     init_us_2    :      0.00s CPU      0.00s WALL (       2 calls)
+     init_us_2:cp :      0.00s CPU      0.00s WALL (       2 calls)
+     cegterg      :      0.06s CPU      0.06s WALL (       4 calls)
 
      Called by sum_band:
 
      Called by *egterg:
-     cdiaghg      :      0.10s CPU      0.14s WALL (     240 calls)
-     cegterg:over :      0.02s CPU      0.02s WALL (     232 calls)
-     cegterg:upda :      0.01s CPU      0.01s WALL (     232 calls)
-     cegterg:last :      0.01s CPU      0.01s WALL (     164 calls)
-     h_psi        :      0.25s CPU      0.29s WALL (     256 calls)
-     g_psi        :      0.00s CPU      0.00s WALL (     232 calls)
+     cdiaghg      :      0.03s CPU      0.03s WALL (      61 calls)
+     cegterg:over :      0.00s CPU      0.00s WALL (      59 calls)
+     cegterg:upda :      0.00s CPU      0.00s WALL (      59 calls)
+     cegterg:last :      0.00s CPU      0.00s WALL (      40 calls)
+     h_psi        :      0.03s CPU      0.03s WALL (      65 calls)
+     g_psi        :      0.00s CPU      0.00s WALL (      59 calls)
 
      Called by h_psi:
-     h_psi:calbec :      0.01s CPU      0.01s WALL (     256 calls)
-     vloc_psi     :      0.23s CPU      0.26s WALL (     256 calls)
-     add_vuspsi   :      0.01s CPU      0.01s WALL (     256 calls)
+     h_psi:calbec :      0.00s CPU      0.00s WALL (      65 calls)
+     vloc_psi     :      0.02s CPU      0.03s WALL (      65 calls)
+     add_vuspsi   :      0.00s CPU      0.00s WALL (      65 calls)
 
      General routines
-     calbec       :      0.01s CPU      0.01s WALL (     256 calls)
+     calbec       :      0.00s CPU      0.00s WALL (      65 calls)
      fft          :      0.00s CPU      0.00s WALL (       4 calls)
-     fftw         :      0.20s CPU      0.23s WALL (    6564 calls)
-     davcio       :      0.00s CPU      0.00s WALL (      16 calls)
+     fftw         :      0.02s CPU      0.02s WALL (    1602 calls)
+     davcio       :      0.00s CPU      0.00s WALL (       4 calls)
  
      Parallel routines
  
-     PWSCF        :      0.53s CPU      0.66s WALL
+     PWSCF        :      0.17s CPU      0.19s WALL
 
  
-   This run was terminated on:  14:18:38  17Oct2022            
+   This run was terminated on:  16: 6:39  31Oct2022            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

@@ -70,7 +70,7 @@
              | 675 Mass Ave, Cambridge, MA 02139, USA.           |
              |                                                   |
              +---------------------------------------------------+
-             |    Execution started on 17Oct2022 at 14:18:39     |
+             |    Execution started on 31Oct2022 at 16:06:39     |
              +---------------------------------------------------+
  
  ******************************************************************************
@@ -249,6 +249,6 @@
   
  Starting a new Wannier90 calculation ...
 
- Time to write kmesh            0.014 (sec)
+ Time to write kmesh            0.012 (sec)
 
  Exiting... wann_preproc.nnkp written.

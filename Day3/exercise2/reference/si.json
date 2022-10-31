@@ -35,13 +35,6 @@
                 "nbnd": 20
             }
         },
-        "kcp": {
-            "system": {
-                "nr1b": 20,
-                "nr2b": 20,
-                "nr3b": 20
-            }
-        },
         "w90": {
             "bands_plot": true,
             "projections": [{"fsite": [ 0.25, 0.25, 0.25 ], "ang_mtm": "sp3"}],

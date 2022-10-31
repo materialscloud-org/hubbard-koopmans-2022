@@ -1,5 +1,5 @@
 
-     Program PW2WANNIER v.7.1 starts on 17Oct2022 at 14:18:39 
+     Program PW2WANNIER v.7.1 starts on 31Oct2022 at 16: 6:40 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -10,18 +10,18 @@
      in publications or presentations arising from this work. More details at
      http://www.quantum-espresso.org/quote
 
-     Parallel version (MPI), running on     4 processors
+     Parallel version (MPI), running on    24 processors
 
      MPI processes distributed on     1 nodes
-     R & G space division:  proc/nbgrp/npool/nimage =       4
-     322 MiB available memory on the printing compute node when the environment starts
+     R & G space division:  proc/nbgrp/npool/nimage =      24
+     181621 MiB available memory on the printing compute node when the environment starts
  
  
   Reading nscf_save data
 
      Reading xml data from directory:
 
-     /home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/init/wannier/TMP/kc.save/
+     /home/degennar/CODES/hubbard-koopmans-2022/Day3/exercise2/init/TMP/kc.save/
 
      IMPORTANT: XC functional enforced from input :
      Exchange-correlation= PW
@@ -33,8 +33,8 @@
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min          73      73     22                  821      821     152
-     Max          74      74     23                  823      823     153
+     Min          12      12      3                  136      136      23
+     Max          13      13      4                  138      138      27
      Sum         295     295     91                 3287     3287     609
  
      Using Slab Decomposition
@@ -114,14 +114,14 @@
   ------------
  
  
-     init_pw2wan  :      0.11s CPU      0.12s WALL (       1 calls)
-     compute_amn  :      0.08s CPU      0.09s WALL (       1 calls)
-     compute_mmn  :      0.11s CPU      0.21s WALL (       1 calls)
+     init_pw2wan  :      0.05s CPU      0.07s WALL (       1 calls)
+     compute_amn  :      0.01s CPU      0.01s WALL (       1 calls)
+     compute_mmn  :      0.05s CPU      0.06s WALL (       1 calls)
  
-     PW2WANNIER   :      0.30s CPU      0.43s WALL
+     PW2WANNIER   :      0.11s CPU      0.14s WALL
 
  
-   This run was terminated on:  14:18:39  17Oct2022            
+   This run was terminated on:  16: 6:40  31Oct2022            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

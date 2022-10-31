@@ -1,10 +1,10 @@
 UNFOLDING & INTERPOLATION
 
-	Parsing input in:                      0.017 sec
-	Calculating bands in:                  0.081 sec
+	Parsing input in:                      0.013 sec
+	Calculating bands in:                  0.034 sec
 	Calculating DOS in:                    0.000 sec
-	Printing output in:                    0.010 sec
+	Printing output in:                    0.007 sec
 
-	Total time:                            0.108 sec
+	Total time:                            0.054 sec
 
 ALL DONE

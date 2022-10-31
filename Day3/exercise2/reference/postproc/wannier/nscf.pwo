@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.1 starts on 17Oct2022 at 14:19:28 
+     Program PWSCF v.7.1 starts on 31Oct2022 at 16: 6:55 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -10,10 +10,10 @@
      in publications or presentations arising from this work. More details at
      http://www.quantum-espresso.org/quote
 
-     Parallel version (MPI), running on     4 processors
+     Parallel version (MPI), running on    24 processors
 
      MPI processes distributed on     1 nodes
-     506 MiB available memory on the printing compute node when the environment starts
+     181554 MiB available memory on the printing compute node when the environment starts
  
      Reading input from nscf.pwi
 Warning: card &IONS ignored
@@ -27,11 +27,12 @@ Warning: card / ignored
      Max angular momentum in pseudopotentials (lmaxx) =  4
 
      Atomic positions and unit cell read from directory:
-     /home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/postproc/wannier/TMP/kc.save/
+     /home/degennar/CODES/hubbard-koopmans-2022/Day3/exercise2/postproc/TMP/kc.save/
      Atomic positions from file used, from input discarded
  
  
-     R & G space division:  proc/nbgrp/npool/nimage =       4
+     K-points division:     npool     =       4
+     R & G space division:  proc/nbgrp/npool/nimage =       6
      Subspace diagonalization in iterative solution of the eigenvalue problem:
      a serial algorithm will be used
 
@@ -39,8 +40,8 @@ Warning: card / ignored
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min          73      73     27                  821      821     181
-     Max          74      74     28                  823      823     182
+     Min          49      49     18                  547      547     120
+     Max          50      50     19                  549      549     122
      Sum         295     295    109                 3287     3287     725
  
      Using Slab Decomposition
@@ -74,7 +75,7 @@ Warning: card / ignored
 
 
      PseudoPot. # 1 for Si read from file:
-     /home/nicola/Scrivania/CODES/git/koopmans/pseudos/pseudo_dojo_standard_v0.4.1/lda/Si.upf
+     /home/degennar/CODES/koopmans/src/koopmans/pseudopotentials/pseudo_dojo_standard_v0.4.1/lda/Si.upf
      MD5 check sum: 9e2d726316af3d4752eea8ab0afbb951
      Pseudo is Norm-conserving + core correction, Zval =  4.0
      Generated using ONCVPSP code by D. R. Hamann
@@ -1160,1585 +1161,433 @@ A      1.00
 
      Dense  grid:     3287 G-vectors     FFT dimensions: (  24,  24,  24)
 
-     Dynamical RAM for                 wfc:       0.03 MB
+     Dynamical RAM for                 wfc:       0.02 MB
 
-     Dynamical RAM for     wfc (w. buffer):       0.03 MB
+     Dynamical RAM for     wfc (w. buffer):       0.02 MB
 
      Dynamical RAM for           str. fact:       0.01 MB
 
      Dynamical RAM for           local pot:       0.00 MB
 
-     Dynamical RAM for          nlocal pot:       0.06 MB
+     Dynamical RAM for          nlocal pot:       0.04 MB
 
      Dynamical RAM for                qrad:       0.72 MB
 
-     Dynamical RAM for          rho,v,vnew:       0.12 MB
+     Dynamical RAM for          rho,v,vnew:       0.08 MB
 
-     Dynamical RAM for           G-vectors:       0.05 MB
+     Dynamical RAM for           G-vectors:       0.04 MB
 
      Dynamical RAM for          h,s,v(r/c):       0.07 MB
 
      Dynamical RAM for          <psi|beta>:       0.01 MB
 
-     Dynamical RAM for                 psi:       0.06 MB
+     Dynamical RAM for                 psi:       0.04 MB
 
-     Dynamical RAM for                hpsi:       0.06 MB
+     Dynamical RAM for                hpsi:       0.04 MB
 
-     Dynamical RAM for      wfcinit/wfcrot:       0.07 MB
+     Dynamical RAM for      wfcinit/wfcrot:       0.05 MB
 
-     Estimated static dynamical RAM per process >       1.15 MB
+     Estimated static dynamical RAM per process >       1.00 MB
 
-     Estimated max dynamical RAM per process >       1.35 MB
+     Estimated max dynamical RAM per process >       1.17 MB
 
-     Estimated total dynamical RAM >       5.42 MB
+     Estimated total dynamical RAM >      28.11 MB
 
      The potential is recalculated from file :
-     /home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/postproc/wannier/TMP/kc.save/charge-density
+     /home/degennar/CODES/hubbard-koopmans-2022/Day3/exercise2/postproc/TMP/kc.save/charge-density
 
      Starting wfcs are    8 randomized atomic wfcs +   12 random wfcs
 
      Band Structure Calculation
      Davidson diagonalization with overlap
 
-     Computing kpt #:     1  of   512
+     Computing kpt #:     1  of   128 on this pool
+     total cpu time spent up to now is        0.2 secs
+
+     Computing kpt #:     2  of   128 on this pool
+     total cpu time spent up to now is        0.2 secs
+
+     Computing kpt #:     3  of   128 on this pool
+     total cpu time spent up to now is        0.2 secs
+
+     Computing kpt #:     4  of   128 on this pool
      total cpu time spent up to now is        0.3 secs
 
-     Computing kpt #:     2  of   512
+     Computing kpt #:     5  of   128 on this pool
+     total cpu time spent up to now is        0.3 secs
+
+     Computing kpt #:     6  of   128 on this pool
+     total cpu time spent up to now is        0.3 secs
+
+     Computing kpt #:     7  of   128 on this pool
      total cpu time spent up to now is        0.4 secs
 
-     Computing kpt #:     3  of   512
+     Computing kpt #:     8  of   128 on this pool
+     total cpu time spent up to now is        0.4 secs
+
+     Computing kpt #:     9  of   128 on this pool
+     total cpu time spent up to now is        0.4 secs
+
+     Computing kpt #:    10  of   128 on this pool
      total cpu time spent up to now is        0.5 secs
 
-     Computing kpt #:     4  of   512
+     Computing kpt #:    11  of   128 on this pool
+     total cpu time spent up to now is        0.5 secs
+
+     Computing kpt #:    12  of   128 on this pool
      total cpu time spent up to now is        0.6 secs
 
-     Computing kpt #:     5  of   512
+     Computing kpt #:    13  of   128 on this pool
+     total cpu time spent up to now is        0.6 secs
+
+     Computing kpt #:    14  of   128 on this pool
+     total cpu time spent up to now is        0.6 secs
+
+     Computing kpt #:    15  of   128 on this pool
      total cpu time spent up to now is        0.7 secs
 
-     Computing kpt #:     6  of   512
+     Computing kpt #:    16  of   128 on this pool
+     total cpu time spent up to now is        0.7 secs
+
+     Computing kpt #:    17  of   128 on this pool
+     total cpu time spent up to now is        0.7 secs
+
+     Computing kpt #:    18  of   128 on this pool
      total cpu time spent up to now is        0.8 secs
 
-     Computing kpt #:     7  of   512
+     Computing kpt #:    19  of   128 on this pool
+     total cpu time spent up to now is        0.8 secs
+
+     Computing kpt #:    20  of   128 on this pool
      total cpu time spent up to now is        0.9 secs
 
-     Computing kpt #:     8  of   512
+     Computing kpt #:    21  of   128 on this pool
      total cpu time spent up to now is        0.9 secs
 
-     Computing kpt #:     9  of   512
+     Computing kpt #:    22  of   128 on this pool
+     total cpu time spent up to now is        0.9 secs
+
+     Computing kpt #:    23  of   128 on this pool
      total cpu time spent up to now is        1.0 secs
 
-     Computing kpt #:    10  of   512
+     Computing kpt #:    24  of   128 on this pool
+     total cpu time spent up to now is        1.0 secs
+
+     Computing kpt #:    25  of   128 on this pool
+     total cpu time spent up to now is        1.0 secs
+
+     Computing kpt #:    26  of   128 on this pool
      total cpu time spent up to now is        1.1 secs
 
-     Computing kpt #:    11  of   512
+     Computing kpt #:    27  of   128 on this pool
+     total cpu time spent up to now is        1.1 secs
+
+     Computing kpt #:    28  of   128 on this pool
      total cpu time spent up to now is        1.2 secs
 
-     Computing kpt #:    12  of   512
+     Computing kpt #:    29  of   128 on this pool
+     total cpu time spent up to now is        1.2 secs
+
+     Computing kpt #:    30  of   128 on this pool
+     total cpu time spent up to now is        1.2 secs
+
+     Computing kpt #:    31  of   128 on this pool
      total cpu time spent up to now is        1.3 secs
 
-     Computing kpt #:    13  of   512
+     Computing kpt #:    32  of   128 on this pool
+     total cpu time spent up to now is        1.3 secs
+
+     Computing kpt #:    33  of   128 on this pool
+     total cpu time spent up to now is        1.3 secs
+
+     Computing kpt #:    34  of   128 on this pool
      total cpu time spent up to now is        1.4 secs
 
-     Computing kpt #:    14  of   512
+     Computing kpt #:    35  of   128 on this pool
      total cpu time spent up to now is        1.4 secs
 
-     Computing kpt #:    15  of   512
+     Computing kpt #:    36  of   128 on this pool
      total cpu time spent up to now is        1.5 secs
 
-     Computing kpt #:    16  of   512
+     Computing kpt #:    37  of   128 on this pool
+     total cpu time spent up to now is        1.5 secs
+
+     Computing kpt #:    38  of   128 on this pool
+     total cpu time spent up to now is        1.5 secs
+
+     Computing kpt #:    39  of   128 on this pool
      total cpu time spent up to now is        1.6 secs
 
-     Computing kpt #:    17  of   512
+     Computing kpt #:    40  of   128 on this pool
+     total cpu time spent up to now is        1.6 secs
+
+     Computing kpt #:    41  of   128 on this pool
      total cpu time spent up to now is        1.7 secs
 
-     Computing kpt #:    18  of   512
+     Computing kpt #:    42  of   128 on this pool
+     total cpu time spent up to now is        1.7 secs
+
+     Computing kpt #:    43  of   128 on this pool
+     total cpu time spent up to now is        1.7 secs
+
+     Computing kpt #:    44  of   128 on this pool
      total cpu time spent up to now is        1.8 secs
 
-     Computing kpt #:    19  of   512
+     Computing kpt #:    45  of   128 on this pool
+     total cpu time spent up to now is        1.8 secs
+
+     Computing kpt #:    46  of   128 on this pool
      total cpu time spent up to now is        1.9 secs
 
-     Computing kpt #:    20  of   512
+     Computing kpt #:    47  of   128 on this pool
+     total cpu time spent up to now is        1.9 secs
+
+     Computing kpt #:    48  of   128 on this pool
+     total cpu time spent up to now is        1.9 secs
+
+     Computing kpt #:    49  of   128 on this pool
      total cpu time spent up to now is        2.0 secs
 
-     Computing kpt #:    21  of   512
+     Computing kpt #:    50  of   128 on this pool
+     total cpu time spent up to now is        2.0 secs
+
+     Computing kpt #:    51  of   128 on this pool
      total cpu time spent up to now is        2.1 secs
 
-     Computing kpt #:    22  of   512
+     Computing kpt #:    52  of   128 on this pool
+     total cpu time spent up to now is        2.1 secs
+
+     Computing kpt #:    53  of   128 on this pool
+     total cpu time spent up to now is        2.1 secs
+
+     Computing kpt #:    54  of   128 on this pool
      total cpu time spent up to now is        2.2 secs
 
-     Computing kpt #:    23  of   512
+     Computing kpt #:    55  of   128 on this pool
+     total cpu time spent up to now is        2.2 secs
+
+     Computing kpt #:    56  of   128 on this pool
+     total cpu time spent up to now is        2.2 secs
+
+     Computing kpt #:    57  of   128 on this pool
      total cpu time spent up to now is        2.3 secs
 
-     Computing kpt #:    24  of   512
+     Computing kpt #:    58  of   128 on this pool
      total cpu time spent up to now is        2.3 secs
 
-     Computing kpt #:    25  of   512
+     Computing kpt #:    59  of   128 on this pool
+     total cpu time spent up to now is        2.3 secs
+
+     Computing kpt #:    60  of   128 on this pool
      total cpu time spent up to now is        2.4 secs
 
-     Computing kpt #:    26  of   512
+     Computing kpt #:    61  of   128 on this pool
+     total cpu time spent up to now is        2.4 secs
+
+     Computing kpt #:    62  of   128 on this pool
      total cpu time spent up to now is        2.5 secs
 
-     Computing kpt #:    27  of   512
+     Computing kpt #:    63  of   128 on this pool
+     total cpu time spent up to now is        2.5 secs
+
+     Computing kpt #:    64  of   128 on this pool
+     total cpu time spent up to now is        2.5 secs
+
+     Computing kpt #:    65  of   128 on this pool
      total cpu time spent up to now is        2.6 secs
 
-     Computing kpt #:    28  of   512
+     Computing kpt #:    66  of   128 on this pool
+     total cpu time spent up to now is        2.6 secs
+
+     Computing kpt #:    67  of   128 on this pool
+     total cpu time spent up to now is        2.7 secs
+
+     Computing kpt #:    68  of   128 on this pool
+     total cpu time spent up to now is        2.7 secs
+
+     Computing kpt #:    69  of   128 on this pool
+     total cpu time spent up to now is        2.7 secs
+
+     Computing kpt #:    70  of   128 on this pool
      total cpu time spent up to now is        2.8 secs
 
-     Computing kpt #:    29  of   512
+     Computing kpt #:    71  of   128 on this pool
+     total cpu time spent up to now is        2.8 secs
+
+     Computing kpt #:    72  of   128 on this pool
      total cpu time spent up to now is        2.9 secs
 
-     Computing kpt #:    30  of   512
+     Computing kpt #:    73  of   128 on this pool
      total cpu time spent up to now is        2.9 secs
 
-     Computing kpt #:    31  of   512
+     Computing kpt #:    74  of   128 on this pool
+     total cpu time spent up to now is        2.9 secs
+
+     Computing kpt #:    75  of   128 on this pool
      total cpu time spent up to now is        3.0 secs
 
-     Computing kpt #:    32  of   512
+     Computing kpt #:    76  of   128 on this pool
+     total cpu time spent up to now is        3.0 secs
+
+     Computing kpt #:    77  of   128 on this pool
+     total cpu time spent up to now is        3.0 secs
+
+     Computing kpt #:    78  of   128 on this pool
      total cpu time spent up to now is        3.1 secs
 
-     Computing kpt #:    33  of   512
+     Computing kpt #:    79  of   128 on this pool
+     total cpu time spent up to now is        3.1 secs
+
+     Computing kpt #:    80  of   128 on this pool
+     total cpu time spent up to now is        3.1 secs
+
+     Computing kpt #:    81  of   128 on this pool
      total cpu time spent up to now is        3.2 secs
 
-     Computing kpt #:    34  of   512
+     Computing kpt #:    82  of   128 on this pool
+     total cpu time spent up to now is        3.2 secs
+
+     Computing kpt #:    83  of   128 on this pool
+     total cpu time spent up to now is        3.2 secs
+
+     Computing kpt #:    84  of   128 on this pool
      total cpu time spent up to now is        3.3 secs
 
-     Computing kpt #:    35  of   512
+     Computing kpt #:    85  of   128 on this pool
+     total cpu time spent up to now is        3.3 secs
+
+     Computing kpt #:    86  of   128 on this pool
      total cpu time spent up to now is        3.4 secs
 
-     Computing kpt #:    36  of   512
+     Computing kpt #:    87  of   128 on this pool
+     total cpu time spent up to now is        3.4 secs
+
+     Computing kpt #:    88  of   128 on this pool
+     total cpu time spent up to now is        3.4 secs
+
+     Computing kpt #:    89  of   128 on this pool
      total cpu time spent up to now is        3.5 secs
 
-     Computing kpt #:    37  of   512
+     Computing kpt #:    90  of   128 on this pool
+     total cpu time spent up to now is        3.5 secs
+
+     Computing kpt #:    91  of   128 on this pool
+     total cpu time spent up to now is        3.5 secs
+
+     Computing kpt #:    92  of   128 on this pool
      total cpu time spent up to now is        3.6 secs
 
-     Computing kpt #:    38  of   512
+     Computing kpt #:    93  of   128 on this pool
+     total cpu time spent up to now is        3.6 secs
+
+     Computing kpt #:    94  of   128 on this pool
      total cpu time spent up to now is        3.7 secs
 
-     Computing kpt #:    39  of   512
+     Computing kpt #:    95  of   128 on this pool
+     total cpu time spent up to now is        3.7 secs
+
+     Computing kpt #:    96  of   128 on this pool
+     total cpu time spent up to now is        3.7 secs
+
+     Computing kpt #:    97  of   128 on this pool
      total cpu time spent up to now is        3.8 secs
 
-     Computing kpt #:    40  of   512
+     Computing kpt #:    98  of   128 on this pool
+     total cpu time spent up to now is        3.8 secs
+
+     Computing kpt #:    99  of   128 on this pool
+     total cpu time spent up to now is        3.8 secs
+
+     Computing kpt #:   100  of   128 on this pool
      total cpu time spent up to now is        3.9 secs
 
-     Computing kpt #:    41  of   512
+     Computing kpt #:   101  of   128 on this pool
+     total cpu time spent up to now is        3.9 secs
+
+     Computing kpt #:   102  of   128 on this pool
      total cpu time spent up to now is        4.0 secs
 
-     Computing kpt #:    42  of   512
+     Computing kpt #:   103  of   128 on this pool
+     total cpu time spent up to now is        4.0 secs
+
+     Computing kpt #:   104  of   128 on this pool
+     total cpu time spent up to now is        4.0 secs
+
+     Computing kpt #:   105  of   128 on this pool
      total cpu time spent up to now is        4.1 secs
 
-     Computing kpt #:    43  of   512
+     Computing kpt #:   106  of   128 on this pool
      total cpu time spent up to now is        4.1 secs
 
-     Computing kpt #:    44  of   512
+     Computing kpt #:   107  of   128 on this pool
      total cpu time spent up to now is        4.2 secs
 
-     Computing kpt #:    45  of   512
+     Computing kpt #:   108  of   128 on this pool
+     total cpu time spent up to now is        4.2 secs
+
+     Computing kpt #:   109  of   128 on this pool
+     total cpu time spent up to now is        4.2 secs
+
+     Computing kpt #:   110  of   128 on this pool
      total cpu time spent up to now is        4.3 secs
 
-     Computing kpt #:    46  of   512
+     Computing kpt #:   111  of   128 on this pool
+     total cpu time spent up to now is        4.3 secs
+
+     Computing kpt #:   112  of   128 on this pool
+     total cpu time spent up to now is        4.3 secs
+
+     Computing kpt #:   113  of   128 on this pool
      total cpu time spent up to now is        4.4 secs
 
-     Computing kpt #:    47  of   512
+     Computing kpt #:   114  of   128 on this pool
+     total cpu time spent up to now is        4.4 secs
+
+     Computing kpt #:   115  of   128 on this pool
      total cpu time spent up to now is        4.5 secs
 
-     Computing kpt #:    48  of   512
+     Computing kpt #:   116  of   128 on this pool
+     total cpu time spent up to now is        4.5 secs
+
+     Computing kpt #:   117  of   128 on this pool
+     total cpu time spent up to now is        4.5 secs
+
+     Computing kpt #:   118  of   128 on this pool
      total cpu time spent up to now is        4.6 secs
 
-     Computing kpt #:    49  of   512
+     Computing kpt #:   119  of   128 on this pool
+     total cpu time spent up to now is        4.6 secs
+
+     Computing kpt #:   120  of   128 on this pool
+     total cpu time spent up to now is        4.6 secs
+
+     Computing kpt #:   121  of   128 on this pool
      total cpu time spent up to now is        4.7 secs
 
-     Computing kpt #:    50  of   512
+     Computing kpt #:   122  of   128 on this pool
+     total cpu time spent up to now is        4.7 secs
+
+     Computing kpt #:   123  of   128 on this pool
      total cpu time spent up to now is        4.8 secs
 
-     Computing kpt #:    51  of   512
+     Computing kpt #:   124  of   128 on this pool
+     total cpu time spent up to now is        4.8 secs
+
+     Computing kpt #:   125  of   128 on this pool
+     total cpu time spent up to now is        4.8 secs
+
+     Computing kpt #:   126  of   128 on this pool
      total cpu time spent up to now is        4.9 secs
 
-     Computing kpt #:    52  of   512
-     total cpu time spent up to now is        5.0 secs
-
-     Computing kpt #:    53  of   512
-     total cpu time spent up to now is        5.1 secs
-
-     Computing kpt #:    54  of   512
-     total cpu time spent up to now is        5.2 secs
-
-     Computing kpt #:    55  of   512
-     total cpu time spent up to now is        5.3 secs
-
-     Computing kpt #:    56  of   512
-     total cpu time spent up to now is        5.5 secs
-
-     Computing kpt #:    57  of   512
-     total cpu time spent up to now is        5.6 secs
-
-     Computing kpt #:    58  of   512
-     total cpu time spent up to now is        5.6 secs
-
-     Computing kpt #:    59  of   512
-     total cpu time spent up to now is        5.7 secs
-
-     Computing kpt #:    60  of   512
-     total cpu time spent up to now is        5.8 secs
-
-     Computing kpt #:    61  of   512
-     total cpu time spent up to now is        5.9 secs
-
-     Computing kpt #:    62  of   512
-     total cpu time spent up to now is        5.9 secs
-
-     Computing kpt #:    63  of   512
-     total cpu time spent up to now is        6.0 secs
-
-     Computing kpt #:    64  of   512
-     total cpu time spent up to now is        6.1 secs
-
-     Computing kpt #:    65  of   512
-     total cpu time spent up to now is        6.2 secs
-
-     Computing kpt #:    66  of   512
-     total cpu time spent up to now is        6.2 secs
-
-     Computing kpt #:    67  of   512
-     total cpu time spent up to now is        6.3 secs
-
-     Computing kpt #:    68  of   512
-     total cpu time spent up to now is        6.4 secs
-
-     Computing kpt #:    69  of   512
-     total cpu time spent up to now is        6.5 secs
-
-     Computing kpt #:    70  of   512
-     total cpu time spent up to now is        6.5 secs
-
-     Computing kpt #:    71  of   512
-     total cpu time spent up to now is        6.6 secs
-
-     Computing kpt #:    72  of   512
-     total cpu time spent up to now is        6.7 secs
-
-     Computing kpt #:    73  of   512
-     total cpu time spent up to now is        6.8 secs
-
-     Computing kpt #:    74  of   512
-     total cpu time spent up to now is        6.8 secs
-
-     Computing kpt #:    75  of   512
-     total cpu time spent up to now is        6.9 secs
-
-     Computing kpt #:    76  of   512
-     total cpu time spent up to now is        7.0 secs
-
-     Computing kpt #:    77  of   512
-     total cpu time spent up to now is        7.1 secs
-
-     Computing kpt #:    78  of   512
-     total cpu time spent up to now is        7.1 secs
-
-     Computing kpt #:    79  of   512
-     total cpu time spent up to now is        7.2 secs
-
-     Computing kpt #:    80  of   512
-     total cpu time spent up to now is        7.3 secs
-
-     Computing kpt #:    81  of   512
-     total cpu time spent up to now is        7.4 secs
-
-     Computing kpt #:    82  of   512
-     total cpu time spent up to now is        7.4 secs
-
-     Computing kpt #:    83  of   512
-     total cpu time spent up to now is        7.5 secs
-
-     Computing kpt #:    84  of   512
-     total cpu time spent up to now is        7.6 secs
-
-     Computing kpt #:    85  of   512
-     total cpu time spent up to now is        7.7 secs
-
-     Computing kpt #:    86  of   512
-     total cpu time spent up to now is        7.8 secs
-
-     Computing kpt #:    87  of   512
-     total cpu time spent up to now is        7.8 secs
-
-     Computing kpt #:    88  of   512
-     total cpu time spent up to now is        7.9 secs
-
-     Computing kpt #:    89  of   512
-     total cpu time spent up to now is        8.0 secs
-
-     Computing kpt #:    90  of   512
-     total cpu time spent up to now is        8.1 secs
-
-     Computing kpt #:    91  of   512
-     total cpu time spent up to now is        8.1 secs
-
-     Computing kpt #:    92  of   512
-     total cpu time spent up to now is        8.2 secs
-
-     Computing kpt #:    93  of   512
-     total cpu time spent up to now is        8.3 secs
-
-     Computing kpt #:    94  of   512
-     total cpu time spent up to now is        8.4 secs
-
-     Computing kpt #:    95  of   512
-     total cpu time spent up to now is        8.5 secs
-
-     Computing kpt #:    96  of   512
-     total cpu time spent up to now is        8.5 secs
-
-     Computing kpt #:    97  of   512
-     total cpu time spent up to now is        8.6 secs
-
-     Computing kpt #:    98  of   512
-     total cpu time spent up to now is        8.7 secs
-
-     Computing kpt #:    99  of   512
-     total cpu time spent up to now is        8.8 secs
-
-     Computing kpt #:   100  of   512
-     total cpu time spent up to now is        8.8 secs
-
-     Computing kpt #:   101  of   512
-     total cpu time spent up to now is        8.9 secs
-
-     Computing kpt #:   102  of   512
-     total cpu time spent up to now is        9.0 secs
-
-     Computing kpt #:   103  of   512
-     total cpu time spent up to now is        9.1 secs
-
-     Computing kpt #:   104  of   512
-     total cpu time spent up to now is        9.2 secs
-
-     Computing kpt #:   105  of   512
-     total cpu time spent up to now is        9.3 secs
-
-     Computing kpt #:   106  of   512
-     total cpu time spent up to now is        9.3 secs
-
-     Computing kpt #:   107  of   512
-     total cpu time spent up to now is        9.4 secs
-
-     Computing kpt #:   108  of   512
-     total cpu time spent up to now is        9.5 secs
-
-     Computing kpt #:   109  of   512
-     total cpu time spent up to now is        9.6 secs
-
-     Computing kpt #:   110  of   512
-     total cpu time spent up to now is        9.7 secs
-
-     Computing kpt #:   111  of   512
-     total cpu time spent up to now is        9.8 secs
-
-     Computing kpt #:   112  of   512
-     total cpu time spent up to now is        9.8 secs
-
-     Computing kpt #:   113  of   512
-     total cpu time spent up to now is        9.9 secs
-
-     Computing kpt #:   114  of   512
-     total cpu time spent up to now is       10.0 secs
-
-     Computing kpt #:   115  of   512
-     total cpu time spent up to now is       10.1 secs
-
-     Computing kpt #:   116  of   512
-     total cpu time spent up to now is       10.2 secs
-
-     Computing kpt #:   117  of   512
-     total cpu time spent up to now is       10.3 secs
-
-     Computing kpt #:   118  of   512
-     total cpu time spent up to now is       10.4 secs
-
-     Computing kpt #:   119  of   512
-     total cpu time spent up to now is       10.4 secs
-
-     Computing kpt #:   120  of   512
-     total cpu time spent up to now is       10.5 secs
-
-     Computing kpt #:   121  of   512
-     total cpu time spent up to now is       10.6 secs
-
-     Computing kpt #:   122  of   512
-     total cpu time spent up to now is       10.7 secs
-
-     Computing kpt #:   123  of   512
-     total cpu time spent up to now is       10.8 secs
-
-     Computing kpt #:   124  of   512
-     total cpu time spent up to now is       10.9 secs
-
-     Computing kpt #:   125  of   512
-     total cpu time spent up to now is       10.9 secs
-
-     Computing kpt #:   126  of   512
-     total cpu time spent up to now is       11.0 secs
-
-     Computing kpt #:   127  of   512
-     total cpu time spent up to now is       11.1 secs
-
-     Computing kpt #:   128  of   512
-     total cpu time spent up to now is       11.2 secs
-
-     Computing kpt #:   129  of   512
-     total cpu time spent up to now is       11.3 secs
-
-     Computing kpt #:   130  of   512
-     total cpu time spent up to now is       11.3 secs
-
-     Computing kpt #:   131  of   512
-     total cpu time spent up to now is       11.4 secs
-
-     Computing kpt #:   132  of   512
-     total cpu time spent up to now is       11.5 secs
-
-     Computing kpt #:   133  of   512
-     total cpu time spent up to now is       11.6 secs
-
-     Computing kpt #:   134  of   512
-     total cpu time spent up to now is       11.6 secs
-
-     Computing kpt #:   135  of   512
-     total cpu time spent up to now is       11.7 secs
-
-     Computing kpt #:   136  of   512
-     total cpu time spent up to now is       11.8 secs
-
-     Computing kpt #:   137  of   512
-     total cpu time spent up to now is       11.8 secs
-
-     Computing kpt #:   138  of   512
-     total cpu time spent up to now is       11.9 secs
-
-     Computing kpt #:   139  of   512
-     total cpu time spent up to now is       12.0 secs
-
-     Computing kpt #:   140  of   512
-     total cpu time spent up to now is       12.1 secs
-
-     Computing kpt #:   141  of   512
-     total cpu time spent up to now is       12.1 secs
-
-     Computing kpt #:   142  of   512
-     total cpu time spent up to now is       12.2 secs
-
-     Computing kpt #:   143  of   512
-     total cpu time spent up to now is       12.3 secs
-
-     Computing kpt #:   144  of   512
-     total cpu time spent up to now is       12.4 secs
-
-     Computing kpt #:   145  of   512
-     total cpu time spent up to now is       12.4 secs
-
-     Computing kpt #:   146  of   512
-     total cpu time spent up to now is       12.5 secs
-
-     Computing kpt #:   147  of   512
-     total cpu time spent up to now is       12.6 secs
-
-     Computing kpt #:   148  of   512
-     total cpu time spent up to now is       12.6 secs
-
-     Computing kpt #:   149  of   512
-     total cpu time spent up to now is       12.7 secs
-
-     Computing kpt #:   150  of   512
-     total cpu time spent up to now is       12.8 secs
-
-     Computing kpt #:   151  of   512
-     total cpu time spent up to now is       12.9 secs
-
-     Computing kpt #:   152  of   512
-     total cpu time spent up to now is       12.9 secs
-
-     Computing kpt #:   153  of   512
-     total cpu time spent up to now is       13.0 secs
-
-     Computing kpt #:   154  of   512
-     total cpu time spent up to now is       13.1 secs
-
-     Computing kpt #:   155  of   512
-     total cpu time spent up to now is       13.2 secs
-
-     Computing kpt #:   156  of   512
-     total cpu time spent up to now is       13.2 secs
-
-     Computing kpt #:   157  of   512
-     total cpu time spent up to now is       13.3 secs
-
-     Computing kpt #:   158  of   512
-     total cpu time spent up to now is       13.4 secs
-
-     Computing kpt #:   159  of   512
-     total cpu time spent up to now is       13.5 secs
-
-     Computing kpt #:   160  of   512
-     total cpu time spent up to now is       13.5 secs
-
-     Computing kpt #:   161  of   512
-     total cpu time spent up to now is       13.6 secs
-
-     Computing kpt #:   162  of   512
-     total cpu time spent up to now is       13.7 secs
-
-     Computing kpt #:   163  of   512
-     total cpu time spent up to now is       13.8 secs
-
-     Computing kpt #:   164  of   512
-     total cpu time spent up to now is       13.9 secs
-
-     Computing kpt #:   165  of   512
-     total cpu time spent up to now is       13.9 secs
-
-     Computing kpt #:   166  of   512
-     total cpu time spent up to now is       14.0 secs
-
-     Computing kpt #:   167  of   512
-     total cpu time spent up to now is       14.1 secs
-
-     Computing kpt #:   168  of   512
-     total cpu time spent up to now is       14.2 secs
-
-     Computing kpt #:   169  of   512
-     total cpu time spent up to now is       14.2 secs
-
-     Computing kpt #:   170  of   512
-     total cpu time spent up to now is       14.3 secs
-
-     Computing kpt #:   171  of   512
-     total cpu time spent up to now is       14.4 secs
-
-     Computing kpt #:   172  of   512
-     total cpu time spent up to now is       14.4 secs
-
-     Computing kpt #:   173  of   512
-     total cpu time spent up to now is       14.5 secs
-
-     Computing kpt #:   174  of   512
-     total cpu time spent up to now is       14.6 secs
-
-     Computing kpt #:   175  of   512
-     total cpu time spent up to now is       14.7 secs
-
-     Computing kpt #:   176  of   512
-     total cpu time spent up to now is       14.8 secs
-
-     Computing kpt #:   177  of   512
-     total cpu time spent up to now is       14.8 secs
-
-     Computing kpt #:   178  of   512
-     total cpu time spent up to now is       14.9 secs
-
-     Computing kpt #:   179  of   512
-     total cpu time spent up to now is       15.0 secs
-
-     Computing kpt #:   180  of   512
-     total cpu time spent up to now is       15.1 secs
-
-     Computing kpt #:   181  of   512
-     total cpu time spent up to now is       15.2 secs
-
-     Computing kpt #:   182  of   512
-     total cpu time spent up to now is       15.3 secs
-
-     Computing kpt #:   183  of   512
-     total cpu time spent up to now is       15.4 secs
-
-     Computing kpt #:   184  of   512
-     total cpu time spent up to now is       15.4 secs
-
-     Computing kpt #:   185  of   512
-     total cpu time spent up to now is       15.5 secs
-
-     Computing kpt #:   186  of   512
-     total cpu time spent up to now is       15.6 secs
-
-     Computing kpt #:   187  of   512
-     total cpu time spent up to now is       15.7 secs
-
-     Computing kpt #:   188  of   512
-     total cpu time spent up to now is       15.8 secs
-
-     Computing kpt #:   189  of   512
-     total cpu time spent up to now is       15.9 secs
-
-     Computing kpt #:   190  of   512
-     total cpu time spent up to now is       16.0 secs
-
-     Computing kpt #:   191  of   512
-     total cpu time spent up to now is       16.1 secs
-
-     Computing kpt #:   192  of   512
-     total cpu time spent up to now is       16.1 secs
-
-     Computing kpt #:   193  of   512
-     total cpu time spent up to now is       16.2 secs
-
-     Computing kpt #:   194  of   512
-     total cpu time spent up to now is       16.3 secs
-
-     Computing kpt #:   195  of   512
-     total cpu time spent up to now is       16.4 secs
-
-     Computing kpt #:   196  of   512
-     total cpu time spent up to now is       16.5 secs
-
-     Computing kpt #:   197  of   512
-     total cpu time spent up to now is       16.6 secs
-
-     Computing kpt #:   198  of   512
-     total cpu time spent up to now is       16.7 secs
-
-     Computing kpt #:   199  of   512
-     total cpu time spent up to now is       16.7 secs
-
-     Computing kpt #:   200  of   512
-     total cpu time spent up to now is       16.8 secs
-
-     Computing kpt #:   201  of   512
-     total cpu time spent up to now is       16.9 secs
-
-     Computing kpt #:   202  of   512
-     total cpu time spent up to now is       16.9 secs
-
-     Computing kpt #:   203  of   512
-     total cpu time spent up to now is       17.0 secs
-
-     Computing kpt #:   204  of   512
-     total cpu time spent up to now is       17.1 secs
-
-     Computing kpt #:   205  of   512
-     total cpu time spent up to now is       17.2 secs
-
-     Computing kpt #:   206  of   512
-     total cpu time spent up to now is       17.2 secs
-
-     Computing kpt #:   207  of   512
-     total cpu time spent up to now is       17.3 secs
-
-     Computing kpt #:   208  of   512
-     total cpu time spent up to now is       17.4 secs
-
-     Computing kpt #:   209  of   512
-     total cpu time spent up to now is       17.5 secs
-
-     Computing kpt #:   210  of   512
-     total cpu time spent up to now is       17.5 secs
-
-     Computing kpt #:   211  of   512
-     total cpu time spent up to now is       17.6 secs
-
-     Computing kpt #:   212  of   512
-     total cpu time spent up to now is       17.7 secs
-
-     Computing kpt #:   213  of   512
-     total cpu time spent up to now is       17.8 secs
-
-     Computing kpt #:   214  of   512
-     total cpu time spent up to now is       17.8 secs
-
-     Computing kpt #:   215  of   512
-     total cpu time spent up to now is       17.9 secs
-
-     Computing kpt #:   216  of   512
-     total cpu time spent up to now is       18.0 secs
-
-     Computing kpt #:   217  of   512
-     total cpu time spent up to now is       18.1 secs
-
-     Computing kpt #:   218  of   512
-     total cpu time spent up to now is       18.1 secs
-
-     Computing kpt #:   219  of   512
-     total cpu time spent up to now is       18.2 secs
-
-     Computing kpt #:   220  of   512
-     total cpu time spent up to now is       18.3 secs
-
-     Computing kpt #:   221  of   512
-     total cpu time spent up to now is       18.4 secs
-
-     Computing kpt #:   222  of   512
-     total cpu time spent up to now is       18.4 secs
-
-     Computing kpt #:   223  of   512
-     total cpu time spent up to now is       18.5 secs
-
-     Computing kpt #:   224  of   512
-     total cpu time spent up to now is       18.6 secs
-
-     Computing kpt #:   225  of   512
-     total cpu time spent up to now is       18.7 secs
-
-     Computing kpt #:   226  of   512
-     total cpu time spent up to now is       18.8 secs
-
-     Computing kpt #:   227  of   512
-     total cpu time spent up to now is       18.8 secs
-
-     Computing kpt #:   228  of   512
-     total cpu time spent up to now is       18.9 secs
-
-     Computing kpt #:   229  of   512
-     total cpu time spent up to now is       19.0 secs
-
-     Computing kpt #:   230  of   512
-     total cpu time spent up to now is       19.0 secs
-
-     Computing kpt #:   231  of   512
-     total cpu time spent up to now is       19.1 secs
-
-     Computing kpt #:   232  of   512
-     total cpu time spent up to now is       19.2 secs
-
-     Computing kpt #:   233  of   512
-     total cpu time spent up to now is       19.3 secs
-
-     Computing kpt #:   234  of   512
-     total cpu time spent up to now is       19.4 secs
-
-     Computing kpt #:   235  of   512
-     total cpu time spent up to now is       19.4 secs
-
-     Computing kpt #:   236  of   512
-     total cpu time spent up to now is       19.5 secs
-
-     Computing kpt #:   237  of   512
-     total cpu time spent up to now is       19.6 secs
-
-     Computing kpt #:   238  of   512
-     total cpu time spent up to now is       19.6 secs
-
-     Computing kpt #:   239  of   512
-     total cpu time spent up to now is       19.7 secs
-
-     Computing kpt #:   240  of   512
-     total cpu time spent up to now is       19.8 secs
-
-     Computing kpt #:   241  of   512
-     total cpu time spent up to now is       19.9 secs
-
-     Computing kpt #:   242  of   512
-     total cpu time spent up to now is       19.9 secs
-
-     Computing kpt #:   243  of   512
-     total cpu time spent up to now is       20.0 secs
-
-     Computing kpt #:   244  of   512
-     total cpu time spent up to now is       20.1 secs
-
-     Computing kpt #:   245  of   512
-     total cpu time spent up to now is       20.2 secs
-
-     Computing kpt #:   246  of   512
-     total cpu time spent up to now is       20.3 secs
-
-     Computing kpt #:   247  of   512
-     total cpu time spent up to now is       20.3 secs
-
-     Computing kpt #:   248  of   512
-     total cpu time spent up to now is       20.4 secs
-
-     Computing kpt #:   249  of   512
-     total cpu time spent up to now is       20.5 secs
-
-     Computing kpt #:   250  of   512
-     total cpu time spent up to now is       20.6 secs
-
-     Computing kpt #:   251  of   512
-     total cpu time spent up to now is       20.7 secs
-
-     Computing kpt #:   252  of   512
-     total cpu time spent up to now is       20.8 secs
-
-     Computing kpt #:   253  of   512
-     total cpu time spent up to now is       20.8 secs
-
-     Computing kpt #:   254  of   512
-     total cpu time spent up to now is       20.9 secs
-
-     Computing kpt #:   255  of   512
-     total cpu time spent up to now is       21.0 secs
-
-     Computing kpt #:   256  of   512
-     total cpu time spent up to now is       21.1 secs
-
-     Computing kpt #:   257  of   512
-     total cpu time spent up to now is       21.1 secs
-
-     Computing kpt #:   258  of   512
-     total cpu time spent up to now is       21.2 secs
-
-     Computing kpt #:   259  of   512
-     total cpu time spent up to now is       21.3 secs
-
-     Computing kpt #:   260  of   512
-     total cpu time spent up to now is       21.4 secs
-
-     Computing kpt #:   261  of   512
-     total cpu time spent up to now is       21.5 secs
-
-     Computing kpt #:   262  of   512
-     total cpu time spent up to now is       21.5 secs
-
-     Computing kpt #:   263  of   512
-     total cpu time spent up to now is       21.6 secs
-
-     Computing kpt #:   264  of   512
-     total cpu time spent up to now is       21.8 secs
-
-     Computing kpt #:   265  of   512
-     total cpu time spent up to now is       21.8 secs
-
-     Computing kpt #:   266  of   512
-     total cpu time spent up to now is       21.9 secs
-
-     Computing kpt #:   267  of   512
-     total cpu time spent up to now is       22.0 secs
-
-     Computing kpt #:   268  of   512
-     total cpu time spent up to now is       22.0 secs
-
-     Computing kpt #:   269  of   512
-     total cpu time spent up to now is       22.1 secs
-
-     Computing kpt #:   270  of   512
-     total cpu time spent up to now is       22.2 secs
-
-     Computing kpt #:   271  of   512
-     total cpu time spent up to now is       22.3 secs
-
-     Computing kpt #:   272  of   512
-     total cpu time spent up to now is       22.4 secs
-
-     Computing kpt #:   273  of   512
-     total cpu time spent up to now is       22.4 secs
-
-     Computing kpt #:   274  of   512
-     total cpu time spent up to now is       22.5 secs
-
-     Computing kpt #:   275  of   512
-     total cpu time spent up to now is       22.6 secs
-
-     Computing kpt #:   276  of   512
-     total cpu time spent up to now is       22.7 secs
-
-     Computing kpt #:   277  of   512
-     total cpu time spent up to now is       22.8 secs
-
-     Computing kpt #:   278  of   512
-     total cpu time spent up to now is       22.8 secs
-
-     Computing kpt #:   279  of   512
-     total cpu time spent up to now is       22.9 secs
-
-     Computing kpt #:   280  of   512
-     total cpu time spent up to now is       23.0 secs
-
-     Computing kpt #:   281  of   512
-     total cpu time spent up to now is       23.1 secs
-
-     Computing kpt #:   282  of   512
-     total cpu time spent up to now is       23.1 secs
-
-     Computing kpt #:   283  of   512
-     total cpu time spent up to now is       23.2 secs
-
-     Computing kpt #:   284  of   512
-     total cpu time spent up to now is       23.3 secs
-
-     Computing kpt #:   285  of   512
-     total cpu time spent up to now is       23.3 secs
-
-     Computing kpt #:   286  of   512
-     total cpu time spent up to now is       23.4 secs
-
-     Computing kpt #:   287  of   512
-     total cpu time spent up to now is       23.5 secs
-
-     Computing kpt #:   288  of   512
-     total cpu time spent up to now is       23.6 secs
-
-     Computing kpt #:   289  of   512
-     total cpu time spent up to now is       23.6 secs
-
-     Computing kpt #:   290  of   512
-     total cpu time spent up to now is       23.7 secs
-
-     Computing kpt #:   291  of   512
-     total cpu time spent up to now is       23.8 secs
-
-     Computing kpt #:   292  of   512
-     total cpu time spent up to now is       23.9 secs
-
-     Computing kpt #:   293  of   512
-     total cpu time spent up to now is       23.9 secs
-
-     Computing kpt #:   294  of   512
-     total cpu time spent up to now is       24.0 secs
-
-     Computing kpt #:   295  of   512
-     total cpu time spent up to now is       24.1 secs
-
-     Computing kpt #:   296  of   512
-     total cpu time spent up to now is       24.2 secs
-
-     Computing kpt #:   297  of   512
-     total cpu time spent up to now is       24.2 secs
-
-     Computing kpt #:   298  of   512
-     total cpu time spent up to now is       24.3 secs
-
-     Computing kpt #:   299  of   512
-     total cpu time spent up to now is       24.4 secs
-
-     Computing kpt #:   300  of   512
-     total cpu time spent up to now is       24.4 secs
-
-     Computing kpt #:   301  of   512
-     total cpu time spent up to now is       24.5 secs
-
-     Computing kpt #:   302  of   512
-     total cpu time spent up to now is       24.6 secs
-
-     Computing kpt #:   303  of   512
-     total cpu time spent up to now is       24.6 secs
-
-     Computing kpt #:   304  of   512
-     total cpu time spent up to now is       24.7 secs
-
-     Computing kpt #:   305  of   512
-     total cpu time spent up to now is       24.8 secs
-
-     Computing kpt #:   306  of   512
-     total cpu time spent up to now is       24.9 secs
-
-     Computing kpt #:   307  of   512
-     total cpu time spent up to now is       24.9 secs
-
-     Computing kpt #:   308  of   512
-     total cpu time spent up to now is       25.0 secs
-
-     Computing kpt #:   309  of   512
-     total cpu time spent up to now is       25.1 secs
-
-     Computing kpt #:   310  of   512
-     total cpu time spent up to now is       25.1 secs
-
-     Computing kpt #:   311  of   512
-     total cpu time spent up to now is       25.2 secs
-
-     Computing kpt #:   312  of   512
-     total cpu time spent up to now is       25.3 secs
-
-     Computing kpt #:   313  of   512
-     total cpu time spent up to now is       25.5 secs
-
-     Computing kpt #:   314  of   512
-     total cpu time spent up to now is       25.6 secs
-
-     Computing kpt #:   315  of   512
-     total cpu time spent up to now is       25.6 secs
-
-     Computing kpt #:   316  of   512
-     total cpu time spent up to now is       25.7 secs
-
-     Computing kpt #:   317  of   512
-     total cpu time spent up to now is       25.8 secs
-
-     Computing kpt #:   318  of   512
-     total cpu time spent up to now is       25.9 secs
-
-     Computing kpt #:   319  of   512
-     total cpu time spent up to now is       25.9 secs
-
-     Computing kpt #:   320  of   512
-     total cpu time spent up to now is       26.0 secs
-
-     Computing kpt #:   321  of   512
-     total cpu time spent up to now is       26.1 secs
-
-     Computing kpt #:   322  of   512
-     total cpu time spent up to now is       26.1 secs
-
-     Computing kpt #:   323  of   512
-     total cpu time spent up to now is       26.2 secs
-
-     Computing kpt #:   324  of   512
-     total cpu time spent up to now is       26.3 secs
-
-     Computing kpt #:   325  of   512
-     total cpu time spent up to now is       26.4 secs
-
-     Computing kpt #:   326  of   512
-     total cpu time spent up to now is       26.4 secs
-
-     Computing kpt #:   327  of   512
-     total cpu time spent up to now is       26.5 secs
-
-     Computing kpt #:   328  of   512
-     total cpu time spent up to now is       26.6 secs
-
-     Computing kpt #:   329  of   512
-     total cpu time spent up to now is       26.7 secs
-
-     Computing kpt #:   330  of   512
-     total cpu time spent up to now is       26.8 secs
-
-     Computing kpt #:   331  of   512
-     total cpu time spent up to now is       26.8 secs
-
-     Computing kpt #:   332  of   512
-     total cpu time spent up to now is       26.9 secs
-
-     Computing kpt #:   333  of   512
-     total cpu time spent up to now is       27.0 secs
-
-     Computing kpt #:   334  of   512
-     total cpu time spent up to now is       27.0 secs
-
-     Computing kpt #:   335  of   512
-     total cpu time spent up to now is       27.1 secs
-
-     Computing kpt #:   336  of   512
-     total cpu time spent up to now is       27.2 secs
-
-     Computing kpt #:   337  of   512
-     total cpu time spent up to now is       27.3 secs
-
-     Computing kpt #:   338  of   512
-     total cpu time spent up to now is       27.3 secs
-
-     Computing kpt #:   339  of   512
-     total cpu time spent up to now is       27.4 secs
-
-     Computing kpt #:   340  of   512
-     total cpu time spent up to now is       27.5 secs
-
-     Computing kpt #:   341  of   512
-     total cpu time spent up to now is       27.6 secs
-
-     Computing kpt #:   342  of   512
-     total cpu time spent up to now is       27.7 secs
-
-     Computing kpt #:   343  of   512
-     total cpu time spent up to now is       27.7 secs
-
-     Computing kpt #:   344  of   512
-     total cpu time spent up to now is       27.8 secs
-
-     Computing kpt #:   345  of   512
-     total cpu time spent up to now is       27.9 secs
-
-     Computing kpt #:   346  of   512
-     total cpu time spent up to now is       28.0 secs
-
-     Computing kpt #:   347  of   512
-     total cpu time spent up to now is       28.1 secs
-
-     Computing kpt #:   348  of   512
-     total cpu time spent up to now is       28.2 secs
-
-     Computing kpt #:   349  of   512
-     total cpu time spent up to now is       28.2 secs
-
-     Computing kpt #:   350  of   512
-     total cpu time spent up to now is       28.3 secs
-
-     Computing kpt #:   351  of   512
-     total cpu time spent up to now is       28.4 secs
-
-     Computing kpt #:   352  of   512
-     total cpu time spent up to now is       28.4 secs
-
-     Computing kpt #:   353  of   512
-     total cpu time spent up to now is       28.5 secs
-
-     Computing kpt #:   354  of   512
-     total cpu time spent up to now is       28.6 secs
-
-     Computing kpt #:   355  of   512
-     total cpu time spent up to now is       28.7 secs
-
-     Computing kpt #:   356  of   512
-     total cpu time spent up to now is       28.8 secs
-
-     Computing kpt #:   357  of   512
-     total cpu time spent up to now is       28.8 secs
-
-     Computing kpt #:   358  of   512
-     total cpu time spent up to now is       28.9 secs
-
-     Computing kpt #:   359  of   512
-     total cpu time spent up to now is       28.9 secs
-
-     Computing kpt #:   360  of   512
-     total cpu time spent up to now is       29.0 secs
-
-     Computing kpt #:   361  of   512
-     total cpu time spent up to now is       29.1 secs
-
-     Computing kpt #:   362  of   512
-     total cpu time spent up to now is       29.2 secs
-
-     Computing kpt #:   363  of   512
-     total cpu time spent up to now is       29.3 secs
-
-     Computing kpt #:   364  of   512
-     total cpu time spent up to now is       29.3 secs
-
-     Computing kpt #:   365  of   512
-     total cpu time spent up to now is       29.4 secs
-
-     Computing kpt #:   366  of   512
-     total cpu time spent up to now is       29.4 secs
-
-     Computing kpt #:   367  of   512
-     total cpu time spent up to now is       29.5 secs
-
-     Computing kpt #:   368  of   512
-     total cpu time spent up to now is       29.6 secs
-
-     Computing kpt #:   369  of   512
-     total cpu time spent up to now is       29.7 secs
-
-     Computing kpt #:   370  of   512
-     total cpu time spent up to now is       29.7 secs
-
-     Computing kpt #:   371  of   512
-     total cpu time spent up to now is       29.8 secs
-
-     Computing kpt #:   372  of   512
-     total cpu time spent up to now is       29.9 secs
-
-     Computing kpt #:   373  of   512
-     total cpu time spent up to now is       29.9 secs
-
-     Computing kpt #:   374  of   512
-     total cpu time spent up to now is       30.0 secs
-
-     Computing kpt #:   375  of   512
-     total cpu time spent up to now is       30.1 secs
-
-     Computing kpt #:   376  of   512
-     total cpu time spent up to now is       30.1 secs
-
-     Computing kpt #:   377  of   512
-     total cpu time spent up to now is       30.2 secs
-
-     Computing kpt #:   378  of   512
-     total cpu time spent up to now is       30.3 secs
-
-     Computing kpt #:   379  of   512
-     total cpu time spent up to now is       30.3 secs
-
-     Computing kpt #:   380  of   512
-     total cpu time spent up to now is       30.4 secs
-
-     Computing kpt #:   381  of   512
-     total cpu time spent up to now is       30.5 secs
-
-     Computing kpt #:   382  of   512
-     total cpu time spent up to now is       30.5 secs
-
-     Computing kpt #:   383  of   512
-     total cpu time spent up to now is       30.6 secs
-
-     Computing kpt #:   384  of   512
-     total cpu time spent up to now is       30.7 secs
-
-     Computing kpt #:   385  of   512
-     total cpu time spent up to now is       30.7 secs
-
-     Computing kpt #:   386  of   512
-     total cpu time spent up to now is       30.8 secs
-
-     Computing kpt #:   387  of   512
-     total cpu time spent up to now is       30.9 secs
-
-     Computing kpt #:   388  of   512
-     total cpu time spent up to now is       30.9 secs
-
-     Computing kpt #:   389  of   512
-     total cpu time spent up to now is       31.0 secs
-
-     Computing kpt #:   390  of   512
-     total cpu time spent up to now is       31.1 secs
-
-     Computing kpt #:   391  of   512
-     total cpu time spent up to now is       31.1 secs
-
-     Computing kpt #:   392  of   512
-     total cpu time spent up to now is       31.2 secs
-
-     Computing kpt #:   393  of   512
-     total cpu time spent up to now is       31.3 secs
-
-     Computing kpt #:   394  of   512
-     total cpu time spent up to now is       31.3 secs
-
-     Computing kpt #:   395  of   512
-     total cpu time spent up to now is       31.4 secs
-
-     Computing kpt #:   396  of   512
-     total cpu time spent up to now is       31.5 secs
-
-     Computing kpt #:   397  of   512
-     total cpu time spent up to now is       31.6 secs
-
-     Computing kpt #:   398  of   512
-     total cpu time spent up to now is       31.7 secs
-
-     Computing kpt #:   399  of   512
-     total cpu time spent up to now is       31.8 secs
-
-     Computing kpt #:   400  of   512
-     total cpu time spent up to now is       31.9 secs
-
-     Computing kpt #:   401  of   512
-     total cpu time spent up to now is       31.9 secs
-
-     Computing kpt #:   402  of   512
-     total cpu time spent up to now is       32.0 secs
-
-     Computing kpt #:   403  of   512
-     total cpu time spent up to now is       32.1 secs
-
-     Computing kpt #:   404  of   512
-     total cpu time spent up to now is       32.2 secs
-
-     Computing kpt #:   405  of   512
-     total cpu time spent up to now is       32.2 secs
-
-     Computing kpt #:   406  of   512
-     total cpu time spent up to now is       32.3 secs
-
-     Computing kpt #:   407  of   512
-     total cpu time spent up to now is       32.4 secs
-
-     Computing kpt #:   408  of   512
-     total cpu time spent up to now is       32.5 secs
-
-     Computing kpt #:   409  of   512
-     total cpu time spent up to now is       32.5 secs
-
-     Computing kpt #:   410  of   512
-     total cpu time spent up to now is       32.6 secs
-
-     Computing kpt #:   411  of   512
-     total cpu time spent up to now is       32.7 secs
-
-     Computing kpt #:   412  of   512
-     total cpu time spent up to now is       32.8 secs
-
-     Computing kpt #:   413  of   512
-     total cpu time spent up to now is       32.8 secs
-
-     Computing kpt #:   414  of   512
-     total cpu time spent up to now is       32.9 secs
-
-     Computing kpt #:   415  of   512
-     total cpu time spent up to now is       33.0 secs
-
-     Computing kpt #:   416  of   512
-     total cpu time spent up to now is       33.1 secs
-
-     Computing kpt #:   417  of   512
-     total cpu time spent up to now is       33.2 secs
-
-     Computing kpt #:   418  of   512
-     total cpu time spent up to now is       33.3 secs
-
-     Computing kpt #:   419  of   512
-     total cpu time spent up to now is       33.3 secs
-
-     Computing kpt #:   420  of   512
-     total cpu time spent up to now is       33.4 secs
-
-     Computing kpt #:   421  of   512
-     total cpu time spent up to now is       33.5 secs
-
-     Computing kpt #:   422  of   512
-     total cpu time spent up to now is       33.5 secs
-
-     Computing kpt #:   423  of   512
-     total cpu time spent up to now is       33.6 secs
-
-     Computing kpt #:   424  of   512
-     total cpu time spent up to now is       33.7 secs
-
-     Computing kpt #:   425  of   512
-     total cpu time spent up to now is       33.8 secs
-
-     Computing kpt #:   426  of   512
-     total cpu time spent up to now is       33.8 secs
-
-     Computing kpt #:   427  of   512
-     total cpu time spent up to now is       33.9 secs
-
-     Computing kpt #:   428  of   512
-     total cpu time spent up to now is       34.0 secs
-
-     Computing kpt #:   429  of   512
-     total cpu time spent up to now is       34.0 secs
-
-     Computing kpt #:   430  of   512
-     total cpu time spent up to now is       34.1 secs
-
-     Computing kpt #:   431  of   512
-     total cpu time spent up to now is       34.2 secs
-
-     Computing kpt #:   432  of   512
-     total cpu time spent up to now is       34.3 secs
-
-     Computing kpt #:   433  of   512
-     total cpu time spent up to now is       34.3 secs
-
-     Computing kpt #:   434  of   512
-     total cpu time spent up to now is       34.4 secs
-
-     Computing kpt #:   435  of   512
-     total cpu time spent up to now is       34.5 secs
-
-     Computing kpt #:   436  of   512
-     total cpu time spent up to now is       34.6 secs
-
-     Computing kpt #:   437  of   512
-     total cpu time spent up to now is       34.6 secs
-
-     Computing kpt #:   438  of   512
-     total cpu time spent up to now is       34.7 secs
-
-     Computing kpt #:   439  of   512
-     total cpu time spent up to now is       34.8 secs
-
-     Computing kpt #:   440  of   512
-     total cpu time spent up to now is       34.8 secs
-
-     Computing kpt #:   441  of   512
-     total cpu time spent up to now is       34.9 secs
-
-     Computing kpt #:   442  of   512
-     total cpu time spent up to now is       34.9 secs
-
-     Computing kpt #:   443  of   512
-     total cpu time spent up to now is       35.0 secs
-
-     Computing kpt #:   444  of   512
-     total cpu time spent up to now is       35.1 secs
-
-     Computing kpt #:   445  of   512
-     total cpu time spent up to now is       35.1 secs
-
-     Computing kpt #:   446  of   512
-     total cpu time spent up to now is       35.2 secs
-
-     Computing kpt #:   447  of   512
-     total cpu time spent up to now is       35.3 secs
-
-     Computing kpt #:   448  of   512
-     total cpu time spent up to now is       35.3 secs
-
-     Computing kpt #:   449  of   512
-     total cpu time spent up to now is       35.4 secs
-
-     Computing kpt #:   450  of   512
-     total cpu time spent up to now is       35.5 secs
-
-     Computing kpt #:   451  of   512
-     total cpu time spent up to now is       35.5 secs
-
-     Computing kpt #:   452  of   512
-     total cpu time spent up to now is       35.6 secs
-
-     Computing kpt #:   453  of   512
-     total cpu time spent up to now is       35.7 secs
-
-     Computing kpt #:   454  of   512
-     total cpu time spent up to now is       35.7 secs
-
-     Computing kpt #:   455  of   512
-     total cpu time spent up to now is       35.8 secs
-
-     Computing kpt #:   456  of   512
-     total cpu time spent up to now is       35.9 secs
-
-     Computing kpt #:   457  of   512
-     total cpu time spent up to now is       35.9 secs
-
-     Computing kpt #:   458  of   512
-     total cpu time spent up to now is       36.0 secs
-
-     Computing kpt #:   459  of   512
-     total cpu time spent up to now is       36.0 secs
-
-     Computing kpt #:   460  of   512
-     total cpu time spent up to now is       36.1 secs
-
-     Computing kpt #:   461  of   512
-     total cpu time spent up to now is       36.2 secs
-
-     Computing kpt #:   462  of   512
-     total cpu time spent up to now is       36.2 secs
-
-     Computing kpt #:   463  of   512
-     total cpu time spent up to now is       36.3 secs
-
-     Computing kpt #:   464  of   512
-     total cpu time spent up to now is       36.4 secs
-
-     Computing kpt #:   465  of   512
-     total cpu time spent up to now is       36.4 secs
-
-     Computing kpt #:   466  of   512
-     total cpu time spent up to now is       36.5 secs
-
-     Computing kpt #:   467  of   512
-     total cpu time spent up to now is       36.6 secs
-
-     Computing kpt #:   468  of   512
-     total cpu time spent up to now is       36.7 secs
-
-     Computing kpt #:   469  of   512
-     total cpu time spent up to now is       36.7 secs
-
-     Computing kpt #:   470  of   512
-     total cpu time spent up to now is       36.8 secs
-
-     Computing kpt #:   471  of   512
-     total cpu time spent up to now is       36.9 secs
-
-     Computing kpt #:   472  of   512
-     total cpu time spent up to now is       36.9 secs
-
-     Computing kpt #:   473  of   512
-     total cpu time spent up to now is       37.0 secs
-
-     Computing kpt #:   474  of   512
-     total cpu time spent up to now is       37.1 secs
-
-     Computing kpt #:   475  of   512
-     total cpu time spent up to now is       37.2 secs
-
-     Computing kpt #:   476  of   512
-     total cpu time spent up to now is       37.2 secs
-
-     Computing kpt #:   477  of   512
-     total cpu time spent up to now is       37.3 secs
-
-     Computing kpt #:   478  of   512
-     total cpu time spent up to now is       37.4 secs
-
-     Computing kpt #:   479  of   512
-     total cpu time spent up to now is       37.5 secs
-
-     Computing kpt #:   480  of   512
-     total cpu time spent up to now is       37.5 secs
-
-     Computing kpt #:   481  of   512
-     total cpu time spent up to now is       37.6 secs
-
-     Computing kpt #:   482  of   512
-     total cpu time spent up to now is       37.7 secs
-
-     Computing kpt #:   483  of   512
-     total cpu time spent up to now is       37.7 secs
-
-     Computing kpt #:   484  of   512
-     total cpu time spent up to now is       37.8 secs
-
-     Computing kpt #:   485  of   512
-     total cpu time spent up to now is       37.9 secs
-
-     Computing kpt #:   486  of   512
-     total cpu time spent up to now is       38.0 secs
-
-     Computing kpt #:   487  of   512
-     total cpu time spent up to now is       38.0 secs
-
-     Computing kpt #:   488  of   512
-     total cpu time spent up to now is       38.1 secs
-
-     Computing kpt #:   489  of   512
-     total cpu time spent up to now is       38.2 secs
-
-     Computing kpt #:   490  of   512
-     total cpu time spent up to now is       38.2 secs
-
-     Computing kpt #:   491  of   512
-     total cpu time spent up to now is       38.3 secs
-
-     Computing kpt #:   492  of   512
-     total cpu time spent up to now is       38.4 secs
-
-     Computing kpt #:   493  of   512
-     total cpu time spent up to now is       38.4 secs
-
-     Computing kpt #:   494  of   512
-     total cpu time spent up to now is       38.5 secs
-
-     Computing kpt #:   495  of   512
-     total cpu time spent up to now is       38.6 secs
-
-     Computing kpt #:   496  of   512
-     total cpu time spent up to now is       38.7 secs
-
-     Computing kpt #:   497  of   512
-     total cpu time spent up to now is       38.7 secs
-
-     Computing kpt #:   498  of   512
-     total cpu time spent up to now is       38.8 secs
-
-     Computing kpt #:   499  of   512
-     total cpu time spent up to now is       38.9 secs
-
-     Computing kpt #:   500  of   512
-     total cpu time spent up to now is       38.9 secs
-
-     Computing kpt #:   501  of   512
-     total cpu time spent up to now is       39.0 secs
-
-     Computing kpt #:   502  of   512
-     total cpu time spent up to now is       39.1 secs
-
-     Computing kpt #:   503  of   512
-     total cpu time spent up to now is       39.2 secs
-
-     Computing kpt #:   504  of   512
-     total cpu time spent up to now is       39.2 secs
-
-     Computing kpt #:   505  of   512
-     total cpu time spent up to now is       39.3 secs
-
-     Computing kpt #:   506  of   512
-     total cpu time spent up to now is       39.4 secs
-
-     Computing kpt #:   507  of   512
-     total cpu time spent up to now is       39.5 secs
-
-     Computing kpt #:   508  of   512
-     total cpu time spent up to now is       39.5 secs
-
-     Computing kpt #:   509  of   512
-     total cpu time spent up to now is       39.6 secs
-
-     Computing kpt #:   510  of   512
-     total cpu time spent up to now is       39.7 secs
-
-     Computing kpt #:   511  of   512
-     total cpu time spent up to now is       39.8 secs
-
-     Computing kpt #:   512  of   512
-     total cpu time spent up to now is       39.9 secs
+     Computing kpt #:   127  of   128 on this pool
+     total cpu time spent up to now is        4.9 secs
+
+     Computing kpt #:   128  of   128 on this pool
+     total cpu time spent up to now is        4.9 secs
 
      ethr =  2.00E-10,  avg # of iterations = 31.3
 
-     total cpu time spent up to now is       39.9 secs
+     total cpu time spent up to now is        4.9 secs
 
      End of band structure calculation
 
@@ -2767,7 +1616,7 @@ A      1.00
           k =-0.2500 0.2500-0.2500 (   401 PWs)   bands (ev):
 
     -4.8986   2.3298   5.5552   5.5552   8.1705   9.6943   9.6943  13.0393
-    13.4087  13.4087  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
+    13.4086  13.4086  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
     24.0765  25.9297  30.3746  30.3746
 
      occupation numbers 
@@ -2790,7 +1639,7 @@ A      1.00
 
     -3.3359  -0.7597   5.1119   5.1119   7.6808   9.4961   9.4961  13.6106
     16.8448  16.8448  17.4097  17.5121  17.5121  19.0440  25.5792  26.0356
-    27.7442  27.7442  28.0450  28.0450
+    27.7442  27.7442  28.0449  28.0449
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -2811,7 +1660,7 @@ A      1.00
           k = 0.2500-0.2500 0.2500 (   401 PWs)   bands (ev):
 
     -4.8986   2.3298   5.5552   5.5552   8.1705   9.6943   9.6943  13.0393
-    13.4087  13.4087  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
+    13.4086  13.4086  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
     24.0765  25.9297  30.3746  30.3746
 
      occupation numbers 
@@ -2843,8 +1692,8 @@ A      1.00
 
           k = 0.0000 0.2500 0.0000 (   399 PWs)   bands (ev):
 
-    -5.4300   4.9842   5.4938   5.4938   8.1499   9.9270   9.9270  10.5485
-    12.6837  14.3086  14.9228  17.7216  17.7216  18.2326  23.0553  26.7984
+    -5.4300   4.9841   5.4938   5.4938   8.1499   9.9270   9.9270  10.5485
+    12.6837  14.3086  14.9228  17.7216  17.7216  18.2326  23.0554  26.7984
     26.7984  28.1763  28.8601  29.7230
 
      occupation numbers 
@@ -2865,8 +1714,8 @@ A      1.00
 
           k =-0.2500 0.5000-0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -2889,7 +1738,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -2911,7 +1760,7 @@ A      1.00
 
     -5.1606   3.6065   4.6268   6.0468   9.2169   9.3047   9.5584  11.6938
     12.5337  14.2499  15.6645  17.1994  18.3818  20.6097  23.9003  24.0273
-    27.0362  27.4369  27.9722  29.3475
+    27.0362  27.4369  27.9721  29.3475
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -2921,7 +1770,7 @@ A      1.00
           k = 0.2500 0.2500 0.2500 (   401 PWs)   bands (ev):
 
     -4.8986   2.3298   5.5552   5.5552   8.1705   9.6943   9.6943  13.0393
-    13.4087  13.4087  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
+    13.4086  13.4086  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
     24.0765  25.9297  30.3746  30.3746
 
      occupation numbers 
@@ -2942,7 +1791,7 @@ A      1.00
 
           k = 0.0000 0.5000 0.0000 (   415 PWs)   bands (ev):
 
-    -4.6164   2.7935   4.3831   4.3831   7.2269   9.2110  11.9963  11.9963
+    -4.6164   2.7934   4.3831   4.3831   7.2269   9.2110  11.9963  11.9963
     14.2266  15.2163  17.3476  19.0773  19.0773  19.7265  23.5282  23.5282
     24.6608  26.4941  26.9906  31.0532
 
@@ -2975,8 +1824,8 @@ A      1.00
 
           k = 0.6250-0.1250 0.6250 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -2986,8 +1835,8 @@ A      1.00
 
           k = 0.5000 0.0000 0.5000 (   407 PWs)   bands (ev):
 
-    -3.6414   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
-    12.6475  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
+    -3.6415   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
+    12.6474  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
     24.9296  27.5004  27.7828  30.0900
 
      occupation numbers 
@@ -3019,8 +1868,8 @@ A      1.00
 
           k = 0.2500 0.5000 0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -3042,7 +1891,7 @@ A      1.00
           k = 0.0000 0.7500 0.0000 (   416 PWs)   bands (ev):
 
     -3.2941   0.5554   3.6554   3.6554   6.6859   7.5978  14.2655  14.2655
-    16.7235  16.8504  19.2793  19.2793  19.6044  21.4894  21.9996  22.7954
+    16.7235  16.8504  19.2792  19.2792  19.6044  21.4894  21.9996  22.7954
     22.7954  24.9571  29.4920  29.8634
 
      occupation numbers 
@@ -3053,7 +1902,7 @@ A      1.00
           k = 0.8750-0.1250 0.8750 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -3064,7 +1913,7 @@ A      1.00
           k = 0.7500 0.0000 0.7500 (   409 PWs)   bands (ev):
 
     -1.9295  -0.9409   1.8707   3.8432   7.2744  10.2724  13.6506  14.2286
-    14.3539  14.7685  20.7510  21.2595  21.7155  21.8363  21.8627  23.2791
+    14.3539  14.7685  20.7510  21.2595  21.7155  21.8362  21.8627  23.2790
     25.9295  25.9987  27.5794  27.6477
 
      occupation numbers 
@@ -3074,8 +1923,8 @@ A      1.00
 
           k = 0.6250 0.1250 0.6250 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -3087,7 +1936,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3098,7 +1947,7 @@ A      1.00
 
     -3.3359  -0.7597   5.1119   5.1119   7.6808   9.4961   9.4961  13.6106
     16.8448  16.8448  17.4097  17.5121  17.5121  19.0440  25.5792  26.0356
-    27.7442  27.7442  28.0450  28.0450
+    27.7442  27.7442  28.0449  28.0449
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3130,7 +1979,7 @@ A      1.00
           k =-0.8750-0.1250-0.8750 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -3152,7 +2001,7 @@ A      1.00
           k =-0.1250-0.8750-0.1250 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -3197,7 +2046,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3206,8 +2055,8 @@ A      1.00
 
           k =-0.6250-0.1250-0.6250 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -3218,7 +2067,7 @@ A      1.00
           k =-0.7500 0.0000-0.7500 (   409 PWs)   bands (ev):
 
     -1.9295  -0.9409   1.8707   3.8432   7.2744  10.2724  13.6506  14.2286
-    14.3539  14.7685  20.7510  21.2595  21.7155  21.8363  21.8627  23.2791
+    14.3539  14.7685  20.7510  21.2595  21.7155  21.8362  21.8627  23.2790
     25.9295  25.9987  27.5794  27.6477
 
      occupation numbers 
@@ -3229,7 +2078,7 @@ A      1.00
           k = 0.1250-0.8750 0.1250 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -3240,7 +2089,7 @@ A      1.00
           k = 0.0000-0.7500 0.0000 (   416 PWs)   bands (ev):
 
     -3.2941   0.5554   3.6554   3.6554   6.6859   7.5978  14.2655  14.2655
-    16.7235  16.8504  19.2793  19.2793  19.6044  21.4894  21.9996  22.7954
+    16.7235  16.8504  19.2792  19.2792  19.6044  21.4894  21.9996  22.7954
     22.7954  24.9571  29.4920  29.8634
 
      occupation numbers 
@@ -3261,8 +2110,8 @@ A      1.00
 
           k =-0.2500-0.5000-0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -3273,7 +2122,7 @@ A      1.00
           k =-0.2500-0.2500-0.2500 (   401 PWs)   bands (ev):
 
     -4.8986   2.3298   5.5552   5.5552   8.1705   9.6943   9.6943  13.0393
-    13.4087  13.4087  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
+    13.4086  13.4086  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
     24.0765  25.9297  30.3746  30.3746
 
      occupation numbers 
@@ -3294,8 +2143,8 @@ A      1.00
 
           k =-0.5000 0.0000-0.5000 (   407 PWs)   bands (ev):
 
-    -3.6414   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
-    12.6475  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
+    -3.6415   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
+    12.6474  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
     24.9296  27.5004  27.7828  30.0900
 
      occupation numbers 
@@ -3305,8 +2154,8 @@ A      1.00
 
           k =-0.6250 0.1250-0.6250 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -3338,7 +2187,7 @@ A      1.00
 
           k = 0.0000-0.5000 0.0000 (   415 PWs)   bands (ev):
 
-    -4.6164   2.7935   4.3831   4.3831   7.2269   9.2110  11.9963  11.9963
+    -4.6164   2.7934   4.3831   4.3831   7.2269   9.2110  11.9963  11.9963
     14.2266  15.2163  17.3476  19.0773  19.0773  19.7265  23.5282  23.5282
     24.6608  26.4941  26.9906  31.0532
 
@@ -3373,7 +2222,7 @@ A      1.00
 
     -5.1606   3.6065   4.6268   6.0468   9.2169   9.3047   9.5584  11.6938
     12.5337  14.2499  15.6645  17.1994  18.3818  20.6097  23.9003  24.0273
-    27.0362  27.4369  27.9722  29.3475
+    27.0362  27.4369  27.9721  29.3475
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3395,7 +2244,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3415,8 +2264,8 @@ A      1.00
 
           k = 0.2500-0.5000 0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -3437,8 +2286,8 @@ A      1.00
 
           k = 0.0000-0.2500 0.0000 (   399 PWs)   bands (ev):
 
-    -5.4300   4.9842   5.4938   5.4938   8.1499   9.9270   9.9270  10.5485
-    12.6837  14.3086  14.9228  17.7216  17.7216  18.2326  23.0553  26.7984
+    -5.4300   4.9841   5.4938   5.4938   8.1499   9.9270   9.9270  10.5485
+    12.6837  14.3086  14.9228  17.7216  17.7216  18.2326  23.0554  26.7984
     26.7984  28.1763  28.8601  29.7230
 
      occupation numbers 
@@ -3459,8 +2308,8 @@ A      1.00
 
           k =-0.2500 0.0000 0.0000 (   399 PWs)   bands (ev):
 
-    -5.4300   4.9842   5.4938   5.4938   8.1499   9.9270   9.9270  10.5485
-    12.6837  14.3086  14.9228  17.7216  17.7216  18.2326  23.0553  26.7984
+    -5.4300   4.9841   5.4938   5.4938   8.1499   9.9270   9.9270  10.5485
+    12.6837  14.3086  14.9228  17.7216  17.7216  18.2326  23.0554  26.7984
     26.7984  28.1763  28.8601  29.7230
 
      occupation numbers 
@@ -3481,8 +2330,8 @@ A      1.00
 
           k =-0.5000 0.2500-0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -3505,7 +2354,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3527,7 +2376,7 @@ A      1.00
 
     -5.1606   3.6065   4.6268   6.0468   9.2169   9.3047   9.5584  11.6938
     12.5337  14.2499  15.6645  17.1994  18.3818  20.6097  23.9003  24.0273
-    27.0362  27.4369  27.9722  29.3475
+    27.0362  27.4369  27.9721  29.3475
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3536,8 +2385,8 @@ A      1.00
 
           k = 0.0000 0.0000 0.2500 (   399 PWs)   bands (ev):
 
-    -5.4300   4.9842   5.4938   5.4938   8.1499   9.9270   9.9270  10.5485
-    12.6837  14.3086  14.9228  17.7216  17.7216  18.2326  23.0553  26.7984
+    -5.4300   4.9841   5.4938   5.4938   8.1499   9.9270   9.9270  10.5485
+    12.6837  14.3086  14.9228  17.7216  17.7216  18.2326  23.0554  26.7984
     26.7984  28.1763  28.8601  29.7230
 
      occupation numbers 
@@ -3560,7 +2409,7 @@ A      1.00
 
     -5.1606   3.6065   4.6268   6.0468   9.2169   9.3047   9.5584  11.6938
     12.5337  14.2499  15.6645  17.1994  18.3818  20.6097  23.9003  24.0273
-    27.0362  27.4369  27.9722  29.3475
+    27.0362  27.4369  27.9721  29.3475
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3582,7 +2431,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3602,8 +2451,8 @@ A      1.00
 
           k = 0.2500-0.2500 0.5000 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -3637,7 +2486,7 @@ A      1.00
 
     -5.1606   3.6065   4.6268   6.0468   9.2169   9.3047   9.5584  11.6938
     12.5337  14.2499  15.6645  17.1994  18.3818  20.6097  23.9003  24.0273
-    27.0362  27.4369  27.9722  29.3475
+    27.0362  27.4369  27.9721  29.3475
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3679,7 +2528,7 @@ A      1.00
 
           k = 0.5000-0.2500 0.7500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -3712,8 +2561,8 @@ A      1.00
 
           k = 0.2500 0.2500 0.5000 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -3757,8 +2606,8 @@ A      1.00
           k = 0.7500-0.2500 1.0000 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3780,7 +2629,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3813,7 +2662,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3834,8 +2683,8 @@ A      1.00
           k =-1.0000-0.2500-0.7500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3845,7 +2694,7 @@ A      1.00
           k =-0.1250-1.1250 0.1250 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -3855,7 +2704,7 @@ A      1.00
 
           k =-0.2500-1.0000 0.0000 (   412 PWs)   bands (ev):
 
-    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0259  14.0259
+    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0258  14.0258
     16.8171  16.8171  19.0793  19.0793  21.7781  21.7781  23.4763  23.4763
     25.0467  25.0467  27.8774  27.8774
 
@@ -3877,7 +2726,7 @@ A      1.00
 
           k =-0.5000-0.7500-0.2500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -3890,7 +2739,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3910,7 +2759,7 @@ A      1.00
 
           k =-0.7500-0.2500-0.5000 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -3932,7 +2781,7 @@ A      1.00
 
           k = 0.0000-1.0000 0.2500 (   412 PWs)   bands (ev):
 
-    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0259  14.0259
+    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0258  14.0258
     16.8171  16.8171  19.0793  19.0793  21.7781  21.7781  23.4763  23.4763
     25.0467  25.0467  27.8774  27.8774
 
@@ -3944,7 +2793,7 @@ A      1.00
           k =-0.1250-0.8750 0.1250 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -3955,8 +2804,8 @@ A      1.00
           k =-0.2500-0.7500 0.0000 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -3987,8 +2836,8 @@ A      1.00
 
           k =-0.5000-0.2500-0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -4011,7 +2860,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -4032,8 +2881,8 @@ A      1.00
           k = 0.0000-0.7500 0.2500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -4066,7 +2915,7 @@ A      1.00
 
     -5.1606   3.6065   4.6268   6.0468   9.2169   9.3047   9.5584  11.6938
     12.5337  14.2499  15.6645  17.1994  18.3818  20.6097  23.9003  24.0273
-    27.0362  27.4369  27.9722  29.3475
+    27.0362  27.4369  27.9721  29.3475
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -4108,7 +2957,7 @@ A      1.00
 
           k = 0.2500-0.7500 0.5000 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -4153,7 +3002,7 @@ A      1.00
           k =-0.2500-0.2500 0.2500 (   401 PWs)   bands (ev):
 
     -4.8986   2.3298   5.5552   5.5552   8.1705   9.6943   9.6943  13.0393
-    13.4087  13.4087  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
+    13.4086  13.4086  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
     24.0765  25.9297  30.3746  30.3746
 
      occupation numbers 
@@ -4174,7 +3023,7 @@ A      1.00
 
           k =-0.5000 0.0000 0.0000 (   415 PWs)   bands (ev):
 
-    -4.6164   2.7935   4.3831   4.3831   7.2269   9.2110  11.9963  11.9963
+    -4.6164   2.7934   4.3831   4.3831   7.2269   9.2110  11.9963  11.9963
     14.2266  15.2163  17.3476  19.0773  19.0773  19.7265  23.5282  23.5282
     24.6608  26.4941  26.9906  31.0532
 
@@ -4207,8 +3056,8 @@ A      1.00
 
           k = 0.1250-0.6250 0.6250 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -4218,8 +3067,8 @@ A      1.00
 
           k = 0.0000-0.5000 0.5000 (   407 PWs)   bands (ev):
 
-    -3.6414   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
-    12.6475  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
+    -3.6415   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
+    12.6474  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
     24.9296  27.5004  27.7828  30.0900
 
      occupation numbers 
@@ -4253,7 +3102,7 @@ A      1.00
 
     -5.1606   3.6065   4.6268   6.0468   9.2169   9.3047   9.5584  11.6938
     12.5337  14.2499  15.6645  17.1994  18.3818  20.6097  23.9003  24.0273
-    27.0362  27.4369  27.9722  29.3475
+    27.0362  27.4369  27.9721  29.3475
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -4295,7 +3144,7 @@ A      1.00
 
           k = 0.2500-0.5000 0.7500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -4328,7 +3177,7 @@ A      1.00
 
           k = 0.0000 0.0000 0.5000 (   415 PWs)   bands (ev):
 
-    -4.6164   2.7935   4.3831   4.3831   7.2269   9.2110  11.9963  11.9963
+    -4.6164   2.7934   4.3831   4.3831   7.2269   9.2110  11.9963  11.9963
     14.2266  15.2163  17.3476  19.0773  19.0773  19.7265  23.5282  23.5282
     24.6608  26.4941  26.9906  31.0532
 
@@ -4351,7 +3200,7 @@ A      1.00
           k =-0.2500 0.2500 0.2500 (   401 PWs)   bands (ev):
 
     -4.8986   2.3298   5.5552   5.5552   8.1705   9.6943   9.6943  13.0393
-    13.4087  13.4087  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
+    13.4086  13.4086  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
     24.0765  25.9297  30.3746  30.3746
 
      occupation numbers 
@@ -4372,8 +3221,8 @@ A      1.00
 
           k = 0.5000-0.5000 1.0000 (   407 PWs)   bands (ev):
 
-    -3.6414   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
-    12.6475  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
+    -3.6415   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
+    12.6474  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
     24.9296  27.5004  27.7828  30.0900
 
      occupation numbers 
@@ -4383,8 +3232,8 @@ A      1.00
 
           k = 0.3750-0.3750 0.8750 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -4449,8 +3298,8 @@ A      1.00
 
           k =-0.2500 0.5000 0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -4473,7 +3322,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -4494,8 +3343,8 @@ A      1.00
           k = 0.2500 0.0000 0.7500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -4526,8 +3375,8 @@ A      1.00
 
           k =-1.0000-0.5000-0.5000 (   407 PWs)   bands (ev):
 
-    -3.6414   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
-    12.6475  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
+    -3.6415   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
+    12.6474  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
     24.9296  27.5004  27.7828  30.0900
 
      occupation numbers 
@@ -4592,8 +3441,8 @@ A      1.00
 
           k =-0.6250-0.6250-0.1250 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -4603,7 +3452,7 @@ A      1.00
 
           k =-0.7500-0.5000-0.2500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -4614,8 +3463,8 @@ A      1.00
 
           k =-0.8750-0.3750-0.3750 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -4627,7 +3476,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -4648,7 +3497,7 @@ A      1.00
           k =-0.2500-1.0000 0.2500 (   409 PWs)   bands (ev):
 
     -1.9295  -0.9409   1.8707   3.8432   7.2744  10.2724  13.6506  14.2286
-    14.3539  14.7685  20.7510  21.2595  21.7155  21.8363  21.8627  23.2791
+    14.3539  14.7685  20.7510  21.2595  21.7155  21.8362  21.8627  23.2790
     25.9295  25.9987  27.5794  27.6477
 
      occupation numbers 
@@ -4671,7 +3520,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -4680,8 +3529,8 @@ A      1.00
 
           k =-0.5000-0.5000 0.0000 (   407 PWs)   bands (ev):
 
-    -3.6414   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
-    12.6475  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
+    -3.6415   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
+    12.6474  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
     24.9296  27.5004  27.7828  30.0900
 
      occupation numbers 
@@ -4802,8 +3651,8 @@ A      1.00
           k =-0.7500 0.0000-0.2500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -4825,7 +3674,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -4845,8 +3694,8 @@ A      1.00
 
           k =-0.2500-0.5000 0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -4867,8 +3716,8 @@ A      1.00
 
           k =-0.5000-0.2500 0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -4890,7 +3739,7 @@ A      1.00
           k =-0.7500 0.0000 0.0000 (   416 PWs)   bands (ev):
 
     -3.2941   0.5554   3.6554   3.6554   6.6859   7.5978  14.2655  14.2655
-    16.7235  16.8504  19.2793  19.2793  19.6044  21.4894  21.9996  22.7954
+    16.7235  16.8504  19.2792  19.2792  19.6044  21.4894  21.9996  22.7954
     22.7954  24.9571  29.4920  29.8634
 
      occupation numbers 
@@ -4901,7 +3750,7 @@ A      1.00
           k = 0.1250-0.8750 0.8750 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -4912,7 +3761,7 @@ A      1.00
           k = 0.0000-0.7500 0.7500 (   409 PWs)   bands (ev):
 
     -1.9295  -0.9409   1.8707   3.8432   7.2744  10.2724  13.6506  14.2286
-    14.3539  14.7685  20.7510  21.2595  21.7155  21.8363  21.8627  23.2791
+    14.3539  14.7685  20.7510  21.2595  21.7155  21.8362  21.8627  23.2790
     25.9295  25.9987  27.5794  27.6477
 
      occupation numbers 
@@ -4922,8 +3771,8 @@ A      1.00
 
           k =-0.1250-0.6250 0.6250 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -4935,7 +3784,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -4944,8 +3793,8 @@ A      1.00
 
           k =-0.2500-0.2500 0.5000 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -4989,8 +3838,8 @@ A      1.00
           k = 0.2500-0.7500 1.0000 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5012,7 +3861,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5065,8 +3914,8 @@ A      1.00
 
           k =-0.5000 0.2500 0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -5089,7 +3938,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5110,8 +3959,8 @@ A      1.00
           k = 0.0000-0.2500 0.7500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5121,7 +3970,7 @@ A      1.00
           k = 0.0000 0.0000 0.7500 (   416 PWs)   bands (ev):
 
     -3.2941   0.5554   3.6554   3.6554   6.6859   7.5978  14.2655  14.2655
-    16.7235  16.8504  19.2793  19.2793  19.6044  21.4894  21.9996  22.7954
+    16.7235  16.8504  19.2792  19.2792  19.6044  21.4894  21.9996  22.7954
     22.7954  24.9571  29.4920  29.8634
 
      occupation numbers 
@@ -5142,8 +3991,8 @@ A      1.00
 
           k =-0.2500 0.2500 0.5000 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -5166,7 +4015,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5175,8 +4024,8 @@ A      1.00
 
           k = 0.3750-0.3750 1.1250 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -5187,7 +4036,7 @@ A      1.00
           k = 0.2500-0.2500 1.0000 (   409 PWs)   bands (ev):
 
     -1.9295  -0.9409   1.8707   3.8432   7.2744  10.2724  13.6506  14.2286
-    14.3539  14.7685  20.7510  21.2595  21.7155  21.8363  21.8627  23.2791
+    14.3539  14.7685  20.7510  21.2595  21.7155  21.8362  21.8627  23.2790
     25.9295  25.9987  27.5794  27.6477
 
      occupation numbers 
@@ -5198,7 +4047,7 @@ A      1.00
           k = 0.1250-0.1250 0.8750 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -5209,7 +4058,7 @@ A      1.00
           k =-0.8750-0.8750-0.1250 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -5220,8 +4069,8 @@ A      1.00
           k =-1.0000-0.7500-0.2500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5243,7 +4092,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5263,7 +4112,7 @@ A      1.00
 
           k =-0.5000-1.2500 0.2500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -5285,7 +4134,7 @@ A      1.00
 
           k =-0.7500-1.0000 0.0000 (   412 PWs)   bands (ev):
 
-    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0259  14.0259
+    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0258  14.0258
     16.8171  16.8171  19.0793  19.0793  21.7781  21.7781  23.4763  23.4763
     25.0467  25.0467  27.8774  27.8774
 
@@ -5297,7 +4146,7 @@ A      1.00
           k =-0.7500-0.7500 0.0000 (   409 PWs)   bands (ev):
 
     -1.9295  -0.9409   1.8707   3.8432   7.2744  10.2724  13.6506  14.2286
-    14.3539  14.7685  20.7510  21.2595  21.7155  21.8363  21.8627  23.2791
+    14.3539  14.7685  20.7510  21.2595  21.7155  21.8362  21.8627  23.2790
     25.9295  25.9987  27.5794  27.6477
 
      occupation numbers 
@@ -5320,7 +4169,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5329,8 +4178,8 @@ A      1.00
 
           k =-1.1250-0.3750-0.3750 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -5340,7 +4189,7 @@ A      1.00
 
           k =-0.2500-1.2500 0.5000 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -5351,8 +4200,8 @@ A      1.00
 
           k =-0.3750-1.1250 0.3750 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -5364,7 +4213,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5384,8 +4233,8 @@ A      1.00
 
           k =-0.6250-0.6250 0.1250 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -5397,7 +4246,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5418,7 +4267,7 @@ A      1.00
           k =-1.0000-0.2500-0.2500 (   409 PWs)   bands (ev):
 
     -1.9295  -0.9409   1.8707   3.8432   7.2744  10.2724  13.6506  14.2286
-    14.3539  14.7685  20.7510  21.2595  21.7155  21.8363  21.8627  23.2791
+    14.3539  14.7685  20.7510  21.2595  21.7155  21.8362  21.8627  23.2790
     25.9295  25.9987  27.5794  27.6477
 
      occupation numbers 
@@ -5441,7 +4290,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5450,8 +4299,8 @@ A      1.00
 
           k =-0.3750-0.8750 0.3750 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -5461,7 +4310,7 @@ A      1.00
 
           k =-0.5000-0.7500 0.2500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -5474,7 +4323,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5495,8 +4344,8 @@ A      1.00
           k =-0.7500-0.2500 0.0000 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5506,7 +4355,7 @@ A      1.00
           k =-0.8750-0.1250-0.1250 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -5516,7 +4365,7 @@ A      1.00
 
           k = 0.0000-1.0000 0.7500 (   412 PWs)   bands (ev):
 
-    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0259  14.0259
+    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0258  14.0258
     16.8171  16.8171  19.0793  19.0793  21.7781  21.7781  23.4763  23.4763
     25.0467  25.0467  27.8774  27.8774
 
@@ -5538,7 +4387,7 @@ A      1.00
 
           k =-0.2500-0.7500 0.5000 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -5562,7 +4411,7 @@ A      1.00
 
     -3.3359  -0.7597   5.1119   5.1119   7.6808   9.4961   9.4961  13.6106
     16.8448  16.8448  17.4097  17.5121  17.5121  19.0440  25.5792  26.0356
-    27.7442  27.7442  28.0450  28.0450
+    27.7442  27.7442  28.0449  28.0449
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5594,7 +4443,7 @@ A      1.00
           k = 0.1250 0.8750-0.8750 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -5616,7 +4465,7 @@ A      1.00
           k = 0.8750 0.1250-0.1250 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -5661,7 +4510,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5682,8 +4531,8 @@ A      1.00
           k = 0.2500 1.0000-0.7500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5693,7 +4542,7 @@ A      1.00
           k = 1.1250 0.1250 0.1250 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -5703,7 +4552,7 @@ A      1.00
 
           k = 1.0000 0.2500 0.0000 (   412 PWs)   bands (ev):
 
-    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0259  14.0259
+    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0258  14.0258
     16.8171  16.8171  19.0793  19.0793  21.7781  21.7781  23.4763  23.4763
     25.0467  25.0467  27.8774  27.8774
 
@@ -5725,7 +4574,7 @@ A      1.00
 
           k = 0.7500 0.5000-0.2500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -5758,8 +4607,8 @@ A      1.00
 
           k = 0.5000 1.0000-0.5000 (   407 PWs)   bands (ev):
 
-    -3.6414   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
-    12.6475  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
+    -3.6415   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
+    12.6474  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
     24.9296  27.5004  27.7828  30.0900
 
      occupation numbers 
@@ -5825,7 +4674,7 @@ A      1.00
           k = 0.8750 0.8750-0.1250 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -5836,8 +4685,8 @@ A      1.00
           k = 0.7500 1.0000-0.2500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5859,7 +4708,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5879,7 +4728,7 @@ A      1.00
 
           k = 1.2500 0.5000 0.2500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -5901,7 +4750,7 @@ A      1.00
 
           k = 1.0000 0.7500 0.0000 (   412 PWs)   bands (ev):
 
-    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0259  14.0259
+    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0258  14.0258
     16.8171  16.8171  19.0793  19.0793  21.7781  21.7781  23.4763  23.4763
     25.0467  25.0467  27.8774  27.8774
 
@@ -5924,7 +4773,7 @@ A      1.00
           k =-0.1250 0.1250-1.1250 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -5958,7 +4807,7 @@ A      1.00
 
     -3.3359  -0.7597   5.1119   5.1119   7.6808   9.4961   9.4961  13.6106
     16.8448  16.8448  17.4097  17.5121  17.5121  19.0440  25.5792  26.0356
-    27.7442  27.7442  28.0450  28.0450
+    27.7442  27.7442  28.0449  28.0449
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -5990,7 +4839,7 @@ A      1.00
           k = 0.1250-0.1250-0.8750 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -6001,7 +4850,7 @@ A      1.00
           k = 0.1250 0.1250-0.8750 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -6011,7 +4860,7 @@ A      1.00
 
           k = 0.0000 0.2500-1.0000 (   412 PWs)   bands (ev):
 
-    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0259  14.0259
+    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0258  14.0258
     16.8171  16.8171  19.0793  19.0793  21.7781  21.7781  23.4763  23.4763
     25.0467  25.0467  27.8774  27.8774
 
@@ -6033,7 +4882,7 @@ A      1.00
 
           k =-0.2500 0.5000-1.2500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -6057,7 +4906,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6078,8 +4927,8 @@ A      1.00
           k = 0.2500 0.0000-0.7500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6154,8 +5003,8 @@ A      1.00
 
           k = 0.5000 0.0000-0.5000 (   407 PWs)   bands (ev):
 
-    -3.6414   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
-    12.6475  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
+    -3.6415   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
+    12.6474  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
     24.9296  27.5004  27.7828  30.0900
 
      occupation numbers 
@@ -6187,7 +5036,7 @@ A      1.00
 
           k = 0.2500 0.5000-0.7500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -6209,7 +5058,7 @@ A      1.00
 
           k = 0.0000 0.7500-1.0000 (   412 PWs)   bands (ev):
 
-    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0259  14.0259
+    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0258  14.0258
     16.8171  16.8171  19.0793  19.0793  21.7781  21.7781  23.4763  23.4763
     25.0467  25.0467  27.8774  27.8774
 
@@ -6221,7 +5070,7 @@ A      1.00
           k = 0.8750-0.1250-0.1250 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -6232,8 +5081,8 @@ A      1.00
           k = 0.7500 0.0000-0.2500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6255,7 +5104,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6277,7 +5126,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6286,8 +5135,8 @@ A      1.00
 
           k = 0.1250 0.6250-0.6250 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -6298,7 +5147,7 @@ A      1.00
           k = 0.0000 0.7500-0.7500 (   409 PWs)   bands (ev):
 
     -1.9295  -0.9409   1.8707   3.8432   7.2744  10.2724  13.6506  14.2286
-    14.3539  14.7685  20.7510  21.2595  21.7155  21.8363  21.8627  23.2791
+    14.3539  14.7685  20.7510  21.2595  21.7155  21.8362  21.8627  23.2790
     25.9295  25.9987  27.5794  27.6477
 
      occupation numbers 
@@ -6309,7 +5158,7 @@ A      1.00
           k = 0.8750-0.1250 0.1250 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -6320,7 +5169,7 @@ A      1.00
           k = 0.7500 0.0000 0.0000 (   416 PWs)   bands (ev):
 
     -3.2941   0.5554   3.6554   3.6554   6.6859   7.5978  14.2655  14.2655
-    16.7235  16.8504  19.2793  19.2793  19.6044  21.4894  21.9996  22.7954
+    16.7235  16.8504  19.2792  19.2792  19.6044  21.4894  21.9996  22.7954
     22.7954  24.9571  29.4920  29.8634
 
      occupation numbers 
@@ -6341,8 +5190,8 @@ A      1.00
 
           k = 0.5000 0.2500-0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -6354,7 +5203,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6374,7 +5223,7 @@ A      1.00
 
           k = 0.2500 0.7500-0.5000 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -6396,7 +5245,7 @@ A      1.00
 
           k = 1.0000 0.0000 0.2500 (   412 PWs)   bands (ev):
 
-    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0259  14.0259
+    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0258  14.0258
     16.8171  16.8171  19.0793  19.0793  21.7781  21.7781  23.4763  23.4763
     25.0467  25.0467  27.8774  27.8774
 
@@ -6408,7 +5257,7 @@ A      1.00
           k = 0.8750 0.1250 0.1250 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -6419,8 +5268,8 @@ A      1.00
           k = 0.7500 0.2500 0.0000 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6440,8 +5289,8 @@ A      1.00
 
           k = 0.6250 0.6250-0.1250 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -6451,7 +5300,7 @@ A      1.00
 
           k = 0.5000 0.7500-0.2500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -6462,8 +5311,8 @@ A      1.00
 
           k = 0.3750 0.8750-0.3750 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -6475,7 +5324,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6496,7 +5345,7 @@ A      1.00
           k = 1.0000 0.2500 0.2500 (   409 PWs)   bands (ev):
 
     -1.9295  -0.9409   1.8707   3.8432   7.2744  10.2724  13.6506  14.2286
-    14.3539  14.7685  20.7510  21.2595  21.7155  21.8363  21.8627  23.2791
+    14.3539  14.7685  20.7510  21.2595  21.7155  21.8362  21.8627  23.2790
     25.9295  25.9987  27.5794  27.6477
 
      occupation numbers 
@@ -6519,7 +5368,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6529,7 +5378,7 @@ A      1.00
           k = 0.7500 0.7500 0.0000 (   409 PWs)   bands (ev):
 
     -1.9295  -0.9409   1.8707   3.8432   7.2744  10.2724  13.6506  14.2286
-    14.3539  14.7685  20.7510  21.2595  21.7155  21.8363  21.8627  23.2791
+    14.3539  14.7685  20.7510  21.2595  21.7155  21.8362  21.8627  23.2790
     25.9295  25.9987  27.5794  27.6477
 
      occupation numbers 
@@ -6552,7 +5401,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6561,8 +5410,8 @@ A      1.00
 
           k = 0.3750 1.1250-0.3750 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -6572,7 +5421,7 @@ A      1.00
 
           k = 1.2500 0.2500 0.5000 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -6583,8 +5432,8 @@ A      1.00
 
           k = 1.1250 0.3750 0.3750 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -6596,7 +5445,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6617,7 +5466,7 @@ A      1.00
           k =-0.1250-0.1250-0.8750 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -6627,7 +5476,7 @@ A      1.00
 
           k =-0.2500 0.0000-1.0000 (   412 PWs)   bands (ev):
 
-    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0259  14.0259
+    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0258  14.0258
     16.8171  16.8171  19.0793  19.0793  21.7781  21.7781  23.4763  23.4763
     25.0467  25.0467  27.8774  27.8774
 
@@ -6649,7 +5498,7 @@ A      1.00
 
           k =-0.5000 0.2500-1.2500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -6673,7 +5522,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6694,8 +5543,8 @@ A      1.00
           k = 0.0000-0.2500-0.7500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6705,7 +5554,7 @@ A      1.00
           k = 0.0000 0.0000-0.7500 (   416 PWs)   bands (ev):
 
     -3.2941   0.5554   3.6554   3.6554   6.6859   7.5978  14.2655  14.2655
-    16.7235  16.8504  19.2793  19.2793  19.6044  21.4894  21.9996  22.7954
+    16.7235  16.8504  19.2792  19.2792  19.6044  21.4894  21.9996  22.7954
     22.7954  24.9571  29.4920  29.8634
 
      occupation numbers 
@@ -6716,7 +5565,7 @@ A      1.00
           k =-0.1250 0.1250-0.8750 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -6727,7 +5576,7 @@ A      1.00
           k =-0.2500 0.2500-1.0000 (   409 PWs)   bands (ev):
 
     -1.9295  -0.9409   1.8707   3.8432   7.2744  10.2724  13.6506  14.2286
-    14.3539  14.7685  20.7510  21.2595  21.7155  21.8363  21.8627  23.2791
+    14.3539  14.7685  20.7510  21.2595  21.7155  21.8362  21.8627  23.2790
     25.9295  25.9987  27.5794  27.6477
 
      occupation numbers 
@@ -6737,8 +5586,8 @@ A      1.00
 
           k =-0.3750 0.3750-1.1250 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -6750,7 +5599,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6770,8 +5619,8 @@ A      1.00
 
           k = 0.2500-0.2500-0.5000 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -6804,8 +5653,8 @@ A      1.00
           k = 0.0000 0.2500-0.7500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6827,7 +5676,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6847,8 +5696,8 @@ A      1.00
 
           k = 0.5000-0.2500-0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -6880,8 +5729,8 @@ A      1.00
 
           k = 0.2500 0.2500-0.5000 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -6904,7 +5753,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6925,8 +5774,8 @@ A      1.00
           k = 0.7500-0.2500 0.0000 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -6969,7 +5818,7 @@ A      1.00
           k = 0.2500 0.2500-0.2500 (   401 PWs)   bands (ev):
 
     -4.8986   2.3298   5.5552   5.5552   8.1705   9.6943   9.6943  13.0393
-    13.4087  13.4087  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
+    13.4086  13.4086  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
     24.0765  25.9297  30.3746  30.3746
 
      occupation numbers 
@@ -6990,8 +5839,8 @@ A      1.00
 
           k = 0.0000 0.5000-0.5000 (   407 PWs)   bands (ev):
 
-    -3.6414   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
-    12.6475  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
+    -3.6415   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
+    12.6474  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
     24.9296  27.5004  27.7828  30.0900
 
      occupation numbers 
@@ -7001,8 +5850,8 @@ A      1.00
 
           k =-0.1250 0.6250-0.6250 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -7034,7 +5883,7 @@ A      1.00
 
           k = 0.5000 0.0000 0.0000 (   415 PWs)   bands (ev):
 
-    -4.6164   2.7935   4.3831   4.3831   7.2269   9.2110  11.9963  11.9963
+    -4.6164   2.7934   4.3831   4.3831   7.2269   9.2110  11.9963  11.9963
     14.2266  15.2163  17.3476  19.0773  19.0773  19.7265  23.5282  23.5282
     24.6608  26.4941  26.9906  31.0532
 
@@ -7067,8 +5916,8 @@ A      1.00
 
           k = 0.2500 0.5000-0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -7091,7 +5940,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -7112,8 +5961,8 @@ A      1.00
           k = 0.7500 0.0000 0.2500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -7144,8 +5993,8 @@ A      1.00
 
           k = 0.5000 0.5000 0.0000 (   407 PWs)   bands (ev):
 
-    -3.6414   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
-    12.6475  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
+    -3.6415   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
+    12.6474  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
     24.9296  27.5004  27.7828  30.0900
 
      occupation numbers 
@@ -7232,8 +6081,8 @@ A      1.00
 
           k = 0.6250 0.6250 0.1250 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -7245,7 +6094,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -7266,7 +6115,7 @@ A      1.00
           k = 0.2500 1.0000-0.2500 (   409 PWs)   bands (ev):
 
     -1.9295  -0.9409   1.8707   3.8432   7.2744  10.2724  13.6506  14.2286
-    14.3539  14.7685  20.7510  21.2595  21.7155  21.8363  21.8627  23.2791
+    14.3539  14.7685  20.7510  21.2595  21.7155  21.8362  21.8627  23.2790
     25.9295  25.9987  27.5794  27.6477
 
      occupation numbers 
@@ -7289,7 +6138,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -7298,8 +6147,8 @@ A      1.00
 
           k = 0.8750 0.3750 0.3750 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -7309,7 +6158,7 @@ A      1.00
 
           k = 0.7500 0.5000 0.2500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -7386,8 +6235,8 @@ A      1.00
 
           k = 0.0000-0.5000-0.5000 (   407 PWs)   bands (ev):
 
-    -3.6414   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
-    12.6475  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
+    -3.6415   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
+    12.6474  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
     24.9296  27.5004  27.7828  30.0900
 
      occupation numbers 
@@ -7420,8 +6269,8 @@ A      1.00
           k =-0.2500 0.0000-0.7500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -7443,7 +6292,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -7463,8 +6312,8 @@ A      1.00
 
           k = 0.2500-0.5000-0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -7496,7 +6345,7 @@ A      1.00
 
           k = 0.0000 0.0000-0.5000 (   415 PWs)   bands (ev):
 
-    -4.6164   2.7935   4.3831   4.3831   7.2269   9.2110  11.9963  11.9963
+    -4.6164   2.7934   4.3831   4.3831   7.2269   9.2110  11.9963  11.9963
     14.2266  15.2163  17.3476  19.0773  19.0773  19.7265  23.5282  23.5282
     24.6608  26.4941  26.9906  31.0532
 
@@ -7529,8 +6378,8 @@ A      1.00
 
           k =-0.3750 0.3750-0.8750 (   408 PWs)   bands (ev):
 
-    -2.7457  -0.3788   2.2049   4.3960   7.9354  11.6469  11.6667  13.1153
-    14.1462  14.2065  18.5744  21.1229  21.1688  22.1898  22.6164  24.6814
+    -2.7457  -0.3788   2.2048   4.3960   7.9354  11.6469  11.6667  13.1153
+    14.1462  14.2065  18.5744  21.1229  21.1687  22.1898  22.6164  24.6814
     25.6276  26.0909  27.9840  28.1827
 
      occupation numbers 
@@ -7540,8 +6389,8 @@ A      1.00
 
           k = 0.5000-0.5000 0.0000 (   407 PWs)   bands (ev):
 
-    -3.6414   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
-    12.6475  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
+    -3.6415   0.8036   2.4411   4.9723   8.5659  10.9722  11.3328  12.2493
+    12.6474  15.7672  18.6621  19.4338  19.4509  22.6928  23.4104  23.5876
     24.9296  27.5004  27.7828  30.0900
 
      occupation numbers 
@@ -7563,7 +6412,7 @@ A      1.00
           k = 0.2500-0.2500-0.2500 (   401 PWs)   bands (ev):
 
     -4.8986   2.3298   5.5552   5.5552   8.1705   9.6943   9.6943  13.0393
-    13.4087  13.4087  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
+    13.4086  13.4086  14.8872  17.8088  20.7963  20.7963  24.0420  24.0420
     24.0765  25.9297  30.3746  30.3746
 
      occupation numbers 
@@ -7617,7 +6466,7 @@ A      1.00
 
           k =-0.2500 0.5000-0.7500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -7663,7 +6512,7 @@ A      1.00
 
     -5.1606   3.6065   4.6268   6.0468   9.2169   9.3047   9.5584  11.6938
     12.5337  14.2499  15.6645  17.1994  18.3818  20.6097  23.9003  24.0273
-    27.0362  27.4369  27.9722  29.3475
+    27.0362  27.4369  27.9721  29.3475
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -7685,7 +6534,7 @@ A      1.00
 
     -5.1606   3.6065   4.6268   6.0468   9.2169   9.3047   9.5584  11.6938
     12.5337  14.2499  15.6645  17.1994  18.3818  20.6097  23.9003  24.0273
-    27.0362  27.4369  27.9722  29.3475
+    27.0362  27.4369  27.9721  29.3475
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -7707,7 +6556,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -7727,8 +6576,8 @@ A      1.00
 
           k = 0.5000-0.2500 0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -7749,8 +6598,8 @@ A      1.00
 
           k = 0.2500 0.0000 0.0000 (   399 PWs)   bands (ev):
 
-    -5.4300   4.9842   5.4938   5.4938   8.1499   9.9270   9.9270  10.5485
-    12.6837  14.3086  14.9228  17.7216  17.7216  18.2326  23.0553  26.7984
+    -5.4300   4.9841   5.4938   5.4938   8.1499   9.9270   9.9270  10.5485
+    12.6837  14.3086  14.9228  17.7216  17.7216  18.2326  23.0554  26.7984
     26.7984  28.1763  28.8601  29.7230
 
      occupation numbers 
@@ -7762,7 +6611,7 @@ A      1.00
 
     -5.1606   3.6065   4.6268   6.0468   9.2169   9.3047   9.5584  11.6938
     12.5337  14.2499  15.6645  17.1994  18.3818  20.6097  23.9003  24.0273
-    27.0362  27.4369  27.9722  29.3475
+    27.0362  27.4369  27.9721  29.3475
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -7804,7 +6653,7 @@ A      1.00
 
           k = 0.7500-0.2500 0.5000 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -7882,8 +6731,8 @@ A      1.00
           k = 0.0000 0.7500-0.2500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -7905,7 +6754,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -7925,8 +6774,8 @@ A      1.00
 
           k = 0.5000 0.2500 0.2500 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -7938,7 +6787,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -7959,8 +6808,8 @@ A      1.00
           k = 0.2500 0.7500 0.0000 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -7970,7 +6819,7 @@ A      1.00
           k = 0.1250 0.8750-0.1250 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -7980,7 +6829,7 @@ A      1.00
 
           k = 1.0000 0.0000 0.7500 (   412 PWs)   bands (ev):
 
-    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0259  14.0259
+    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0258  14.0258
     16.8171  16.8171  19.0793  19.0793  21.7781  21.7781  23.4763  23.4763
     25.0467  25.0467  27.8774  27.8774
 
@@ -8002,7 +6851,7 @@ A      1.00
 
           k = 0.7500 0.2500 0.5000 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -8035,7 +6884,7 @@ A      1.00
 
           k =-0.5000-0.2500-0.7500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -8057,7 +6906,7 @@ A      1.00
 
           k =-0.7500 0.0000-1.0000 (   412 PWs)   bands (ev):
 
-    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0259  14.0259
+    -1.4462  -1.4462   2.7957   2.7957   8.0763   8.0763  14.0258  14.0258
     16.8171  16.8171  19.0793  19.0793  21.7781  21.7781  23.4763  23.4763
     25.0467  25.0467  27.8774  27.8774
 
@@ -8069,7 +6918,7 @@ A      1.00
           k = 0.1250-0.8750-0.1250 (   415 PWs)   bands (ev):
 
     -2.3872  -0.5344   2.7763   3.5792   6.9607   8.0691  14.4729  14.5451
-    16.9414  17.0667  18.6125  18.9918  21.0246  21.2437  21.9780  24.6879
+    16.9414  17.0667  18.6125  18.9918  21.0246  21.2436  21.9780  24.6879
     24.9250  25.4349  26.8679  28.3577
 
      occupation numbers 
@@ -8080,8 +6929,8 @@ A      1.00
           k = 0.0000-0.7500-0.2500 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -8103,7 +6952,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -8112,8 +6961,8 @@ A      1.00
 
           k =-0.2500-0.2500-0.5000 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -8136,7 +6985,7 @@ A      1.00
 
     -2.5529  -0.2770   1.9506   3.6535   8.9947  10.7115  11.3596  13.1966
     14.0824  15.4510  20.2427  20.3859  20.6017  22.5667  22.7349  24.6503
-    25.2446  26.1758  27.3040  28.0951
+    25.2446  26.1757  27.3040  28.0951
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -8157,8 +7006,8 @@ A      1.00
           k = 0.2500-0.7500 0.0000 (   410 PWs)   bands (ev):
 
     -3.0906   0.3373   2.8509   3.4745   8.0704   8.7412  11.9409  14.2154
-    16.3983  16.4022  19.0717  19.5552  20.2534  20.7011  22.7172  23.3173
-    25.6026  26.1120  27.9448  28.0232
+    16.3983  16.4022  19.0717  19.5551  20.2534  20.7011  22.7172  23.3173
+    25.6026  26.1119  27.9448  28.0232
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -8233,7 +7082,7 @@ A      1.00
 
           k =-0.5000 0.2500-0.7500 (   414 PWs)   bands (ev):
 
-    -2.7958  -0.5420   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
+    -2.7958  -0.5421   2.7746   4.0975   9.2245   9.2514  12.1151  13.2909
     13.5349  16.7296  17.8518  18.4713  21.6605  21.8045  24.2235  24.6057
     25.6514  26.9464  27.1805  28.1940
 
@@ -8279,7 +7128,7 @@ A      1.00
 
     -5.1606   3.6065   4.6268   6.0468   9.2169   9.3047   9.5584  11.6938
     12.5337  14.2499  15.6645  17.1994  18.3818  20.6097  23.9003  24.0273
-    27.0362  27.4369  27.9722  29.3475
+    27.0362  27.4369  27.9721  29.3475
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -8288,8 +7137,8 @@ A      1.00
 
           k = 0.0000 0.0000-0.2500 (   399 PWs)   bands (ev):
 
-    -5.4300   4.9842   5.4938   5.4938   8.1499   9.9270   9.9270  10.5485
-    12.6837  14.3086  14.9228  17.7216  17.7216  18.2326  23.0553  26.7984
+    -5.4300   4.9841   5.4938   5.4938   8.1499   9.9270   9.9270  10.5485
+    12.6837  14.3086  14.9228  17.7216  17.7216  18.2326  23.0554  26.7984
     26.7984  28.1763  28.8601  29.7230
 
      occupation numbers 
@@ -8310,8 +7159,8 @@ A      1.00
 
           k =-0.2500 0.2500-0.5000 (   397 PWs)   bands (ev):
 
-    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6642  11.6056
-    15.3562  15.5777  16.0421  19.4565  19.6559  21.4152  22.7396  23.7848
+    -4.1334   0.9682   4.4371   4.7005   8.3841   9.8176  10.6641  11.6056
+    15.3562  15.5777  16.0420  19.4565  19.6558  21.4152  22.7396  23.7848
     24.7302  28.2042  28.6519  29.6756
 
      occupation numbers 
@@ -8334,7 +7183,7 @@ A      1.00
 
     -3.5041  -0.1439   3.7915   5.0397   8.5061   9.7776  10.0348  13.9805
     14.3166  15.2900  17.3001  18.6395  20.5330  20.7545  22.9975  24.7429
-    26.7405  28.3063  28.5514  28.8153
+    26.7405  28.3062  28.5514  28.8153
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -8356,7 +7205,7 @@ A      1.00
 
     -5.1606   3.6065   4.6268   6.0468   9.2169   9.3047   9.5584  11.6938
     12.5337  14.2499  15.6645  17.1994  18.3818  20.6097  23.9003  24.0273
-    27.0362  27.4369  27.9722  29.3475
+    27.0362  27.4369  27.9721  29.3475
 
      occupation numbers 
      1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
@@ -8376,56 +7225,56 @@ A      1.00
 
      highest occupied, lowest unoccupied level (ev):     6.3461    6.6859
 
-     Writing all to output data dir /home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/postproc/wannier/TMP/kc.save/
+     Writing all to output data dir /home/degennar/CODES/hubbard-koopmans-2022/Day3/exercise2/postproc/TMP/kc.save/
  
-     init_run     :      0.02s CPU      0.03s WALL (       1 calls)
-     electrons    :     34.81s CPU     39.68s WALL (       1 calls)
+     init_run     :      0.01s CPU      0.02s WALL (       1 calls)
+     electrons    :      4.58s CPU      4.83s WALL (       1 calls)
 
      Called by init_run:
      wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
-     wfcinit:atom :      0.01s CPU      0.01s WALL (     512 calls)
-     wfcinit:wfcr :      1.15s CPU      1.37s WALL (     512 calls)
+     wfcinit:atom :      0.00s CPU      0.00s WALL (     128 calls)
+     wfcinit:wfcr :      0.11s CPU      0.11s WALL (     128 calls)
      potinit      :      0.00s CPU      0.00s WALL (       1 calls)
-     hinit0       :      0.01s CPU      0.01s WALL (       1 calls)
+     hinit0       :      0.00s CPU      0.00s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :     34.80s CPU     39.63s WALL (       1 calls)
+     c_bands      :      4.57s CPU      4.82s WALL (       1 calls)
      v_of_rho     :      0.00s CPU      0.00s WALL (       1 calls)
      v_h          :      0.00s CPU      0.00s WALL (       1 calls)
      v_xc         :      0.00s CPU      0.00s WALL (       1 calls)
 
      Called by c_bands:
-     init_us_2    :      0.02s CPU      0.03s WALL (     512 calls)
-     init_us_2:cp :      0.02s CPU      0.03s WALL (     512 calls)
-     cegterg      :     33.26s CPU     37.71s WALL (    1055 calls)
+     init_us_2    :      0.00s CPU      0.00s WALL (     128 calls)
+     init_us_2:cp :      0.00s CPU      0.00s WALL (     128 calls)
+     cegterg      :      3.98s CPU      4.21s WALL (     265 calls)
 
      Called by sum_band:
 
      Called by *egterg:
-     cdiaghg      :      8.90s CPU     10.04s WALL (   16563 calls)
-     cegterg:over :      1.51s CPU      1.75s WALL (   16051 calls)
-     cegterg:upda :      0.52s CPU      0.58s WALL (   16051 calls)
-     cegterg:last :      0.85s CPU      0.95s WALL (   10748 calls)
-     h_psi        :     21.48s CPU     24.46s WALL (   17618 calls)
-     g_psi        :      0.10s CPU      0.11s WALL (   16051 calls)
+     cdiaghg      :      1.97s CPU      2.08s WALL (    4084 calls)
+     cegterg:over :      0.12s CPU      0.13s WALL (    3956 calls)
+     cegterg:upda :      0.04s CPU      0.04s WALL (    3956 calls)
+     cegterg:last :      0.05s CPU      0.05s WALL (    2632 calls)
+     h_psi        :      1.81s CPU      1.91s WALL (    4349 calls)
+     g_psi        :      0.01s CPU      0.01s WALL (    3956 calls)
 
      Called by h_psi:
-     h_psi:calbec :      0.93s CPU      1.06s WALL (   17618 calls)
-     vloc_psi     :     19.75s CPU     22.50s WALL (   17618 calls)
-     add_vuspsi   :      0.59s CPU      0.66s WALL (   17618 calls)
+     h_psi:calbec :      0.06s CPU      0.07s WALL (    4349 calls)
+     vloc_psi     :      1.67s CPU      1.76s WALL (    4349 calls)
+     add_vuspsi   :      0.05s CPU      0.05s WALL (    4349 calls)
 
      General routines
-     calbec       :      0.87s CPU      1.00s WALL (   17618 calls)
+     calbec       :      0.06s CPU      0.06s WALL (    4349 calls)
      fft          :      0.00s CPU      0.00s WALL (       4 calls)
-     fftw         :     17.36s CPU     19.84s WALL (  431332 calls)
-     davcio       :      0.08s CPU      0.14s WALL (    1024 calls)
+     fftw         :      1.42s CPU      1.50s WALL (  106506 calls)
+     davcio       :      0.01s CPU      0.01s WALL (     256 calls)
  
      Parallel routines
  
-     PWSCF        :     35.23s CPU     40.51s WALL
+     PWSCF        :      4.74s CPU      5.04s WALL
 
  
-   This run was terminated on:  14:20: 9  17Oct2022            
+   This run was terminated on:  16: 7: 0  31Oct2022            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

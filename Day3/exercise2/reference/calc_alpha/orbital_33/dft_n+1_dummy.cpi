@@ -3,10 +3,10 @@
    verbosity        = 'low'
    restart_mode     = 'from_scratch'
    iprint           = 1
-   outdir           = '/home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/calc_alpha/TMP-CP/orbital_33/'
+   outdir           = '/home/degennar/CODES/hubbard-koopmans-2022/Day3/exercise2/calc_alpha/TMP-CP/orbital_33/'
    prefix           = 'kc'
    disk_io          = 'high'
-   pseudo_dir       = '/home/nicola/Scrivania/CODES/git/koopmans/pseudos/pseudo_dojo_standard_v0.4.1/lda/'
+   pseudo_dir       = '/home/degennar/CODES/koopmans/src/koopmans/pseudopotentials/pseudo_dojo_standard_v0.4.1/lda/'
    ndr              = 65
    ndw              = 65
    write_hr         = .false.
@@ -26,9 +26,9 @@
    nelup            = 33
    neldw            = 32
    do_wf_cmplx      = .true.
-   nr1b             = 20
-   nr2b             = 20
-   nr3b             = 20
+   nr1b             = 18
+   nr2b             = 18
+   nr3b             = 18
    starting_magnetization(1) = 0.0
    ntyp             = 1
    nat              = 16
@@ -71,7 +71,7 @@ Si  28.085 Si.upf
 ATOMIC_POSITIONS crystal
 Si  -0.0000000000 0.0000000000 -0.0000000000
 Si  0.1250000000 0.1250000000 0.1250000000
-Si  -0.0000000000 0.0000000000 0.5000000000
+Si  -0.0000000000 -0.0000000000 0.5000000000
 Si  0.1250000000 0.1250000000 0.6250000000
 Si  -0.0000000000 0.5000000000 -0.0000000000
 Si  0.1250000000 0.6250000000 0.1250000000

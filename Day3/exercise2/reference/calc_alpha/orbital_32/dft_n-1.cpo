@@ -3,17 +3,17 @@
      CP: variable-cell Car-Parrinello molecular dynamics
      using norm-conserving and ultrasoft Vanderbilt pseudopotentials
 
-     Version: 4.1 - Wed May 4 10:12:44 CEST 2022                          
+     Version: 4.1 - Tue 18 Oct 18:17:06 CEST 2022                         
      Authors: Alfredo Pasquarello, Kari Laasonen, Andrea Trave, Roberto Car,
        Paolo Giannozzi, Nicola Marzari, Carlo Cavazzoni, Guido Chiarotti,
        Sandro Scandolo, Paolo Focher, Gerardo Ballabio, and others
 
 =------------------------------------------------------------------------------=
 
-   This run was started on:  14:18:49  17Oct2022               
+   This run was started on:  16: 6:46  31Oct2022               
 
    MPI Parallel Build
-   Tasks =    4  This task id =    0
+   Tasks =   24  This task id =    0
      Message from routine  system_checkin     :
       starting_magnetization is not used in CP 
 Warning: card &NKSIC ignored
@@ -34,7 +34,7 @@ Warning: card / ignored
    ----------------------------------
 
    Reading pseudopotential for specie #  1 from file :
-   /home/nicola/Scrivania/CODES/git/koopmans/pseudos/pseudo_dojo_standard_v0.4.1/lda/Si.upf
+   /home/degennar/CODES/koopmans/src/koopmans/pseudopotentials/pseudo_dojo_standard_v0.4.1/lda/Si.upf
    file type is 20: UPF
  read_nonlocal
 
@@ -159,10 +159,30 @@ Warning: card / ignored
    ----------
    nst =   580,  nstw =   148, nsts =   580
         PEs    n.st   n.stw   n.sts    n.g    n.gw   n.gs
-          1     290      74     290    6560     822    6560
-          2     290      74     290    6558     822    6558
-          3     289      73     289    6553     823    6553
-          4     290      74     290    6558     820    6558
+          1      48      12      48    1094     136    1094
+          2      48      12      48    1094     140    1094
+          3      50      12      50    1098     140    1098
+          4      50      12      50    1098     140    1098
+          5      48      12      48    1090     140    1090
+          6      48      12      48    1090     140    1090
+          7      48      12      48    1094     136    1094
+          8      48      12      48    1094     136    1094
+          9      48      12      48    1094     136    1094
+         10      48      12      48    1092     136    1092
+         11      48      14      48    1092     136    1092
+         12      48      14      48    1092     136    1092
+         13      48      12      48    1092     136    1092
+         14      48      12      48    1092     136    1092
+         15      48      12      48    1092     136    1092
+         16      48      12      48    1092     136    1092
+         17      48      12      48    1092     136    1092
+         18      48      12      48    1090     136    1090
+         19      48      14      48    1090     138    1090
+         20      50      14      50    1096     138    1096
+         21      50      12      50    1096     134    1096
+         22      47      11      47    1091     133    1091
+         23      48      12      48    1092     138    1092
+         24      48      12      48    1092     138    1092
           0    1159     295    1159   26229    3287   26229
  
  
@@ -170,59 +190,123 @@ Warning: card / ignored
    ---------
    Global Dimensions   Local  Dimensions   Processor Grid
    .X.   .Y.   .Z.     .X.   .Y.   .Z.     .X.   .Y.   .Z.
-    45    45    45      45    45    12       1     1     4
+    45    45    45      45    45     2       1     1    24
    Array leading dimensions ( nr1x, nr2x, nr3x )   =     45    45    45
-   Local number of cell to store the grid ( nnrx ) =      24300
+   Local number of cell to store the grid ( nnrx ) =       4050
    Number of x-y planes for each processors: 
-   nr3l =    12   11   11   11
+   nr3l =     2    2    2    2    2    2    2    2    2    2
+   nr3l =     2    2    2    2    2    2    2    2    2    2
+   nr3l =     2    1    1    1
  
    Smooth Real Mesh
    ----------------
    Global Dimensions   Local  Dimensions   Processor Grid
    .X.   .Y.   .Z.     .X.   .Y.   .Z.     .X.   .Y.   .Z.
-    45    45    45      45    45    12       1     1     4
+    45    45    45      45    45     2       1     1    24
    Array leading dimensions ( nr1x, nr2x, nr3x )   =     45    45    45
-   Local number of cell to store the grid ( nnrx ) =      24300
+   Local number of cell to store the grid ( nnrx ) =       4050
    Number of x-y planes for each processors: 
-   nr3sl =    12   11   11   11
+   nr3sl =     2    2    2    2    2    2    2    2    2    2
+   nr3sl =     2    2    2    2    2    2    2    2    2    2
+   nr3sl =     2    1    1    1
  
    Small Box Real Mesh
    -------------------
    Global Dimensions   Local  Dimensions   Processor Grid
    .X.   .Y.   .Z.     .X.   .Y.   .Z.     .X.   .Y.   .Z.
-    20    20    20      20    20    20       1     1     1
-   Array leading dimensions ( nr1x, nr2x, nr3x )   =     20    20    20
-   Local number of cell to store the grid ( nnrx ) =       8000
+    18    18    18      18    18    18       1     1     1
+   Array leading dimensions ( nr1x, nr2x, nr3x )   =     18    18    18
+   Local number of cell to store the grid ( nnrx ) =       5832
  
    unit vectors of box grid cell
    in real space:                         in reciprocal space:
-      -4.5610    0.0000    4.5610             -1.0000   -1.0000    1.0000
-       0.0000    4.5610    4.5610              1.0000    1.0000    1.0000
-      -4.5610    4.5610    0.0000             -1.0000    1.0000   -1.0000
+      -4.1049    0.0000    4.1049             -1.0000   -1.0000    1.0000
+       0.0000    4.1049    4.1049              1.0000    1.0000    1.0000
+      -4.1049    4.1049    0.0000             -1.0000    1.0000   -1.0000
  
    Reciprocal Space Mesh
    ---------------------
                 Large Mesh
    PE   Global(ngmt)     Local(ngm) MaxLocal(ngmx)
-    1          26229           6560           6560
-    2          26229           6558           6560
-    3          26229           6553           6560
-    4          26229           6558           6560
+    1          26229           1094           1098
+    2          26229           1094           1098
+    3          26229           1098           1098
+    4          26229           1098           1098
+    5          26229           1090           1098
+    6          26229           1090           1098
+    7          26229           1094           1098
+    8          26229           1094           1098
+    9          26229           1094           1098
+   10          26229           1092           1098
+   11          26229           1092           1098
+   12          26229           1092           1098
+   13          26229           1092           1098
+   14          26229           1092           1098
+   15          26229           1092           1098
+   16          26229           1092           1098
+   17          26229           1092           1098
+   18          26229           1090           1098
+   19          26229           1090           1098
+   20          26229           1096           1098
+   21          26229           1096           1098
+   22          26229           1091           1098
+   23          26229           1092           1098
+   24          26229           1092           1098
                 Smooth Mesh
    PE   Global(ngst)     Local(ngs) MaxLocal(ngsx)
-    1          26229           6560           6560
-    2          26229           6558           6560
-    3          26229           6553           6560
-    4          26229           6558           6560
+    1          26229           1094           1098
+    2          26229           1094           1098
+    3          26229           1098           1098
+    4          26229           1098           1098
+    5          26229           1090           1098
+    6          26229           1090           1098
+    7          26229           1094           1098
+    8          26229           1094           1098
+    9          26229           1094           1098
+   10          26229           1092           1098
+   11          26229           1092           1098
+   12          26229           1092           1098
+   13          26229           1092           1098
+   14          26229           1092           1098
+   15          26229           1092           1098
+   16          26229           1092           1098
+   17          26229           1092           1098
+   18          26229           1090           1098
+   19          26229           1090           1098
+   20          26229           1096           1098
+   21          26229           1096           1098
+   22          26229           1091           1098
+   23          26229           1092           1098
+   24          26229           1092           1098
                 Wave function Mesh
    PE   Global(ngwt)     Local(ngw) MaxLocal(ngwx)
-    1           3287            822            823
-    2           3287            822            823
-    3           3287            823            823
-    4           3287            820            823
+    1           3287            136            140
+    2           3287            140            140
+    3           3287            140            140
+    4           3287            140            140
+    5           3287            140            140
+    6           3287            140            140
+    7           3287            136            140
+    8           3287            136            140
+    9           3287            136            140
+   10           3287            136            140
+   11           3287            136            140
+   12           3287            136            140
+   13           3287            136            140
+   14           3287            136            140
+   15           3287            136            140
+   16           3287            136            140
+   17           3287            136            140
+   18           3287            136            140
+   19           3287            138            140
+   20           3287            138            140
+   21           3287            134            140
+   22           3287            133            140
+   23           3287            138            140
+   24           3287            138            140
 
                 Small box Mesh
-   ngb =         1139 not distributed to processors
+   ngb =          844 not distributed to processors
 
 
    System geometry initialization
@@ -311,10 +395,10 @@ Warning: card / ignored
    EE with periodic-image correction method = none                
  USING TCC FOR ODD T
 
-   reading restart file: /home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/calc_alpha/TMP-CP/orbital_32//kc_60.save
+   reading restart file: /home/degennar/CODES/hubbard-koopmans-2022/Day3/exercise2/calc_alpha/TMP-CP/orbital_32//kc_60.save
  here should be iotk first error
  here should be iotk first error
-   restart file read in    0.037 sec.
+   restart file read in    0.034 sec.
 
  nprint_nfi=           -2
  nprint_nfi=            3
@@ -329,97 +413,92 @@ Warning: card / ignored
 
 PERFORMING CONJUGATE GRADIENT MINIMIZATION OF EL. STATES
 
-     CP           :     0.73s CPU time,    0.92s wall time
+     CP           :     0.31s CPU time,    0.34s wall time
 
-     iteration =   1  eff iteration =   1   Etot (Ha) =    -67.28834223390430
-     CP           :     1.18s CPU time,    1.61s wall time
+     iteration =   1  eff iteration =   1   Etot (Ha) =    -67.28832905567143
+     CP           :     0.37s CPU time,    0.39s wall time
 
-     iteration =   2  eff iteration =   2   Etot (Ha) =    -67.34759680024084
-     CP           :     1.48s CPU time,    1.95s wall time
+     iteration =   2  eff iteration =   2   Etot (Ha) =    -67.34758343922651
+     CP           :     0.42s CPU time,    0.44s wall time
 
-     iteration =   3  eff iteration =   3   Etot (Ha) =    -67.35189528008034 delta_E=  0.59254566336534E-01
-     CP           :     1.84s CPU time,    2.35s wall time
+     iteration =   3  eff iteration =   3   Etot (Ha) =    -67.35188187913184 delta_E=  0.59254383555086E-01
+     CP           :     0.47s CPU time,    0.50s wall time
 
-     iteration =   4  eff iteration =   4   Etot (Ha) =    -67.35442562573890 delta_E=  0.42984798395054E-02
-     CP           :     2.21s CPU time,    2.84s wall time
+     iteration =   4  eff iteration =   4   Etot (Ha) =    -67.35441224174221 delta_E=  0.42984399053267E-02
+     CP           :     0.52s CPU time,    0.55s wall time
 
-     iteration =   5  eff iteration =   5   Etot (Ha) =    -67.35605125311795 delta_E=  0.25303456585561E-02
-     CP           :     2.60s CPU time,    3.26s wall time
+     iteration =   5  eff iteration =   5   Etot (Ha) =    -67.35603784379768 delta_E=  0.25303626103721E-02
+     CP           :     0.57s CPU time,    0.60s wall time
 
-     iteration =   6  eff iteration =   6   Etot (Ha) =    -67.35689215642796 delta_E=  0.16256273790560E-02
-     CP           :     2.92s CPU time,    3.78s wall time
+     iteration =   6  eff iteration =   6   Etot (Ha) =    -67.35687873887754 delta_E=  0.16256020554692E-02
+     CP           :     0.62s CPU time,    0.65s wall time
 
-     iteration =   7  eff iteration =   7   Etot (Ha) =    -67.35746926481983 delta_E=  0.84090331000652E-03
-     CP           :     3.46s CPU time,    4.69s wall time
+     iteration =   7  eff iteration =   7   Etot (Ha) =    -67.35745584692313 delta_E=  0.84089507986107E-03
+     CP           :     0.67s CPU time,    0.70s wall time
 
-     iteration =   8  eff iteration =   8   Etot (Ha) =    -67.35794853998269 delta_E=  0.57710839186598E-03
-     CP           :     3.98s CPU time,    5.65s wall time
+     iteration =   8  eff iteration =   8   Etot (Ha) =    -67.35793511657522 delta_E=  0.57710804559008E-03
+     CP           :     0.72s CPU time,    0.76s wall time
 
-     iteration =   9  eff iteration =   9   Etot (Ha) =    -67.35820763658715 delta_E=  0.47927516285995E-03
-     CP           :     4.28s CPU time,    6.00s wall time
+     iteration =   9  eff iteration =   9   Etot (Ha) =    -67.35819422497772 delta_E=  0.47926965208944E-03
+     CP           :     0.77s CPU time,    0.81s wall time
 
-     iteration =  10  eff iteration =  10   Etot (Ha) =    -67.35834921755479 delta_E=  0.25909660446644E-03
+     iteration =  10  eff iteration =  10   Etot (Ha) =    -67.35833581000530 delta_E=  0.25910840250276E-03
 
-     CP           :     4.57s CPU time,    6.33s wall time
+     CP           :     0.83s CPU time,    0.86s wall time
 
-     iteration =  11  eff iteration =  11   Etot (Ha) =    -67.35850269936550 delta_E=  0.14158096763595E-03
-     CP           :     4.85s CPU time,    6.67s wall time
+     iteration =  11  eff iteration =  11   Etot (Ha) =    -67.35848927632617 delta_E=  0.14158502757766E-03
+     CP           :     0.87s CPU time,    0.91s wall time
 
-     iteration =  12  eff iteration =  12   Etot (Ha) =    -67.35862189708830 delta_E=  0.15348181071317E-03
-     CP           :     5.20s CPU time,    7.07s wall time
+     iteration =  12  eff iteration =  12   Etot (Ha) =    -67.35860850649516 delta_E=  0.15346632086732E-03
+     CP           :     0.92s CPU time,    0.96s wall time
 
-     iteration =  13  eff iteration =  13   Etot (Ha) =    -67.35869038547040 delta_E=  0.11919772279612E-03
-     CP           :     5.61s CPU time,    7.52s wall time
+     iteration =  13  eff iteration =  13   Etot (Ha) =    -67.35867699604933 delta_E=  0.11923016899118E-03
+     CP           :     0.97s CPU time,    1.02s wall time
 
-     iteration =  14  eff iteration =  14   Etot (Ha) =    -67.35874654044152 delta_E=  0.68488382098053E-04
-     CP           :     6.41s CPU time,    8.45s wall time
+     iteration =  14  eff iteration =  14   Etot (Ha) =    -67.35873313687428 delta_E=  0.68489554166717E-04
+     CP           :     1.02s CPU time,    1.07s wall time
 
-     iteration =  15  eff iteration =  15   Etot (Ha) =    -67.35878623478425 delta_E=  0.56154971119327E-04
-     CP           :     7.10s CPU time,    9.37s wall time
+     iteration =  15  eff iteration =  15   Etot (Ha) =    -67.35877285647177 delta_E=  0.56140824952422E-04
+     CP           :     1.07s CPU time,    1.12s wall time
 
-     iteration =  16  eff iteration =  16   Etot (Ha) =    -67.35881194542660 delta_E=  0.39694342731877E-04
-     CP           :     7.39s CPU time,    9.70s wall time
+     iteration =  16  eff iteration =  16   Etot (Ha) =    -67.35879855254470 delta_E=  0.39719597495491E-04
+     CP           :     1.12s CPU time,    1.17s wall time
 
-     iteration =  17  eff iteration =  17   Etot (Ha) =    -67.35883344927376 delta_E=  0.25710642347576E-04
-     CP           :     7.71s CPU time,   10.09s wall time
+     iteration =  17  eff iteration =  17   Etot (Ha) =    -67.35882006972250 delta_E=  0.25696072924575E-04
+     CP           :     1.17s CPU time,    1.22s wall time
 
-     iteration =  18  eff iteration =  18   Etot (Ha) =    -67.35885498411675 delta_E=  0.21503847165150E-04
-     WARNING cg_sub: missed minimum, case 1, iteration   18      1.325273895054
-     CP           :     8.14s CPU time,   10.60s wall time
+     iteration =  18  eff iteration =  18   Etot (Ha) =    -67.35884160098080 delta_E=  0.21517177799524E-04
+     CP           :     1.22s CPU time,    1.28s wall time
 
-     iteration =  19  eff iteration =  19   Etot (Ha) =    -67.35887360047053 delta_E=  0.21534842986171E-04
-     CP           :     8.52s CPU time,   11.11s wall time
+     iteration =  19  eff iteration =  19   Etot (Ha) =    -67.35886020510817 delta_E=  0.21531258298069E-04
+     CP           :     1.27s CPU time,    1.33s wall time
 
-     iteration =  20  eff iteration =  20   Etot (Ha) =    -67.35888188974018 delta_E=  0.18616353784751E-04
+     iteration =  20  eff iteration =  20   Etot (Ha) =    -67.35887547883878 delta_E=  0.18604127376420E-04
 
-     CP           :     8.90s CPU time,   11.55s wall time
+     CP           :     1.32s CPU time,    1.38s wall time
 
-     iteration =  21  eff iteration =  21   Etot (Ha) =    -67.35888620142799 delta_E=  0.82892696440240E-05
-     CP           :     9.31s CPU time,   12.02s wall time
+     iteration =  21  eff iteration =  21   Etot (Ha) =    -67.35888325631453 delta_E=  0.15273730610943E-04
+     CP           :     1.36s CPU time,    1.43s wall time
 
-     iteration =  22  eff iteration =  22   Etot (Ha) =    -67.35889882843585 delta_E=  0.43116878174487E-05
-     CP           :    10.01s CPU time,   12.90s wall time
+     iteration =  22  eff iteration =  22   Etot (Ha) =    -67.35889101915754 delta_E=  0.77774757443194E-05
+     CP           :     1.41s CPU time,    1.48s wall time
 
-     iteration =  23  eff iteration =  23   Etot (Ha) =    -67.35890610208213 delta_E=  0.12627007862420E-04
-     CP           :    10.51s CPU time,   13.47s wall time
+     iteration =  23  eff iteration =  23   Etot (Ha) =    -67.35889877963953 delta_E=  0.77628430119603E-05
+     CP           :     1.46s CPU time,    1.53s wall time
 
-     iteration =  24  eff iteration =  24   Etot (Ha) =    -67.35891467248037 delta_E=  0.72736462755074E-05
-     CP           :    10.83s CPU time,   13.84s wall time
+     iteration =  24  eff iteration =  24   Etot (Ha) =    -67.35890531196480 delta_E=  0.77604819921362E-05
+     CP           :     1.52s CPU time,    1.59s wall time
 
-     iteration =  25  eff iteration =  25   Etot (Ha) =    -67.35892341813499 delta_E=  0.85703982364294E-05
-     CP           :    11.18s CPU time,   14.25s wall time
+     iteration =  25  eff iteration =  25   Etot (Ha) =    -67.35891084125848 delta_E=  0.65323252727012E-05
+     CP           :     1.57s CPU time,    1.64s wall time
 
-     iteration =  26  eff iteration =  26   Etot (Ha) =    -67.35892963355388 delta_E=  0.87456546253861E-05
-     CP           :    11.49s CPU time,   14.60s wall time
+     iteration =  26  eff iteration =  26   Etot (Ha) =    -67.35891673163604 delta_E=  0.55292936735896E-05
+     CP           :     1.62s CPU time,    1.69s wall time
 
-     iteration =  27  eff iteration =  27   Etot (Ha) =    -67.35893556171116 delta_E=  0.62154188924524E-05
-     WARNING cg_sub: missed minimum, case 1, iteration   27      1.061052977048
-     CP           :    12.00s CPU time,   15.21s wall time
+     iteration =  27  eff iteration =  27   Etot (Ha) =    -67.35892205857604 delta_E=  0.58903775652652E-05
+     CP           :     1.67s CPU time,    1.74s wall time
 
-     iteration =  28  eff iteration =  28   Etot (Ha) =    -67.35894092601742 delta_E=  0.59281572788450E-05
-     CP           :    12.76s CPU time,   16.20s wall time
-
-     iteration =  29  eff iteration =  29   Etot (Ha) =    -67.35894337706821 delta_E=  0.53643062614128E-05
+     iteration =  28  eff iteration =  28   Etot (Ha) =    -67.35892624892131 delta_E=  0.53269399984401E-05
 
 
  -----------------------
@@ -435,14 +514,14 @@ PERFORMING CONJUGATE GRADIENT MINIMIZATION OF EL. STATES
    Makov-Payne 1-order energy :       1.11690728E-01
 
 
-                total energy =     -67.3589454589 Hartree a.u.
-              kinetic energy =      25.8798267229 Hartree a.u.
-        electrostatic energy =     -74.7758719098 Hartree a.u.
+                total energy =     -67.3589310347 Hartree a.u.
+              kinetic energy =      25.8797542284 Hartree a.u.
+        electrostatic energy =     -74.7757664485 Hartree a.u.
                          esr =       0.0010190093 Hartree a.u.
                        eself =     102.1292237828 Hartree a.u.
-      pseudopotential energy =      -3.9636569037 Hartree a.u.
-  n-l pseudopotential energy =      10.1975508991 Hartree a.u.
- exchange-correlation energy =     -24.6967942673 Hartree a.u.
+      pseudopotential energy =      -3.9636272205 Hartree a.u.
+  n-l pseudopotential energy =      10.1974519473 Hartree a.u.
+ exchange-correlation energy =     -24.6967435413 Hartree a.u.
            average potential =       0.0000000000 Hartree a.u.
                   odd energy =       0.0000000000 Hartree a.u.
         van der waals energy =       0.0000000000 Hartree a.u.
@@ -455,17 +534,17 @@ PERFORMING CONJUGATE GRADIENT MINIMIZATION OF EL. STATES
 
    Eigenvalues (eV), kp =   1 , spin =  1
 
-   -7.9181   -5.8830   -5.7508   -5.7508   -5.2765   -4.1690   -3.9815   -3.9815   -3.9442   -3.9442
-   -3.4046   -3.2010   -3.2010   -3.1278   -1.5120   -0.0000    0.8445    0.8445    0.9279    0.9280
-    1.0422    1.8921    2.5372    2.5372    2.6629    2.6629    2.7216    2.7216    2.7504    3.8218
-    3.9209**********
+   -7.9182   -5.8834   -5.7507   -5.7507   -5.2775   -4.1698   -3.9813   -3.9813   -3.9438   -3.9438
+   -3.4047   -3.2011   -3.2011   -3.1275   -1.5131   -0.0000    0.8443    0.8443    0.9278    0.9278
+    1.0425    1.8916    2.5368    2.5369    2.6630    2.6631    2.7221    2.7221    2.7508    3.8221
+    3.9210**********
 
    Eigenvalues (eV), kp =   1 , spin =  2
 
-   -8.6528   -6.7771   -5.9293   -5.7393   -5.7393   -4.5713   -4.2208   -4.0255   -4.0255   -3.9332
-   -3.9332   -3.2451   -3.2451   -3.2287   -3.1248    0.1709    0.7181    0.7181    0.8986    0.8986
-    1.0420    2.1435    2.4971    2.4971    2.6031    2.6031    2.7344    2.7344    2.7484    3.8585
-    3.9135    3.9135
+   -8.6532   -6.7771   -5.9298   -5.7392   -5.7391   -4.5722   -4.2214   -4.0254   -4.0254   -3.9327
+   -3.9327   -3.2453   -3.2453   -3.2287   -3.1242    0.1702    0.7180    0.7180    0.8984    0.8984
+    1.0421    2.1430    2.4967    2.4967    2.6032    2.6032    2.7351    2.7351    2.7485    3.8588
+    3.9136    3.9136
 
    Orb -- Charge  ---   Centers xyz (Bohr)  ---  Spreads (Bohr^2) - SH(eV), kp =   1 , spin =  1
 
@@ -593,70 +672,70 @@ OCC   32 --    0.00   ---    0.00    0.00    0.00   ---    0.00    0.00
   nfi    ekinc  temph  tempp        etot      enthal       econs       econt    vnhh   xnhh0    vnhp   xnhp0
  
        nfi   tempp            E -T.S-mu.nbsp         +K_p #Iter
-Step     4       0    -67.35895    -67.35895    -67.35895    30
+Step     4       0    -67.35893    -67.35893    -67.35893    29
  tnosep= F thdyn= F
 
-   writing restart file: /home/nicola/Scrivania/CODES/git/hubbard-koopmans-2022/Day3/2_Si_kcp/calc_alpha/TMP-CP/orbital_32//kc_63.save
-   restart file written in    0.191 sec.
+   writing restart file: /home/degennar/CODES/hubbard-koopmans-2022/Day3/exercise2/calc_alpha/TMP-CP/orbital_32//kc_63.save
+   restart file written in    0.084 sec.
 
  
                               lambda   nudx, spin =   32   1
- fixed_lambda           32          32 -8.021114300289696E-002
+ fixed_lambda           32          32 -8.019319681218977E-002
                               lambda   nudx, spin =   32   2
- fixed_lambda           32          32  -17215.4647453345     
+ fixed_lambda           32          32  -17216.0010590374     
 
 
    Averaged Physical Quantities
                       accomulated      this run
    ekinc         :        0.00000       0.00000 (AU)
-   ekin          :       57.95811      25.87983 (AU)
-   epot          :     -100.24999    -103.43632 (AU)
-   total energy  :      -31.26135     -67.35895 (AU)
+   ekin          :       57.95809      25.87975 (AU)
+   epot          :     -100.24995    -103.43614 (AU)
+   total energy  :      -31.26135     -67.35893 (AU)
    temperature   :        0.00000       0.00000 (K )
    enthalpy      :        0.00000       0.00000 (AU)
-   econs         :      -31.26135     -67.35895 (AU)
+   econs         :      -31.26135     -67.35893 (AU)
    pressure      :        0.00000       0.00000 (Gpa)
    volume        :     2161.48101    2161.48101 (AU)
 
 
-     initialize   :     0.50s CPU
-     total_time   :    12.68s CPU
-     formf        :     0.04s CPU
-     rhoofr       :     2.58s CPU (      61 calls,   0.042 s avg)
-     vofrho       :     1.20s CPU (      61 calls,   0.020 s avg)
-     vofrho1      :     0.05s CPU (       3 calls,   0.017 s avg)
-     vofrho2      :     0.58s CPU (      29 calls,   0.020 s avg)
-     vofrho3      :     0.57s CPU (      29 calls,   0.020 s avg)
-     dforce       :     4.33s CPU (     960 calls,   0.005 s avg)
-     dforce1      :     4.24s CPU (     928 calls,   0.005 s avg)
-     dforce2      :     0.17s CPU
-     calphi       :     0.01s CPU (      30 calls,   0.000 s avg)
-     newd         :     0.01s CPU (      30 calls,   0.000 s avg)
-     calbec       :     2.72s CPU (     244 calls,   0.011 s avg)
-     prefor       :     0.03s CPU (      32 calls,   0.001 s avg)
+     initialize   :     0.24s CPU
+     total_time   :     1.45s CPU
+     formf        :     0.02s CPU
+     rhoofr       :     0.36s CPU (      57 calls,   0.006 s avg)
+     vofrho       :     0.14s CPU (      57 calls,   0.002 s avg)
+     vofrho1      :     0.00s CPU
+     vofrho2      :     0.07s CPU (      28 calls,   0.002 s avg)
+     vofrho3      :     0.07s CPU (      28 calls,   0.002 s avg)
+     dforce       :     0.39s CPU (     928 calls,   0.000 s avg)
+     dforce1      :     0.38s CPU (     896 calls,   0.000 s avg)
+     dforce2      :     0.08s CPU
+     calphi       :     0.00s CPU (      29 calls,   0.000 s avg)
+     newd         :     0.00s CPU (      29 calls,   0.000 s avg)
+     calbec       :     0.19s CPU (     228 calls,   0.001 s avg)
+     prefor       :     0.00s CPU (      31 calls,   0.000 s avg)
      strucf       :     0.00s CPU
      nlfl         :     0.00s CPU
-     set_cc       :     0.05s CPU (      61 calls,   0.001 s avg)
-     nlsm1        :     2.72s CPU (     244 calls,   0.011 s avg)
-     fft          :     0.42s CPU (     489 calls,   0.001 s avg)
-     ffts         :     0.08s CPU (     122 calls,   0.001 s avg)
-     fftw         :     5.09s CPU (    7744 calls,   0.001 s avg)
-     fftb         :     0.02s CPU (     490 calls,   0.000 s avg)
-     cft3s        :     5.57s CPU (    8355 calls,   0.001 s avg)
-     fft_scatter  :     3.21s CPU (    8355 calls,   0.000 s avg)
+     set_cc       :     0.01s CPU (      57 calls,   0.000 s avg)
+     nlsm1        :     0.19s CPU (     228 calls,   0.001 s avg)
+     fft          :     0.07s CPU (     457 calls,   0.000 s avg)
+     ffts         :     0.01s CPU (     114 calls,   0.000 s avg)
+     fftw         :     0.60s CPU (    7360 calls,   0.000 s avg)
+     fftb         :     0.00s CPU (     458 calls,   0.000 s avg)
+     cft3s        :     0.67s CPU (    7931 calls,   0.000 s avg)
+     fft_scatter  :     0.47s CPU (    7931 calls,   0.000 s avg)
 
-     outer_loop   :    12.56s CPU (      29 calls,   0.433 s avg)
-     runcg_uspp   :    12.68s CPU
-     pc2          :     0.30s CPU (      87 calls,   0.003 s avg)
-     pcdaga2      :     0.39s CPU (      29 calls,   0.014 s avg)
-     xminus1      :     0.01s CPU (      58 calls,   0.000 s avg)
+     outer_loop   :     1.43s CPU (      28 calls,   0.051 s avg)
+     runcg_uspp   :     1.45s CPU
+     pc2          :     0.03s CPU (      84 calls,   0.000 s avg)
+     pcdaga2      :     0.03s CPU (      28 calls,   0.001 s avg)
+     xminus1      :     0.00s CPU (      56 calls,   0.000 s avg)
      emass_p_tpa  :     0.00s CPU
  
  
-     CP           :    13.40s CPU time,   17.10s wall time
+     CP           :     1.81s CPU time,    1.90s wall time
 
  
-   This run was terminated on:  14:19: 6  17Oct2022            
+   This run was terminated on:  16: 6:48  31Oct2022            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
