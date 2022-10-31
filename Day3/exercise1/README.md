@@ -5,8 +5,8 @@ KI electronic structure of the ozone molecule (O<sub>3</sub>).
 
 1) Load the koopmans virtual environment: 
    
-   conda activate koopmans 
+   `conda activate koopmans`
 
 2) run the `koopmans` package by simply typing: 
    
-   koopmans ozone.json
+   `koopmans ozone.json`
