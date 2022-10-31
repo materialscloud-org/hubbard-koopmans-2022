@@ -13,7 +13,7 @@ cd 1_wannier
  ./run.sh
 cd ../
 
-echo " 2-Wannier"
+echo " 2-Screening"
 cd 2_screening
 ./clean.sh
 ./run.sh
