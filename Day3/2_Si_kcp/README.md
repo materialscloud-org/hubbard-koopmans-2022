@@ -5,7 +5,9 @@ KI and KIPZ electronic structure of FCC Silicon.
 
 To run the KC calculation you have to 
 1) Load the Koopmans virtual environment (if you have not done it yet)
+   
    conda activate koopmans
 
 2) Run the `koopmans` package
+   
    koopmans si.json
