@@ -1,12 +1,15 @@
 */TMP-CP
-*/calc_alpha
-*/final
-*/init
-*/postproc
+*/*init
+*/*calc_alpha
+*/*screening
+*/*hamiltonian
+*/*final
+*/*postproc
 */*.bib
 */*.kwf
 
 # Tutorial 1
-1_ozone_kcp/BE.dat
+exercise1/BE.dat
 
-# Tutorial 2
+# Tutorial 3
+exercise3/out

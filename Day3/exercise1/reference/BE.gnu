@@ -17,8 +17,3 @@ set ylab "Relative Error [%]"
 set xlab "Exp. energy [eV]"
 pl [][] 'BE.dat' u 3:(abs($1/$3-1))*100 w boxes lc rgb 'blue' tit 'DFT[PBE]', '' u 3:(abs($2/$3-1))*100 tit 'KI' w boxes lc rgb 'red'
 pause -1
-
-set ylab "Relative Error [%]"
-set xlab "Exp. energy [eV]"
-pl [][] 'BE.dat' u 3:(abs($1/$3-1))*100 w boxes lc rgb 'blue' tit 'DFT[PBE]', '' u 3:(abs($2/$3-1))*100 tit 'KI kcw' w boxes lc rgb 'red'
-pause -1
