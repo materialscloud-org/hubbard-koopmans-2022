@@ -1,0 +1,54 @@
+
+     Program BANDS v.7.1 starts on 31Oct2022 at 14:10:34 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     244 MiB available memory on the printing compute node when the environment starts
+ 
+
+     Reading xml data from directory:
+
+     ./out/si.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         583     583    169                 9257     9257    1471
+ 
+     Using Slab Decomposition
+ 
+     Reading collected, re-writing distributed wavefunctions
+     high-symmetry point: -0.5000 0.5000 0.5000   x coordinate   0.0000
+     high-symmetry point:  0.0000 0.0000 0.0000   x coordinate   0.8660
+     high-symmetry point: -1.0000 0.0000 0.0000   x coordinate   1.8660
+     high-symmetry point: -0.7500 0.7500 0.0000   x coordinate   2.6566
+     high-symmetry point:  0.0000 0.0000 0.0000   x coordinate   3.7173
+
+     Plottable bands (eV) written to file si_bands_pbe.gnu
+     Bands written to file si_bands_pbe
+ 
+     BANDS        :      0.12s CPU      0.21s WALL
+
+ 
+   This run was terminated on:  14:10:35  31Oct2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

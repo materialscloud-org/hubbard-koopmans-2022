@@ -1,0 +1,6 @@
+&bands
+    prefix = 'si'
+    outdir = './out'
+    filband = 'si_bands_pbe'
+    lsym = .false.
+/
