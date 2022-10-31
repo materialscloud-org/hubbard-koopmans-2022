@@ -1,4 +1,6 @@
-rm -fr out 
+#!/bin/bash
+
+rm -frv out 
 
 cd wannier_222
 ./clean.sh

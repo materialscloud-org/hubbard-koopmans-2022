@@ -1,3 +1,4 @@
+#!/bin/bash
 
 echo "DFT calculation"
 cd 0_dft

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd 1_init
 pw.x -in dft.pwi > dft.pwo
 dos.x -in dos.in > dos.out

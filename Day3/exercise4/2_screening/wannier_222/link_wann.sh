@@ -1,4 +1,5 @@
-#/bin/bash
+#!/bin/bash
+
 rm -fr wann_*
 ln -s occ/wann_u.mat wann_u.mat
 ln -s occ/wann_centres.xyz wann_centres.xyz

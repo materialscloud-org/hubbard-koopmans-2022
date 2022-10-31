@@ -1,3 +1,5 @@
+#!/bin/bash
+
 rm -fr ../out
 rm -fr  kc.w2ko  nscf.pwo  scf.pwo  wann_centres.xyz  wann_emp_centres.xyz  wann_emp_u_dis.mat  wann_emp_u.mat  wann_u.mat CRASH
 cd occ

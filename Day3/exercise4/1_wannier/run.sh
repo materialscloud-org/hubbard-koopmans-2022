@@ -1,3 +1,5 @@
+#!/bin/bash
+
 pw.x -in scf.pwi > scf.pwo
 echo "  DFT scf         done"
 pw.x -in nscf.pwi > nscf.pwo

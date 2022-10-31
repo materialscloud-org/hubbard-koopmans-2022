@@ -1,3 +1,5 @@
+#!/bin/bash
+
 pw.x -in scf.pwi > scf.pwo
 echo " PWscf     done"
 pw.x -in bands.pwi > bands.pwo

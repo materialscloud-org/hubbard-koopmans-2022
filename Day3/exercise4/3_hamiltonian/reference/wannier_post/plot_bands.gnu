@@ -1,3 +1,5 @@
+#!/usr/bin/gnuplot
+
 set terminal post eps enhanced solid color "Helvetica" 20 
 set output "Si_ki_bands.eps" 
 

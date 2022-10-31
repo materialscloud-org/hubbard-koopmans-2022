@@ -1,3 +1,4 @@
+#!/bin/bash
 
 cd wannier_222
 ./clean.sh

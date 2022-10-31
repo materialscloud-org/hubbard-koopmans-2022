@@ -1,3 +1,5 @@
+#!/user/bin/gnuplot
+
 ymin=-7
 ymax=18
 

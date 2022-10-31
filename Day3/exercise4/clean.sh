@@ -1,4 +1,6 @@
-rm -fr out 
+#!/bin/bash
+
+rm -frv out 
 cd 0_dft
  ./clean.sh
 cd ../

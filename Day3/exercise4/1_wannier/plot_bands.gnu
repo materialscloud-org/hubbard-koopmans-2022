@@ -1,3 +1,5 @@
+#!/usr/bin/gnuplot
+
 ymin=-7
 ymax=18
 set xrange [0: 4.30091]
