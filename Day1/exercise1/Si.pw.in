@@ -15,9 +15,9 @@
    nbnd             = 5
    !
    input_dft        = "pbe0"
-   nqx1             = 3
-   nqx2             = 3
-   nqx3             = 3
+   nqx1             = 4
+   nqx2             = 4
+   nqx3             = 4
    exxdiv_treatment = "g-b"
    x_gamma_extrapolation = .true.
    ecutfock         = 40
