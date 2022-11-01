@@ -15,12 +15,11 @@
    nbnd             = 5
 /
 &ELECTRONS
-   adaptive_thr     = .true.
-   conv_thr         = 1.6e-08
+   conv_thr         = 1.d-8
 /
 
 ATOMIC_SPECIES
-Si  28.085 Si_ONCV_PBE-1.2.upf
+Si 28.086  Si.pbe_PseudoDojo.UPF
 
 K_POINTS automatic
 12 12 12  0 0 0
