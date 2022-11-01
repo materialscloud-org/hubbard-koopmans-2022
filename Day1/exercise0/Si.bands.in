@@ -1,6 +1,5 @@
 &CONTROL
    calculation      = 'bands'
-   verbosity        = 'high'
    outdir           = './out'
    pseudo_dir       = '../../files/pseudo/'
    prefix           = 'si'
@@ -9,7 +8,6 @@
    ibrav            = 2
    celldm(1)        = 10.262200042863787
    ecutwfc          = 40.0
-   nspin            = 1
    ntyp             = 1
    nat              = 2
    nbnd             = 12
