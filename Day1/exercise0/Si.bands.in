@@ -3,6 +3,7 @@
    outdir           = './out'
    pseudo_dir       = '../../files/pseudo/'
    prefix           = 'si'
+   verbosity        = 'high'
 /
 &SYSTEM
    ibrav            = 2
