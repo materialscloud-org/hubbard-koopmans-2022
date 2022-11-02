@@ -4,7 +4,6 @@
    kcw_iverbosity   = 1
    kcw_at_ks        = .false.
    calculation      = 'wann2kcw'
-   lrpa             = .false.
    mp1              = 6
    mp2              = 6
    mp3              = 6

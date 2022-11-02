@@ -10,6 +10,9 @@ bands_plot = .true.
 write_u_matrices = .true.
 write_xyz = .true.
 
+wannier_plot = .true. 
+wannier_plot_list = 2
+
 begin projections
   f=0.25,0.25,0.25:sp3
 end projections
