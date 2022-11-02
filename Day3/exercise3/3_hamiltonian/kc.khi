@@ -8,23 +8,10 @@
    mp1              = 1
    mp2              = 1
    mp3              = 1
-   homo_only        = .false.
-   read_unitary_matrix = .false.
-   l_vcut           = .false.
    assume_isolated  = 'm-t'
    spin_component   = 1
 /
-&WANNIER
-   seedname         = 'wann'
-   check_ks         = .true.
-   num_wann_occ     = 9
-   num_wann_emp     = 1
-   have_empty       = .true.
-   has_disentangle  = .false.
-/
 &HAM
    do_bands         = .false.
-   use_ws_distance  = .true.
    write_hr         = .true.
-   l_alpha_corr     = .false.
 /
