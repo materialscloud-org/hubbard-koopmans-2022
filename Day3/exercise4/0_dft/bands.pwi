@@ -9,7 +9,6 @@
    ibrav            = 2
    celldm(1)        = 10.262200042863787
    ecutwfc          = 20.0
-   nspin            = 1
    ntyp             = 1
    nat              = 2
    nbnd             = 10

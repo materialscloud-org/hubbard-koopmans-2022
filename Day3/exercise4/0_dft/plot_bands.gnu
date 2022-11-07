@@ -3,7 +3,7 @@
 set terminal pngcairo enhanced solid color font "Helvetica, 20" size 1200,900
 set output "Si_dft_bands.png" 
 
-ymin=-14
+ymin=-12
 ymax=8
 
 set xrange [0: 3.7173]
