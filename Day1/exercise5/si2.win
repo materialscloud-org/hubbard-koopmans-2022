@@ -2,11 +2,11 @@ use_ws_distance = .true.
 
 num_bands        =   XXX
 num_wann         =   XXX
-num_iter         =  500
+num_iter         =  100
 
 dis_win_max      =   XXX
 dis_froz_max     =   XXX
-dis_num_iter     =  500
+dis_num_iter     =  100
 
 !! To plot the WFs
 ! restart                =  plot
