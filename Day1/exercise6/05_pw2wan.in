@@ -1,0 +1,8 @@
+&inputpp
+   outdir = './out'
+   prefix = 'pb'
+   seedname = 'lead'
+   write_amn = .true.
+   write_mmn = .true.
+/
+

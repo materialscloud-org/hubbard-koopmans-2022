@@ -1,7 +1,7 @@
 #!/usr/bin/gnuplot
 
-set terminal post eps enhanced solid color "Helvetica" 20 
-set output "Si_dft_bands.eps" 
+set terminal pngcairo enhanced solid color font "Helvetica, 20" size 1200,900
+set output "Si_dft_bands.png" 
 
 ymin=-12
 ymax=8

@@ -1,20 +1,22 @@
-num_iter = 10000
-conv_tol = 1e-10
-conv_window = 5
-write_hr = .true.
+num_iter        = 10000
+conv_tol        = 1e-10
+conv_window     = 5
 guiding_centres = .true.
-gamma_only = .false.
-bands_plot = .true.
+
+gamma_only      = .false.
+
+write_hr        = .true.
 write_u_matrices = .true.
-write_xyz = .true.
+write_xyz       = .true.
 
 begin projections
   f=0.25,0.25,0.25:sp3
 end projections
-num_wann = 4
-num_bands = 4
-exclude_bands = 5-20
-mp_grid = 2 2 2
+
+exclude_bands   = 5-20
+num_wann        = 4
+num_bands       = 4
+mp_grid         = 2 2 2
 
 begin kpoints
   0.00000000  0.00000000  0.00000000  1.250000e-01
@@ -27,6 +29,7 @@ begin kpoints
   0.50000000  0.50000000  0.50000000  1.250000e-01
 end kpoints
 
+bands_plot = .true.
 begin kpoint_path
    L  0.50000   0.50000   0.50000 G  0.00000   0.00000   0.00000
    G  0.00000   0.00000   0.00000 X  0.50000   0.00000   0.50000

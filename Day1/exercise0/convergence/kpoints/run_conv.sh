@@ -11,7 +11,7 @@ cat > Si.scf.in << EOF
  /
  &system
     ibrav = 2, 
-    celldm(1) = 10.20, 
+    celldm(1) = 10.262, 
     nat = 2, 
     ntyp = 1,
     ecutwfc = 40, 

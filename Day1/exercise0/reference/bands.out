@@ -1,5 +1,5 @@
 
-     Program BANDS v.7.1 starts on  1Nov2022 at 12: 2: 3 
+     Program BANDS v.7.1 starts on  3Nov2022 at 10:55:43 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -13,7 +13,7 @@
      Parallel version (MPI), running on     1 processors
 
      MPI processes distributed on     1 nodes
-     225 MiB available memory on the printing compute node when the environment starts
+     366 MiB available memory on the printing compute node when the environment starts
  
 
      Reading xml data from directory:
@@ -44,10 +44,10 @@
      Plottable bands (eV) written to file si_bands_pbe.gnu
      Bands written to file si_bands_pbe
  
-     BANDS        :      0.19s CPU      0.23s WALL
+     BANDS        :      0.17s CPU      0.22s WALL
 
  
-   This run was terminated on:  12: 2: 4   1Nov2022            
+   This run was terminated on:  10:55:44   3Nov2022            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

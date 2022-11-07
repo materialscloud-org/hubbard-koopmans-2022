@@ -13,7 +13,7 @@
           N.Colonna, R. De Gannaro, E. Linscott, and N. Marzari, arXiv:2202.08155   
      =--------------------------------------------------------------------------------=
 
-     Program KCW v.7.1 starts on 20Sep2022 at  9:40:32 
+     Program KCW v.7.1 starts on  2Nov2022 at  9:42:54 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -27,15 +27,14 @@
      Parallel version (MPI), running on     1 processors
 
      MPI processes distributed on     1 nodes
-     1623 MiB available memory on the printing compute node when the environment starts
+     349 MiB available memory on the printing compute node when the environment starts
  
-      Title line not specified: using 'default'.
 
      KCW INPUT SUMMARY 
      ============================================
 
       CONTROL 
-       # title               =           default
+       # title               =                  
        # out_dir             =           ../out/
        # prefix              =                kc
        # calculation         =          wann2kcw
@@ -107,11 +106,11 @@
 
 
  
-     KCW          :      0.66s CPU      0.83s WALL
+     KCW          :      0.72s CPU      0.91s WALL
 
      INITIALIZATION: 
      map          :      0.00s CPU      0.00s WALL (       1 calls)
-     rho_of_q     :      0.06s CPU      0.06s WALL (       1 calls)
+     rho_of_q     :      0.06s CPU      0.07s WALL (       1 calls)
  
      init_vloc    :      0.04s CPU      0.04s WALL (       1 calls)
      init_us_1    :      0.00s CPU      0.00s WALL (       1 calls)
@@ -132,13 +131,13 @@
      fft          :      0.04s CPU      0.04s WALL (      19 calls)
      ffts         :      0.15s CPU      0.15s WALL (      70 calls)
      fftw         :      0.07s CPU      0.08s WALL (      40 calls)
-     davcio       :      0.00s CPU      0.02s WALL (       9 calls)
+     davcio       :      0.01s CPU      0.02s WALL (       9 calls)
  
  
-     KCW          :      0.66s CPU      0.83s WALL
+     KCW          :      0.72s CPU      0.91s WALL
 
  
-   This run was terminated on:   9:40:32  20Sep2022            
+   This run was terminated on:   9:42:55   2Nov2022            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

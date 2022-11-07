@@ -4,4 +4,5 @@
    seedname         = 'wann'
    wan_mode         = 'standalone'
    spin_component   = 'up'
+   write_unk        = .true.
 /

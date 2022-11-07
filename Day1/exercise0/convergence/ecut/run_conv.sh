@@ -11,14 +11,14 @@ cat > Si.scf_ecut$ecut.in << EOF
  /
  &system
     ibrav = 2, 
-    celldm(1) = 10.20, 
+    celldm(1) = 10.262, 
     nat = 2, 
     ntyp = 1,
     ecutwfc = $ecut, 
     nbnd = 5
  /
  &electrons
-    conv_thr = 1.d-12
+    conv_thr = 1.d-10
  /
 ATOMIC_SPECIES
 Si 28.086  Si.pbe_PseudoDojo.UPF
