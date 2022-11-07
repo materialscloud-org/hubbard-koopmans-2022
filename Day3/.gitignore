@@ -11,5 +11,8 @@
 # Tutorial 1
 exercise1/BE.dat
 
+# Tutorial 2
+exercise2/*.png
+
 # Tutorial 3
 exercise3/out
