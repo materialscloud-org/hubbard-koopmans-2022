@@ -26,7 +26,7 @@ refpw = pw_bands.reference
 # Energy reference for the KI bands
 refcp = [c.results['homo_energy'] for c in wf.calculations if c.prefix == 'dft_init'][0]
 
-ax = w90_occ_bands.subtract_reference(refpw).plot(dpi=300, color='red', label='LDA W90 interp')
+ax = w90_occ_bands.subtract_reference(refpw).plot(color='red', label='LDA W90 interp')
 ax = w90_emp_bands.subtract_reference(refpw).plot(ax=ax, color='red')
 ax = pw_bands.subtract_reference(refpw).plot(ax=ax, ls='none', marker='o', markersize=3, color='blue', label='LDA explicit')
 ki_bands.subtract_reference(refcp).plot(ax=ax, filename='bands.png', color='green', emin=-15, emax=10, label='KI', loc='upper left')
