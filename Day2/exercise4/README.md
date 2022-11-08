@@ -1,7 +1,11 @@
 # Run the calculations in the following way:
 
-pw.x < CoO.scf.in |tee CoO.scf.out
+pw.x < Si.scf.in |tee Si.scf.out
 
-hp.x < CoO.hp.in |tee CoO.hp.out
+pw.x < Si.bands.in |tee Si.bands.out
 
-pw.x < CoO.vcrelax.in |tee CoO.vcrelax.out
+bands.x < Si.bands.pp.in |tee Si.bands.pp.out
+
+plotband.x < Si.plotband.in |tee Si.plotband.out
+
+evince Si_bands.ps

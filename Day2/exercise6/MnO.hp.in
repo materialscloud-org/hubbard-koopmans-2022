@@ -1,0 +1,11 @@
+ &inputhp
+   prefix='MnO',
+   outdir='./tmp'
+   nq1 = 2, nq2 = 2, nq3 = 1,
+   conv_thr_chi = 1.0d-7,
+   alpha_mix(1) = 0.05
+   docc_thr = 1.0d-4
+   iverbosity = 2
+   determine_num_pert_only = .false.
+   niter_max = 200
+ /

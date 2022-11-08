@@ -1,0 +1,51 @@
+ &control
+    calculation = 'scf',
+    verbosity = 'high',
+    pseudo_dir = '../../files/pseudo'
+    outdir='./tmp'
+    restart_mode='from_scratch'
+    verbosity = 'high',
+    prefix='MnO',
+ /
+ &system
+    ibrav = 0, 
+    celldm(1) = 5.2648, 
+    nat = 4, 
+    ntyp = 3,
+    nspin = 2,
+    starting_magnetization(1) =  0.4,
+    starting_magnetization(2) = -0.4,
+    ecutwfc = 45.0, 
+    ecutrho = 450.0,
+    nbnd = 28
+    occupations = 'smearing',
+    smearing = 'mv',
+    degauss = 0.01
+ /
+ &electrons
+    mixing_beta = 0.2 
+    mixing_ndim = 20
+    mixing_mode = 'local-TF'
+    conv_thr =  1.0d-8,
+    electron_maxstep = 200
+ /
+ATOMIC_SPECIES
+  Mn1 1.0 mn_pbesol_v1.5.uspp.F.UPF
+  Mn2 1.0 mn_pbesol_v1.5.uspp.F.UPF
+  O   1.0 O.pbesol-n-kjpaw_psl.0.1.UPF
+CELL_PARAMETERS
+  0.5000000 0.8660254038 0.000000000
+ -0.5000000 0.8660254038 0.000000000
+  0.0000000 0.0000000000 1.583632480
+ATOMIC_POSITIONS {crystal}
+Mn1      0.000000000   0.000000000   0.000000000
+Mn2      0.000000000   0.000000000   0.500000000
+O        0.333333333   0.333333333   0.750000000
+O        0.666666666   0.666666666   0.250000000
+K_POINTS {automatic}
+ 4 4 3 0 0 0
+HUBBARD ortho-atomic
+V Mn1-3d Mn1-3d 1 1 1.d-4
+V Mn2-3d Mn2-3d 2 2 1.d-4
+V Mn1-3d O-2p   1 3 1.d-4
+V Mn2-3d O-2p   2 3 1.d-4
