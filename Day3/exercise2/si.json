@@ -41,10 +41,10 @@
                 "dis_froz_max": 10.6,
                 "dis_win_max": 16.9
             }
-        },
+	},
         "ui": {
-            "smooth_int_factor": 4
-        }
+	    "smooth_int_factor": 4
+	}
     },
     "plotting": {
         "Emin": -15,
