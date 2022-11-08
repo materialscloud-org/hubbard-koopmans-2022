@@ -3,11 +3,11 @@
 * DFT calculation 
  1) Self-consistent field: 
   
-    pw.x -in scf.pwi > scf.pwo
+    pw.x -in scf.pwi | tee scf.pwo
 
  2) Non-self-consisten field on a regular k-point mesh (needed by Wannier90)
 
-    pw.x -in nscf.pwi > nscf.pwo
+    pw.x -in nscf.pwi | tee nscf.pwo
 
 * Separate wannierization for occupied and empty orbitals
  1) mv to the occ folder
@@ -20,7 +20,7 @@
 
  3) interface between PW and Wannier90
  
-    pw2wannier90.x -in pw2wan.p2wi > pw2wan.p2wo
+    pw2wannier90.x -in pw2wan.p2wi | tee pw2wan.p2wo
 
  4) Wannierization of the occupied manifold
 
@@ -36,7 +36,7 @@
 
  7) interface between PW and Wannier90
 
-    pw2wannier90.x -in pw2wan.p2wi > pw2wan.p2wo
+    pw2wannier90.x -in pw2wan.p2wi | tee pw2wan.p2wo
 
  8) Wannierization of the (lower part of the) empty manifold
 
@@ -54,4 +54,4 @@
 
  3) Run kcw.x 
 
-    kcw.x -in kc.w2ki > kc.w2ko
+    kcw.x -in kc.w2ki | tee kc.w2ko
