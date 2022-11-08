@@ -1,5 +1,0 @@
-&bands
-   outdir           = './out'
-   prefix           = 'kc'
-   filband          = 'dft_bands'
-/
