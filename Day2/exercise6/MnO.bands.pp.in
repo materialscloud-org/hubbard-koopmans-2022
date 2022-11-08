@@ -1,0 +1,5 @@
+  &bands
+    prefix = 'MnO',
+    outdir='./tmp'
+    filband = 'MnO_bands.dat'
+  /
