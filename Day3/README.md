@@ -4,6 +4,6 @@
  - [Exercise 2](exercise2/README.md): Use the `koopmans` package and the `kcp.x` code to compute the KI band structure of FCC Si 
  - [Exercise 3](exercise3/README.md): Use `kcw.x` to compute the KI electronic structure of the O<sub>3</sub> molecule
  - [Exercise 4](exercise4/README.md): Use `kcw.x` to compute the KI electronic structure of bulk Silicon. 
- - [Exercise 5](exercise5/README.md): Use `kcw.x` to compute the KI electronic structure of Zn=
+ - [Exercise 5](exercise5/README.md): Use `kcw.x` to compute the KI electronic structure of ZnO
 
 Inside each folder you'll find the inputs file to run the calculations and a "reference" folder with reference output files.
