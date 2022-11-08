@@ -25,7 +25,6 @@
    do_bands         = .true.
    use_ws_distance  = .true.
    write_hr         = .true.
-   l_alpha_corr     = .false.
 /
 K_POINTS crystal_b
 53
