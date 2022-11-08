@@ -1,6 +1,5 @@
 &CONTROL
    calculation      = 'scf'
-   verbosity        = 'high'
    outdir           = '../out'
    pseudo_dir       = '../../../../files/pseudo/'
    prefix           = 'si'
@@ -8,9 +7,9 @@
 &SYSTEM
    ibrav            = 2
    celldm(1)        = 10.262200042863787
-   tot_magnetization = 0
    ecutwfc          = 20.0
    nspin            = 2
+   tot_magnetization = 0
    starting_magnetization(1) = 0.0
    ntyp             = 1
    nat              = 2

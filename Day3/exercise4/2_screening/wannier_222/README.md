@@ -1,4 +1,4 @@
-# Initial DFT and Wannier90 calculations, and interface with the KCW code.
+#  DFT and Wannier90 calculations on a 2x2x2 k-point grid, and interface with the KCW code.
 
 * DFT calculation 
  1) Self-consistent field: 
