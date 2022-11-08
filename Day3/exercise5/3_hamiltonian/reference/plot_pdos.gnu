@@ -1,5 +1,7 @@
-set terminal post eps enhanced solid color "Helvetica" 20 
-set output "ZnO_PDOS.eps" 
+#!/usr/bin/gnuplot
+
+set terminal pngcairo enhanced solid color font "Helvetica, 24" size 1400,900 
+set output "ZnO_ki_PDOS.png"
 
 set arrow from 0, 0 to 0, 8 nohead
 set xrange [-12:8] 

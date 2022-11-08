@@ -45,6 +45,7 @@
             }
         },
         "w90": {
+            "conv_tol": 1e-8,
             "occ": {
                 "projections_blocks": [
                     [{"site": "Zn", "ang_mtm": "l=0"}],

@@ -1,5 +1,7 @@
-set terminal post eps enhanced solid color "Helvetica" 20 
-set output "ZnO_ki_bands.eps" 
+#!/usr/bin/gnuplot
+
+set terminal pngcairo enhanced solid color font "Helvetica, 24" size 1400,900 
+set output "ZnO_ki_bands.png"
 
 ymin=-13
 ymax=10

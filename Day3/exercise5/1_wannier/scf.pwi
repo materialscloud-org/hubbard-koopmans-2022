@@ -6,9 +6,9 @@
    pseudo_dir       = '../../../files/pseudo'
 /
 &SYSTEM
-   tot_magnetization = 0
    ecutwfc          = 50.0
    nspin            = 2
+   tot_magnetization = 0
    starting_magnetization(1) = 0.0
    starting_magnetization(2) = 0.0
    ntyp             = 2
@@ -17,10 +17,6 @@
 /
 &ELECTRONS
    conv_thr         = 1.04e-07
-/
-&IONS
-/
-&CELL
 /
 
 ATOMIC_SPECIES

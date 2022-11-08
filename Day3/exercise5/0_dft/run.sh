@@ -1,8 +1,12 @@
-pw.x -in scf.pwi > scf.pwo
-echo " PWscf     done"
-pw.x -in bands.pwi > bands.pwo
-echo " PWbands   done"
-bands.x -in bands.in > bands.out
-echo " BANDS     done"
+#!/bin/bash
 
-#gnuplot plot_bands.gnu
+printf "  PWSCF   ... "
+pw.x -in scf.pwi > scf.pwo
+echo " done"
+printf "  PWbands ... "
+pw.x -in bands.pwi > bands.pwo
+echo " done"
+printf "  BANDS   ... "
+bands.x -in bands.in > bands.out
+echo " done"
+
