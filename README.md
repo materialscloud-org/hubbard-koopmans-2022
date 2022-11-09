@@ -20,7 +20,7 @@ NOTE: If you are running this tutorial on a laptop, beware that some manufacture
 
  - [Day1](Day1/README.md): Using Hybrids and meta-GGA to compute the band gap of bulk silicon and magnetic moment of bulk iron, and generation of maximally localized Wannier functions using WANNIER90.
  - [Day2](Day2/README.md): Calculation of the electronic structure of transition-metal oxides using extended Hubbard functionals (DFT+U and DFT+U+V), and calculation of Hubbard parameters using the HP code.
- - [Day3](Day3/README.md): Using `kcp.x`, 'kcw.x`, and `koopmans` to compute the electronic structure of finite and extended systems with Koopmans spectral functionals.
+ - [Day3](Day3/README.md): Using `kcp.x`, `kcw.x`, and `koopmans` to compute the electronic structure of finite and extended systems with Koopmans spectral functionals.
 
 ## Bibliography
 1. P. Giannozzi, S. Baroni, N. Bonini, M. Calandra, R. Car, C. Cavazzoni, D. Ceresoli, G. L. Chiarotti, M. Cococcioni, I. Dabo, et al., Journal of physics: Condensed matter 21, 395502 (2009).
